@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:sh="http://www.w3.org/ns/shacl#"
+>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasCategory">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://example.org/boardgame-ontology#Category"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasMaxPlayers">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Rock-Paper-Scissors">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasMaxRecAge">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasMaxGameTime">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Area-Impulse">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Simultaneous_Action_Selection">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasName">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Industry_or_Manufacturing">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasMentalLoad">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://example.org/boardgame-ontology#MentalLoad"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+    <sh:in rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Korean_War">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#isMechanicOf">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Mechanic"/>
+    <rdfs:range rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdf:inverseOf rdf:resource="http://example.org/boardgame-ontology#hasMechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Campaign_or_Battle_Card_Driven">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb1">
+    <rdf:first rdf:resource="http://example.org/boardgame-ontology#easy"/>
+    <rdf:rest rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasGeekRating">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#UniqueIDConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+    <sh:path rdf:resource="http://example.org/boardgame-ontology#hasID"/>
+    <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+    <sh:unique rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sh:unique>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Fantasy">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#UniqueURLConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+    <sh:path rdf:resource="http://example.org/boardgame-ontology#hasURL"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+    <sh:unique rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sh:unique>
+    <sh:pattern>^(https?://[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})?$</sh:pattern>
+    <sh:message>Value must be a valid URL.</sh:message>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Electronic">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasURL">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Negotiation">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#difficult">
+    <rdf:type rdf:resource="http://example.org/boardgame-ontology#MentalLoad"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Chit-Pull_System">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#likesCategory">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Player"/>
+    <rdfs:range rdf:resource="http://example.org/boardgame-ontology#Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasID">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Farming">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Video_Game_Theme">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#medium">
+    <rdf:type rdf:resource="http://example.org/boardgame-ontology#Size"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasMechanic">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://example.org/boardgame-ontology#Mechanic"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Memory">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#isOwnedBy">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://example.org/boardgame-ontology#Player"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Print_&amp;_Play">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Vietnam_War">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb4">
+    <sh:path rdf:resource="http://example.org/boardgame-ontology#hasSize"/>
+    <sh:in rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Partnerships">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Bluffing">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/American_Indian_Wars">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasCreator">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasComment">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Player"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/none">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/World_War_I">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasRating">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Pattern_Recognition">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#SizeConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+    <sh:targetClass rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <sh:property rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#MentalLoad">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasMinPlayers">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Card_Drafting">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasPublisher">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasMinGameTime">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasSize">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://example.org/boardgame-ontology#Size"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Party_Game">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Game_System">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Music">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Pattern_Building">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Math">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasMinRecAge">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb2">
+    <rdf:first rdf:resource="http://example.org/boardgame-ontology#moderate"/>
+    <rdf:rest rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Variable_Phase_Order">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Aviation_or_Flight">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasBestNumPlayers">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Paper-and-Pencil">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Fighting">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Zombies">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#Game">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Mafia">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Civilization">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Collectible_Components">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Age_of_Reason">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Variable_Player_Powers">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Simulation">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Player_Elimination">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Sports">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/American_West">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#isCategoryOf">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Category"/>
+    <rdfs:range rdf:resource="http://example.org/boardgame-ontology#Game"/>
+    <rdf:inverseOf rdf:resource="http://example.org/boardgame-ontology#hasCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Arabian">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/MurderorMystery">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb5">
+    <rdf:first rdf:resource="http://example.org/boardgame-ontology#small"/>
+    <rdf:rest rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb7">
+    <rdf:first rdf:resource="http://example.org/boardgame-ontology#large"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Dice_Rolling">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Expansion_for_Base-game">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Co-operative_Play">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Mature_or_Adult">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Action_or_Movement_Programming">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#small">
+    <rdf:type rdf:resource="http://example.org/boardgame-ontology#Size"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Space_Exploration">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Civil_War">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Take_That">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb3">
+    <rdf:first rdf:resource="http://example.org/boardgame-ontology#difficult"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/City_Building">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Singing">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Political">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Point_to_Point_Movement">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Press_Your_Luck">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Religious">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Trading">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Transportation">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Abstract_Strategy">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Roll_or_Spin_and_Move">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Deduction">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Miniatures">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Adventure">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#likesMechanic">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Player"/>
+    <rdfs:range rdf:resource="http://example.org/boardgame-ontology#Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Deck_or_Pool_Building">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Hex-and-Counter">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Action_Point_Allowance_System">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb6">
+    <rdf:first rdf:resource="http://example.org/boardgame-ontology#medium"/>
+    <rdf:rest rdf:nodeID="n97eb536cdaab46548c9fd579e3cc64dcb7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#hasOwnershipOf">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://example.org/boardgame-ontology#Player"/>
+    <rdfs:range rdf:resource="http://example.org/boardgame-ontology#Game"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Prehistoric">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Storytelling">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Card_Game">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Hand_Management">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Action_or_Dexterity">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Novel-based">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Ancient">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Pick-up_and_Deliver">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/American_Civil_War">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Puzzle">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Renaissance">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Real-time">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Mythology">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Area_Control_or_Area_Influence">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Environmental">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Dice">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Set_Collection">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Wargame">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Exploration">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/BettingorWagering">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Medieval">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#easy">
+    <rdf:type rdf:resource="http://example.org/boardgame-ontology#MentalLoad"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Comic_Book_or_Strip">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Crayon_Rail_System">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Nautical">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Number">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Pike_and_Shot">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/RouteorNetwork_Building">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Animals">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Medical">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Role_Playing">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Territory_Building">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Area_Enclosure">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Word_Game">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Trivia">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Childrens_Game">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Modular_Board">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Voting">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Napoleonic">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Educational">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Time_Track">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Maze">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Horror">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+    <rdfs:comment>all kinds of horror, including the joky kind</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Trick-taking">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/World_War_II">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Travel">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Economic">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Grid_Movement">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Book">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Humor">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Line_Drawing">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Post-Napoleonic">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/AuctionorBidding">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Secret_Unit_Deployment">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Worker_Placement">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Acting">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Science_Fiction">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Area_Movement">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Pirates">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/American_Revolutionary_War">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Modern_Warfare">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Commodity_Speculation">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#large">
+    <rdf:type rdf:resource="http://example.org/boardgame-ontology#Size"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Movies_or_TV_or_Radio_theme">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#Size">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#Mechanic">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#moderate">
+    <rdf:type rdf:resource="http://example.org/boardgame-ontology#MentalLoad"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Racing">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#Category">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/SpiesorSecret_Agents">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Stock_Holding">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/boardgame-ontology#Player">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Trains">
+    <rdf:type rdf:resource="http://example.org/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Tile_Placement">
+    <rdf:type rdf:resource="http://example.org/Mechanic"/>
+  </rdf:Description>
+</rdf:RDF>
