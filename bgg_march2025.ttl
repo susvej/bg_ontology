@@ -5,6 +5,17 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+bgg:boardgame-ontology a owl:Ontology ;
+    dcterms:title "BGG Board Game Ontology" ;
+    dcterms:description "This ontology uses the board games in the board game geek webpage, as available in Kaggle in 2024. It also allows tracking of owners of boardgames, and their ratings (as opposed to the aggregate bgg ratings) of the board games, to enable capture of personalized data.";
+skos:editorialNote """
+Todo: 
+- define the actual ontology name, description etc
+add a prefix for our own resources
+- Make IRIs for hasCreator, hasOwnershipOf, isOwnedBy, hasURL (xsd:anyURI)
+- Add personal
+""".
+
 bgg:Category a rdfs:Class .
 
 bgg:Game a rdfs:Class .
