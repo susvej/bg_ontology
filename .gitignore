@@ -1,0 +1,22 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Raw data — too large for git (kaggle2025bgdb has files up to 3.7 GB,
+# threnjen bg db has files up to 380 MB which exceeds GitHub's 100 MB limit)
+kaggle2025bgdb/
+threnjen bg db/
+
+# Local Claude Code settings (user-specific)
+.claude/settings.local.json

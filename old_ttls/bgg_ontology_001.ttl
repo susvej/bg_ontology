@@ -1,0 +1,186 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://example.org/boardgame-ontology#> .
+
+### Classes ###
+ex:Game rdf:type rdfs:Class .
+ex:Player rdf:type rdfs:Class .
+ex:Mechanic rdf:type rdfs:Class .
+ex:Category rdf:type rdfs:Class .
+ex:MentalLoad rdf:type rdfs:Class .
+ex:Size rdf:type rdfs:Class .
+
+### Properties ###
+
+# Note SHAQL Constraint
+ex:hasID rdf:type rdf:Property ;
+       rdfs:domain ex:Game ;
+       rdfs:range xsd:int .
+
+# Note SHAQL Constraint       
+ex:hasURL rdf:type rdf:Property ;
+        rdfs:domain ex:Game ;
+        rdfs:range xsd:string .
+
+ex:hasName rdf:type rdf:Property ;
+         rdfs:domain ex:Game ;
+         rdfs:range xsd:string .
+
+ex:hasCreator rdf:type rdf:Property ;
+            rdfs:domain ex:Game ;
+            rdfs:range xsd:string ;
+            sh:minCount 1 ;
+            sh:maxCount 1 .
+
+ex:hasPublisher rdf:type rdf:Property ;
+              rdfs:domain ex:Game ;
+              rdfs:range xsd:string ;
+              sh:minCount 1 ;
+              sh:maxCount 1 .
+
+ex:hasMechanic rdf:type rdf:Property ;
+              rdfs:domain ex:Game ;
+              rdfs:range ex:Mechanic ;
+              sh:minCount 1 .
+
+ex:hasCategory rdf:type rdf:Property ;
+              rdfs:domain ex:Game ;
+              rdfs:range ex:Category ;
+              sh:minCount 1 .
+
+ex:hasSize rdf:type rdf:Property ;
+          rdfs:domain ex:Game ;
+          rdfs:range ex:Size ;
+          sh:minCount 1 ;
+          sh:maxCount 1 .
+
+ex:hasMinGameTime rdf:type rdf:Property ;
+                rdfs:domain ex:Game ;
+                rdfs:range xsd:int ;
+                sh:minCount 1 ;
+                sh:maxCount 1 .
+
+ex:hasMaxGameTime rdf:type rdf:Property ;
+                rdfs:domain ex:Game ;
+                rdfs:range xsd:int ;
+                sh:minCount 1 ;
+                sh:maxCount 1 .
+
+ex:hasMinPlayers rdf:type rdf:Property ;
+                rdfs:domain ex:Game ;
+                rdfs:range xsd:int ;
+                sh:minCount 1 ;
+                sh:maxCount 1 .
+
+ex:hasMaxPlayers rdf:type rdf:Property ;
+                rdfs:domain ex:Game ;
+                rdfs:range xsd:int ;
+                sh:minCount 1 ;
+                sh:maxCount 1 .
+
+ex:hasBestNumPlayers rdf:type rdf:Property ;
+                   rdfs:domain ex:Game ;
+                   rdfs:range xsd:int .
+
+ex:isOwnedBy rdf:type rdf:Property ;
+           rdfs:domain ex:Game ;
+           rdfs:range ex:Player .
+
+ex:hasRating rdf:type rdf:Property ;
+           rdfs:domain ex:Game ;
+           rdfs:range xsd:double ;
+           sh:minCount 1 ;
+           sh:maxCount 1 .
+
+ex:hasGeekRating rdf:type rdf:Property ;
+               rdfs:domain ex:Game ;
+               rdfs:range xsd:double ;
+               sh:minCount 1 ;
+               sh:maxCount 1 .
+
+ex:hasComment rdf:type rdf:Property ;
+            rdfs:domain ex:Player ;
+            rdfs:range xsd:string ;
+            sh:minCount 1 ;
+            sh:maxCount 1 .
+
+ex:likesMechanic rdf:type rdf:Property ;
+               rdfs:domain ex:Player ;
+               rdfs:range ex:Mechanic .
+
+ex:likesCategory rdf:type rdf:Property ;
+               rdfs:domain ex:Player ;
+               rdfs:range ex:Category .
+
+ex:hasOwnershipOf rdf:type rdf:Property ;
+                rdfs:domain ex:Player ;
+                rdfs:range ex:Game .
+
+ex:isMechanicOf rdf:type rdf:Property ;
+              rdfs:domain ex:Mechanic ;
+              rdfs:range ex:Game ;
+              rdf:inverseOf ex:hasMechanic .
+
+ex:isCategoryOf rdf:type rdf:Property ;
+              rdfs:domain ex:Category ;
+              rdfs:range ex:Game ;
+              rdf:inverseOf ex:hasCategory .
+
+ex:hasMentalLoad rdf:type rdf:Property ;
+               rdfs:domain ex:Game ;
+               rdfs:range ex:MentalLoad ;
+               sh:minCount 0 ;
+               sh:maxCount 1 ;
+               sh:in (ex:easy ex:moderate ex:difficult) .
+
+ex:hasMinRecAge rdf:type rdf:Property ;
+                rdfs:domain ex:Game ;
+                rdfs:range xsd:int ;
+                sh:minCount 0 ;
+                sh:maxCount 1 .
+
+ex:hasMaxRecAge rdf:type rdf:Property ;
+                rdfs:domain ex:Game ;
+                rdfs:range xsd:int ;
+                sh:minCount 0 ;
+                sh:maxCount 1 .
+
+# SHACL Constraints
+# IDs must be unique.
+ex:UniqueIDConstraint
+    a sh:PropertyShape ;
+    sh:path ex:hasID ;
+    sh:datatype xsd:int ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:unique true .
+
+# hasUrl can be used at most once per subject and must be of a valid URL shape.
+ex:UniqueURLConstraint
+    a sh:PropertyShape ;
+    sh:path ex:hasURL ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:unique true ;
+    sh:pattern "^(https?://[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})?$" ;
+    sh:message "Value must be a valid URL." .
+
+# hasSize can be small, medium, large
+ex:SizeConstraint
+    a sh:NodeShape ;
+    sh:targetClass ex:Game ;
+    sh:property [
+        sh:path ex:hasSize ;
+        sh:in (ex:small ex:medium ex:large)
+    ] .
+
+### Individuals ###
+ex:easy rdf:type ex:MentalLoad .
+ex:moderate rdf:type ex:MentalLoad .
+ex:difficult rdf:type ex:MentalLoad .
+
+ex:small rdf:type ex:Size .
+ex:medium rdf:type ex:Size .
+ex:large rdf:type ex:Size .

@@ -1,0 +1,452 @@
+@prefix ex: <http://example.org/boardgame-ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Category a rdfs:Class .
+
+ex:Game a rdfs:Class .
+
+ex:Mechanic a rdfs:Class .
+
+ex:MentalLoad a rdfs:Class .
+
+ex:Player a rdfs:Class .
+
+ex:Size a rdfs:Class .
+
+<http://example.org/Abstract_Strategy> a <http://example.org/Category> .
+
+<http://example.org/Acting> a <http://example.org/Mechanic> .
+
+<http://example.org/Action_Point_Allowance_System> a <http://example.org/Mechanic> .
+
+<http://example.org/Action_or_Dexterity> a <http://example.org/Category> .
+
+<http://example.org/Action_or_Movement_Programming> a <http://example.org/Mechanic> .
+
+<http://example.org/Adventure> a <http://example.org/Category> .
+
+<http://example.org/Age_of_Reason> a <http://example.org/Category> .
+
+<http://example.org/American_Civil_War> a <http://example.org/Category> .
+
+<http://example.org/American_Indian_Wars> a <http://example.org/Category> .
+
+<http://example.org/American_Revolutionary_War> a <http://example.org/Category> .
+
+<http://example.org/American_West> a <http://example.org/Category> .
+
+<http://example.org/Ancient> a <http://example.org/Category> .
+
+<http://example.org/Animals> a <http://example.org/Category> .
+
+<http://example.org/Arabian> a <http://example.org/Category> .
+
+<http://example.org/Area-Impulse> a <http://example.org/Mechanic> .
+
+<http://example.org/Area_Control_or_Area_Influence> a <http://example.org/Mechanic> .
+
+<http://example.org/Area_Enclosure> a <http://example.org/Mechanic> .
+
+<http://example.org/Area_Movement> a <http://example.org/Mechanic> .
+
+<http://example.org/AuctionorBidding> a <http://example.org/Mechanic> .
+
+<http://example.org/Aviation_or_Flight> a <http://example.org/Category> .
+
+<http://example.org/BettingorWagering> a <http://example.org/Mechanic> .
+
+<http://example.org/Bluffing> a <http://example.org/Category> .
+
+<http://example.org/Book> a <http://example.org/Category> .
+
+<http://example.org/Campaign_or_Battle_Card_Driven> a <http://example.org/Mechanic> .
+
+<http://example.org/Card_Drafting> a <http://example.org/Mechanic> .
+
+<http://example.org/Card_Game> a <http://example.org/Category> .
+
+<http://example.org/Childrens_Game> a <http://example.org/Category> .
+
+<http://example.org/Chit-Pull_System> a <http://example.org/Mechanic> .
+
+<http://example.org/City_Building> a <http://example.org/Category> .
+
+<http://example.org/Civil_War> a <http://example.org/Category> .
+
+<http://example.org/Civilization> a <http://example.org/Category> .
+
+<http://example.org/Co-operative_Play> a <http://example.org/Mechanic> .
+
+<http://example.org/Collectible_Components> a <http://example.org/Category> .
+
+<http://example.org/Comic_Book_or_Strip> a <http://example.org/Category> .
+
+<http://example.org/Commodity_Speculation> a <http://example.org/Mechanic> .
+
+<http://example.org/Crayon_Rail_System> a <http://example.org/Mechanic> .
+
+<http://example.org/Deck_or_Pool_Building> a <http://example.org/Mechanic> .
+
+<http://example.org/Deduction> a <http://example.org/Category> .
+
+<http://example.org/Dice> a <http://example.org/Category> .
+
+<http://example.org/Dice_Rolling> a <http://example.org/Mechanic> .
+
+<http://example.org/Economic> a <http://example.org/Category> .
+
+<http://example.org/Educational> a <http://example.org/Category> .
+
+<http://example.org/Electronic> a <http://example.org/Category> .
+
+<http://example.org/Environmental> a <http://example.org/Category> .
+
+<http://example.org/Expansion_for_Base-game> a <http://example.org/Category> .
+
+<http://example.org/Exploration> a <http://example.org/Category> .
+
+<http://example.org/Fantasy> a <http://example.org/Category> .
+
+<http://example.org/Farming> a <http://example.org/Category> .
+
+<http://example.org/Fighting> a <http://example.org/Category> .
+
+<http://example.org/Game_System> a <http://example.org/Category> .
+
+<http://example.org/Grid_Movement> a <http://example.org/Mechanic> .
+
+<http://example.org/Hand_Management> a <http://example.org/Mechanic> .
+
+<http://example.org/Hex-and-Counter> a <http://example.org/Mechanic> .
+
+<http://example.org/Horror> a <http://example.org/Category> ;
+    rdfs:comment "all kinds of horror, including the joky kind" .
+
+<http://example.org/Humor> a <http://example.org/Category> .
+
+<http://example.org/Industry_or_Manufacturing> a <http://example.org/Category> .
+
+<http://example.org/Korean_War> a <http://example.org/Category> .
+
+<http://example.org/Line_Drawing> a <http://example.org/Mechanic> .
+
+<http://example.org/Mafia> a <http://example.org/Category> .
+
+<http://example.org/Math> a <http://example.org/Category> .
+
+<http://example.org/Mature_or_Adult> a <http://example.org/Category> .
+
+<http://example.org/Maze> a <http://example.org/Category> .
+
+<http://example.org/Medical> a <http://example.org/Category> .
+
+<http://example.org/Medieval> a <http://example.org/Category> .
+
+<http://example.org/Memory> a <http://example.org/Category>,
+        <http://example.org/Mechanic> .
+
+<http://example.org/Miniatures> a <http://example.org/Category> .
+
+<http://example.org/Modern_Warfare> a <http://example.org/Category> .
+
+<http://example.org/Modular_Board> a <http://example.org/Mechanic> .
+
+<http://example.org/Movies_or_TV_or_Radio_theme> a <http://example.org/Category> .
+
+<http://example.org/MurderorMystery> a <http://example.org/Category> .
+
+<http://example.org/Music> a <http://example.org/Category> .
+
+<http://example.org/Mythology> a <http://example.org/Category> .
+
+<http://example.org/Napoleonic> a <http://example.org/Category> .
+
+<http://example.org/Nautical> a <http://example.org/Category> .
+
+<http://example.org/Negotiation> a <http://example.org/Category> .
+
+<http://example.org/Novel-based> a <http://example.org/Category> .
+
+<http://example.org/Number> a <http://example.org/Category> .
+
+<http://example.org/Paper-and-Pencil> a <http://example.org/Mechanic> .
+
+<http://example.org/Partnerships> a <http://example.org/Mechanic> .
+
+<http://example.org/Party_Game> a <http://example.org/Category> .
+
+<http://example.org/Pattern_Building> a <http://example.org/Mechanic> .
+
+<http://example.org/Pattern_Recognition> a <http://example.org/Mechanic> .
+
+<http://example.org/Pick-up_and_Deliver> a <http://example.org/Mechanic> .
+
+<http://example.org/Pike_and_Shot> a <http://example.org/Category> .
+
+<http://example.org/Pirates> a <http://example.org/Category> .
+
+<http://example.org/Player_Elimination> a <http://example.org/Mechanic> .
+
+<http://example.org/Point_to_Point_Movement> a <http://example.org/Mechanic> .
+
+<http://example.org/Political> a <http://example.org/Category> .
+
+<http://example.org/Post-Napoleonic> a <http://example.org/Category> .
+
+<http://example.org/Prehistoric> a <http://example.org/Category> .
+
+<http://example.org/Press_Your_Luck> a <http://example.org/Mechanic> .
+
+<http://example.org/Print_&_Play> a <http://example.org/Category> .
+
+<http://example.org/Puzzle> a <http://example.org/Category> .
+
+<http://example.org/Racing> a <http://example.org/Category> .
+
+<http://example.org/Real-time> a <http://example.org/Category> .
+
+<http://example.org/Religious> a <http://example.org/Category> .
+
+<http://example.org/Renaissance> a <http://example.org/Category> .
+
+<http://example.org/Rock-Paper-Scissors> a <http://example.org/Mechanic> .
+
+<http://example.org/Role_Playing> a <http://example.org/Mechanic> .
+
+<http://example.org/Roll_or_Spin_and_Move> a <http://example.org/Mechanic> .
+
+<http://example.org/RouteorNetwork_Building> a <http://example.org/Mechanic> .
+
+<http://example.org/Science_Fiction> a <http://example.org/Category> .
+
+<http://example.org/Secret_Unit_Deployment> a <http://example.org/Mechanic> .
+
+<http://example.org/Set_Collection> a <http://example.org/Mechanic> .
+
+<http://example.org/Simulation> a <http://example.org/Mechanic> .
+
+<http://example.org/Simultaneous_Action_Selection> a <http://example.org/Mechanic> .
+
+<http://example.org/Singing> a <http://example.org/Mechanic> .
+
+<http://example.org/Space_Exploration> a <http://example.org/Category> .
+
+<http://example.org/SpiesorSecret_Agents> a <http://example.org/Category> .
+
+<http://example.org/Sports> a <http://example.org/Category> .
+
+<http://example.org/Stock_Holding> a <http://example.org/Mechanic> .
+
+<http://example.org/Storytelling> a <http://example.org/Mechanic> .
+
+<http://example.org/Take_That> a <http://example.org/Mechanic> .
+
+<http://example.org/Territory_Building> a <http://example.org/Category> .
+
+<http://example.org/Tile_Placement> a <http://example.org/Mechanic> .
+
+<http://example.org/Time_Track> a <http://example.org/Mechanic> .
+
+<http://example.org/Trading> a <http://example.org/Mechanic> .
+
+<http://example.org/Trains> a <http://example.org/Category> .
+
+<http://example.org/Transportation> a <http://example.org/Category> .
+
+<http://example.org/Travel> a <http://example.org/Category> .
+
+<http://example.org/Trick-taking> a <http://example.org/Mechanic> .
+
+<http://example.org/Trivia> a <http://example.org/Category> .
+
+<http://example.org/Variable_Phase_Order> a <http://example.org/Mechanic> .
+
+<http://example.org/Variable_Player_Powers> a <http://example.org/Mechanic> .
+
+<http://example.org/Video_Game_Theme> a <http://example.org/Category> .
+
+<http://example.org/Vietnam_War> a <http://example.org/Category> .
+
+<http://example.org/Voting> a <http://example.org/Mechanic> .
+
+<http://example.org/Wargame> a <http://example.org/Category> .
+
+<http://example.org/Word_Game> a <http://example.org/Category> .
+
+<http://example.org/Worker_Placement> a <http://example.org/Mechanic> .
+
+<http://example.org/World_War_I> a <http://example.org/Category> .
+
+<http://example.org/World_War_II> a <http://example.org/Category> .
+
+<http://example.org/Zombies> a <http://example.org/Category> .
+
+ex:SizeConstraint a sh:NodeShape ;
+    sh:property [ sh:in ( ex:small ex:medium ex:large ) ;
+            sh:path ex:hasSize ] ;
+    sh:targetClass ex:Game .
+
+ex:UniqueIDConstraint a sh:PropertyShape ;
+    sh:datatype xsd:int ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path ex:hasID ;
+    sh:unique true .
+
+ex:UniqueURLConstraint a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:message "Value must be a valid URL." ;
+    sh:minCount 1 ;
+    sh:path ex:hasURL ;
+    sh:pattern "^(https?://[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})?$" ;
+    sh:unique true .
+
+ex:hasBestNumPlayers a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:int .
+
+ex:hasComment a rdf:Property ;
+    rdfs:domain ex:Player ;
+    rdfs:range xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 .
+
+ex:hasCreator a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 .
+
+ex:hasGeekRating a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:double ;
+    sh:maxCount 1 ;
+    sh:minCount 1 .
+
+ex:hasMaxGameTime a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:int ;
+    sh:maxCount 1 ;
+    sh:minCount 1 .
+
+ex:hasMaxPlayers a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:int ;
+    sh:maxCount 1 ;
+    sh:minCount 1 .
+
+ex:hasMaxRecAge a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:int ;
+    sh:maxCount 1 ;
+    sh:minCount 0 .
+
+ex:hasMentalLoad a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range ex:MentalLoad ;
+    sh:in ( ex:easy ex:moderate ex:difficult ) ;
+    sh:maxCount 1 ;
+    sh:minCount 0 .
+
+ex:hasMinGameTime a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:int ;
+    sh:maxCount 1 ;
+    sh:minCount 1 .
+
+ex:hasMinPlayers a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:int ;
+    sh:maxCount 1 ;
+    sh:minCount 1 .
+
+ex:hasMinRecAge a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:int ;
+    sh:maxCount 1 ;
+    sh:minCount 0 .
+
+ex:hasName a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:string .
+
+ex:hasOwnershipOf a rdf:Property ;
+    rdfs:domain ex:Player ;
+    rdfs:range ex:Game .
+
+ex:hasPublisher a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 .
+
+ex:hasRating a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:double ;
+    sh:maxCount 1 ;
+    sh:minCount 1 .
+
+ex:isCategoryOf a rdf:Property ;
+    rdf:inverseOf ex:hasCategory ;
+    rdfs:domain ex:Category ;
+    rdfs:range ex:Game .
+
+ex:isMechanicOf a rdf:Property ;
+    rdf:inverseOf ex:hasMechanic ;
+    rdfs:domain ex:Mechanic ;
+    rdfs:range ex:Game .
+
+ex:isOwnedBy a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range ex:Player .
+
+ex:likesCategory a rdf:Property ;
+    rdfs:domain ex:Player ;
+    rdfs:range ex:Category .
+
+ex:likesMechanic a rdf:Property ;
+    rdfs:domain ex:Player ;
+    rdfs:range ex:Mechanic .
+
+<http://example.org/none> a <http://example.org/Category>,
+        <http://example.org/Mechanic> .
+
+ex:difficult a ex:MentalLoad .
+
+ex:easy a ex:MentalLoad .
+
+ex:hasCategory a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range ex:Category ;
+    sh:minCount 1 .
+
+ex:hasID a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:int .
+
+ex:hasMechanic a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range ex:Mechanic ;
+    sh:minCount 1 .
+
+ex:hasSize a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range ex:Size ;
+    sh:maxCount 1 ;
+    sh:minCount 1 .
+
+ex:hasURL a rdf:Property ;
+    rdfs:domain ex:Game ;
+    rdfs:range xsd:string .
+
+ex:large a ex:Size .
+
+ex:medium a ex:Size .
+
+ex:moderate a ex:MentalLoad .
+
+ex:small a ex:Size .
+
