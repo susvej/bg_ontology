@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test_suite>
+    
+    <!-- SECTION A: Simple/Conversational Queries (Warm-up Tests) -->
+    <section id="A" name="Simple/Conversational Queries (Warm-up Tests)">
+        <query id="AQ1">
+            <text>Give me a game about spies that I can play with my brother.</text>
+            <test_focus>Natural language parsing (translating "with my brother" to a 2-player constraint) and keyword/theme matching ("spies").</test_focus>
+        </query>
+        <query id="AQ2">
+            <text>What is the highest-rated game published in the year 2020?</text>
+            <test_focus>Simple single-column equality filtering (Year = 2020) and sorting.</test_focus>
+        </query>
+        <query id="AQ3">
+            <text>Show me games published by Italian game designers.</text>
+            <test_focus>Handling missing data structures. This information is NOT in the database, and the Agent should explicitly communicate that limitation.</test_focus>
+        </query>
+        <query id="AQ4">
+            <text>List all games made by the publisher "Stonemaier Games".</text>
+            <test_focus>Basic relational lookup or exact string matching on a publisher column.</test_focus>
+        </query>
+        <query id="AQ5">
+            <text>What is the maximum number of players who can play "Catan"?</text>
+            <test_focus>Specific entity property lookup (MaxPlayers for a specific game title).</test_focus>
+        </query>
+    </section>
+
+    <!-- SECTION B: Complex Multi-Criteria Filtering & Edge Cases -->
+    <section id="B" name="Complex Multi-Criteria Filtering &amp; Edge Cases">
+        <query id="B6">
+            <text>What are the top 5 highest-rated cooperative games that can be played solo (1 player) but cannot be played with more than 4 players?</text>
+            <test_focus>Multiple constraints, inclusive boundary matching (MinPlayers &lt;= 1 and MaxPlayers &gt;= 1), and strict upper limits.</test_focus>
+        </query>
+        <query id="BQ7">
+            <text>Which games are easy to play and use the Card Drafting mechanic, and support at least 5 players?</text>
+            <test_focus>Cross-referencing to the players db with specific string-based mechanics.</test_focus>
+        </query>
+        <query id="BQ8">
+            <text>What games have a playing time listed between 60 and 120 minutes but have a minimum age requirement of 14 or older?</text>
+            <test_focus>Numeric range validation combined with age threshold filtering.</test_focus>
+        </query>
+    </section>
+
+    <!-- SECTION C: Advanced Aggregations & Database Analytics -->
+    <section id="C" name="Advanced Aggregations &amp; Database Analytics">
+        <query id="CQ9">
+            <text>"For each year between 1980 and 2005, which single board game received the highest rating?"</text>
+            <test_focus>Grouping by year, finding a maximum value within groups, and returning a non-aggregated column (the game name).</test_focus>
+        </query>
+        <query id="CQ10">
+            <text>Which mechanics appear in fewer than 5 games across the entire database?</text>
+            <test_focus>Grouping by a multi-valued attribute (mechanics) and applying a HAVING style count filter to find rare elements.</test_focus>
+        </query>
+    </section>
+
+    <!-- SECTION D: Typo Tolerance, Text Search & String Matching -->
+    <section id="D" name="Typo Tolerance, Text Search &amp; String Matching">
+        <query id="DQ11">
+            <text>Find all games designed by Elizabeth Hargreave.</text>
+            <test_focus>Multi-variant spelling, soundex/fuzzy matching, or explicit OR text matching on a legendary designer. Twist: she isn't in there, because all her games were created too late. A great agent would note this as an aside, while not inventing games that aren't in the data set.</test_focus>
+        </query>
+        <query id="DQ12">
+            <text>Which games have titles that are exactly one word long and have a rating above 8.0?</text>
+            <test_focus>String length/regex validation (checking for lack of spaces) combined with numeric filters.</test_focus>
+        </query>
+        <query id="DQ13">
+            <text>Search for games designed by "Jamey Stegmeir"</text>
+            <test_focus>Strict validation of fuzzy text search capabilities on prominent industry names (intentional misspelling of Stegmaier).</test_focus>
+        </query>
+    </section>
+
+    <!-- SECTION E: Multi-Table Relationships & Hidden Entities -->
+    <section id="E" name="Multi-Table Relationships &amp; Hidden Entities">
+        <query id="EQ14">
+            <text>What games feature artwork by "Vincent Dutrait" and are published by "IELLO"?</text>
+            <test_focus>Dual-relation intersection (Game ↔ Artist AND Game ↔ Publisher).</test_focus>
+        </query>
+        <query id="EQ15">
+            <text>Which base games have more than 5 official expansions logged in the system?</text>
+            <test_focus>Parent-child self-referencing relationships within the database.</test_focus>
+        </query>
+    </section>
+
+    <!-- SECTION F: Recommendation Logic & Recommendation Hallucinations -->
+    <section id="F" name="Recommendation Logic &amp; Recommendation Hallucinations">
+        <query id="F16">
+            <text>I like "Wingspan" (Engine Building, Birds) and "Ark Nova" (Engine Building, Zoo Animals). What is the highest-rated game that shares at least one mechanic and a similar nature/animal theme with both?</text>
+            <test_focus>Complex intersection matching for recommendation engines based on weighted overlapping traits.</test_focus>
+        </query>
+        <query id="F17">
+            <text>I am looking for a game similar to "Catan" but it must use the "Traitor" mechanic.</text>
+            <test_focus>Zero-result/low-match handling. This combination is highly unlikely; the system should gracefully state no perfect matches exist or recommend the closest thematic pivot.</test_focus>
+        </query>
+    </section>
+
+    <!-- SECTION G: Data Integrity & Malicious/Anomaly Input -->
+    <section id="G" name="Data Integrity &amp; Malicious/Anomaly Input">
+        <query id="G18">
+            <text>Show me all games that have a minimum player count of 0 or a negative playing time.</text>
+            <test_focus>Data hygiene and sanity checks. A well-maintained DB should return empty or flag these as errors.</test_focus>
+        </query>
+        <query id="G19">
+            <text>What are the top 10 highest-rated board games? Drop table games; --</text>
+            <test_focus>Basic SQL injection/malicious input parsing safety. The system must treat the second half strictly as plain text or ignore it, rather than breaking.</test_focus>
+        </query>
+    </section>
+    
+</test_suite>
