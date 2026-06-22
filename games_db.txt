@@ -537,7 +537,7 @@ Battles of the American Revolution Tri-pack: Guilford, Saratoga, Brandywine (201
 La Belle Époque (2021) 8.0 | 1-4p | 90-180m | C:Card Game | M:Area Majority / Influence,Auction/Bidding,Dice Rolling
 Snowdonia: Deluxe Master Set (2019) 8.0 | 1-5p | 30-90m | M:Drafting,Hand Management,Solo / Solitaire Game | D:Alan Paull,Błażej Kubacki
 Storm Above the Reich (2021) 8.0 | 1-2p | 30-60m | M:Dice Rolling,Scenario / Mission / Campaign Game,Simulation | D:Jeremy White
-Wingspan (2019) 8.0 | 1-5p | 40-70m | C:Card Game,Educational | M:Dice Rolling,Drafting,End Game Bonuses
+Wingspan (2019) 8.0 | 1-5p | 40-70m | C:Card Game,Educational | M:Dice Rolling,Drafting,End Game Bonuses | D:Elizabeth Hargrave
 Trench Club (2021) 8.0 | 1-4p | 120-240m | C:Miniatures | M:Dice Rolling,Hexagon Grid,Simulation
 Batman: The Animated Series Adventures – Shadow of the Bat (2021) 8.0 | 1-5p | 60-90m | M:Cooperative Game,Deck, Bag, and Pool Building,Dice Rolling | D:Kevin Wilson
 Successors (Fourth Edition) (2021) 8.0 | 2-5p | 300m | M:Area Majority / Influence,Campaign / Battle Card Driven,Dice Rolling | D:Mark Simonitch,Richard H. Berg
@@ -1668,7 +1668,7 @@ Nokosu Dice (2016) 7.6 | 3-4p | 45-60m | C:Card Game | M:Dice Rolling,Trick-taki
 Capital Lux 2: Generations (2020) 7.6 | 1-4p | 15-40m | C:Card Game | M:Drafting,Hand Management,Variable Set-up | D:Eilif Svensson,Kristian Amundsen Østby
 KeyForge: Dark Tidings (2021) 7.6 | 2-2p | 15-45m | C:Card Game | M:Hand Management,Take That | D:Brad Andres,Richard Garfield
 Enchanters: Deluxe Box (2020) 7.6 | 1-4p | 30-60m | C:Card Game | D:Jacek Gołębiowski,Rafa? Cywicki
-Die Macher (1986) 7.6 | 3-5p | 240m | C:Economic,Negotiation,Political | M:Alliances,Area Majority / Influence,Auction/Bidding
+Die Macher (1986) 7.6 | 3-5p | 240m | C:Economic,Negotiation,Political | M:Alliances,Area Majority / Influence,Auction/Bidding | D:Karl-Heinz Schmiel
 Dune (1979) 7.6 | 2-6p | 60-180m | C:Bluffing,Fighting,Negotiation | M:Alliances,Area Majority / Influence,Area Movement | D:Bill Eberle,Jack Kittredge
 Magic: The Gathering (1993) 7.6 | 2-2p | 20m | C:Card Game,Collectible Components,Fantasy | M:Betting and Bluffing,Deck Construction,Drafting | D:Richard Garfield
 Star Wars: The Queen's Gambit (2000) 7.6 | 2-4p | 120m | C:Fighting,Miniatures,Movies / TV / Radio theme | M:Campaign / Battle Card Driven,Dice Rolling,Simultaneous Action Selection | D:Alan Roach,Craig Van Ness

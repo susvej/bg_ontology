@@ -18,5 +18,8 @@ Thumbs.db
 kaggle2025bgdb/
 threnjen bg db/
 
+# Derived databases — rebuild with bgg_build_sqlite.py
+bgg.db
+
 # Local Claude Code settings (user-specific)
 .claude/settings.local.json
