@@ -31,15 +31,7 @@
             </verified_answer>
         </query>
 
-        <query id="AQ3">
-            <text>Show me games published by Italian game designers.</text>
-            <test_focus>Handling missing data. Designer nationality is NOT in the database; the agent must communicate this limitation explicitly.</test_focus>
-            <evaluation_criteria>Must return zero results. Ideally also explains that designer nationality is not in the dataset.</evaluation_criteria>
-            <verified_answer source="SPARQL agent" verified_by="susvej" date="2026-06-17">
-                <note>None. The database does not contain designer nationality data.</note>
-            </verified_answer>
-        </query>
-
+        
         <query id="AQ4">
             <text>List all games made by the publisher Stonemaier Games.</text>
             <test_focus>Basic relational lookup on publisher name.</test_focus>
@@ -197,6 +189,21 @@
             </verified_answer>
         </query>
 
+
+        <query id="CQ15">
+                    <text>Which base games have more than 5 official expansions logged in the system?</text>
+                    <test_focus>Counting parent-child relationships between games and expansions. Expansion data IS in the database (added June 2026). Tests whether the agent can count expansions per base game.</test_focus>
+                    <evaluation_criteria>Must return a list of base games with more than 5 expansions. Top answer: Ticket to Ride (135 expansions). Total: 656 qualifying games. SPARQL can answer fully; GraphRAG, LongContext, Gemini cannot (expansion links not in their text corpus).</evaluation_criteria>
+                    <verified_answer source="SPARQL agent" verified_by="susvej" date="2026-06-22">
+                        <result rank="1"><name>Ticket to Ride</name><expansion_count>135</expansion_count></result>
+                        <result rank="2"><name>Heroscape Master Set: Rise of the Valkyrie</name><expansion_count>125</expansion_count></result>
+                        <result rank="3"><name>Shadows of Brimstone: City of the Ancients</name><expansion_count>125</expansion_count></result>
+                        <result rank="4"><name>Heroscape Master Set: Swarm of the Marro</name><expansion_count>124</expansion_count></result>
+                        <result rank="5"><name>Shadows of Brimstone: Swamps of Death</name><expansion_count>120</expansion_count></result>
+                        <note>656 base games qualify total. Only SPARQL agent can answer this question correctly.</note>
+                    </verified_answer>
+                </query>
+
     </section>
 
     <!-- SECTION D: Typo Tolerance, Text Search, String Matching -->
@@ -283,14 +290,16 @@
             </verified_answer>
         </query>
 
-        <query id="EQ15">
-            <text>Which base games have more than 5 official expansions logged in the system?</text>
-            <test_focus>Parent-child relationships between games and expansions. This relationship is NOT in the database.</test_focus>
-            <evaluation_criteria>Zero results. Ideal response explains that base game / expansion relationships are not stored in the dataset.</evaluation_criteria>
-            <verified_answer source="SPARQL agent" verified_by="susvej" date="2026-06-17">
-                <note>None. Base game / expansion relationships are not in the database.</note>
-            </verified_answer>
-        </query>
+        
+
+        <query id="EQ3">
+                    <text>Show me games published by Italian game designers.</text>
+                    <test_focus>Handling missing data. Designer nationality is NOT in the database; the agent must communicate this limitation explicitly.</test_focus>
+                    <evaluation_criteria>Must return zero results. Ideally also explains that designer nationality is not in the dataset.</evaluation_criteria>
+                    <verified_answer source="SPARQL agent" verified_by="susvej" date="2026-06-17">
+                        <note>None. The database does not contain designer nationality data.</note>
+                    </verified_answer>
+                </query>
 
     </section>
 

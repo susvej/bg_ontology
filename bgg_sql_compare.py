@@ -260,6 +260,13 @@ QUESTIONS = [
         "and so on recursively to any depth. "
         "List each game's name and rating, ordered by rating descending."
     ),
+    (
+        "QSQL8",
+        "Which games have the largest total reimplementation family — "
+        "counting all games that have reimplemented them, directly or through any "
+        "number of reimplementation generations? Return every game that has been "
+        "reimplemented at least once, with its full family size, ordered largest first."
+    ),
 ]
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -314,15 +321,16 @@ def interpret_results(question: str, sql: str, rows: list[dict]) -> str:
     return response.content[0].text.strip()
 
 
-def _log(question_id: str, question: str, answer: str) -> None:
+def _log(question_id: str, question: str, answer: str, query: str = "") -> None:
     entry = {
-        "timestamp":   _dt.now().isoformat(timespec="seconds"),
-        "agent":       AGENT_NAME,
-        "question_id": question_id,
-        "question":    question,
-        "answer":      answer,
-        "score":       None,
-        "comment":     "",
+        "timestamp":    _dt.now().isoformat(timespec="seconds"),
+        "agent":        AGENT_NAME,
+        "question_id":  question_id,
+        "question":     question,
+        "generated_query": query,
+        "answer":       answer,
+        "score":        None,
+        "comment":      "",
     }
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(json.dumps(entry, ensure_ascii=False) + "\n")
@@ -359,7 +367,7 @@ def ask(question_id: str, question: str, max_retries: int = 2) -> str:
     print()
 
     answer = interpret_results(question, sql, rows)
-    _log(question_id, question, answer)
+    _log(question_id, question, answer, sql)
 
     print("Answer:")
     print(answer.encode("ascii", errors="replace").decode())

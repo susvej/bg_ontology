@@ -78,16 +78,6 @@
 
 
 
-\# AQ3
-
-\# "Show me games published by Italian game designers."
-
-\# How to evaluate answer: AQ3 should at minimum contain a 0 because country of origin for designers isn't in the data, but may contain other useful info.
-
-None (The database doesn't have any)
-
-
-
 \# AQ4
 
 \# "List all games made by the publisher Stonemaier Games."
@@ -858,6 +848,42 @@ None (The database doesn't have any)
 
 
 
+\# CQ15
+
+\# "Which base games have more than 5 official expansions logged in the system?"
+
+\# How to evaluate answer: CQ15 has real expansion data (added June 2026). Correct answer per SPARQL: 656 base games have more than 5 expansions. A great answer lists the top games with counts. SPARQL can fully answer this; GraphRAG, LongContext, and Gemini cannot since expansion relationships are not in their text corpus.
+
+1
+
+"Ticket to Ride" (135 expansions)
+
+
+
+2
+
+"Heroscape Master Set: Rise of the Valkyrie" (125 expansions)
+
+
+
+3
+
+"Shadows of Brimstone: City of the Ancients" (125 expansions)
+
+
+
+4
+
+"Heroscape Master Set: Swarm of the Marro" (124 expansions)
+
+
+
+5
+
+"Shadows of Brimstone: Swamps of Death" (120 expansions)
+
+
+
 \# DQ11
 
 \# "Find all games designed by Elizabeth Hargrave or Elizabeth Hargreave."
@@ -1154,11 +1180,13 @@ None
 
 
 
-\# EQ15
+\# EQ3
 
-\# "Which base games have more than 5 official expansions logged in the system?"
+\# "Show me games published by Italian game designers."
 
-\#How to evaluate answer: This info is not  in the database, and should at minimum return 0 answer. Great it also notes the lack of data, rather than the answer being "that doesn't exist at all"
+\# How to evaluate answer: EQ3 should return 0 results or clearly state that country-of-origin data for designers is not in the database. A great answer also explains the data gap rather than just returning nothing.
+
+None (The database doesn't have any)
 
 
 
