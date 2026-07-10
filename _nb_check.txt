@@ -1,0 +1,44 @@
+﻿=== bgg_longcontext_qa.ipynb ===
+# BGG Long-Context QA
+
+Long-context inference over the board game knowledge graph — no vector search or SPARQL.
+
+**How it works:**
+1. Convert `bgg_main.ttl` + `fake_players.ttl` to a compact text file (one line per game)
+2. At query time: send the *entire* database as context to Claude — no retrieval step
+3. Claude reads everything and answers directly
+
+**Compared to the other agents:**
+
+| | SPARQL | GraphRAG | Long-Context (this) |
+|---|---|---|---|
+| Sees all data | ✅ | ❌ top-K only | ✅ top-N |
+| Exact filtering | ✅ | ❌ | ✅ |
+| Fuzzy / semantic | ❌ | ✅ | ✅ |
+| Cost per query | free | cheap | moderate |
+| Games covered | 126k | 21k | ~5k Claude / ~21k Gemini 1.5 Pro |
+
+**First run:** set `BUILD_DATABASE = True` in the config cell to generate `games_db.txt` and `players_db.txt`.  
+**Subseq
+---
+=== bgg_gemini_qa.ipynb ===
+# BGG Gemini Long-Context QA
+
+Long-context inference using Google Gemini — same idea as `bgg_longcontext_qa.ipynb` but with
+Gemini's 1M token context window, which is large enough to hold **all 21k enriched games** at once.
+
+**Why Gemini here instead of Claude:**
+
+| | Claude Sonnet (Tier 1) | Gemini 2.0 Flash (free) |
+|---|---|---|
+| Context window | 200k tokens | 1,000,000 tokens |
+| Input rate limit | 30k tokens/min | much more generous |
+| Games that fit | ~500 | **~21,000** (all enriched) |
+| Cost | pay-per-token | free tier available |
+
+**Prerequisites:**
+- Run `bgg_longcontext_qa.ipynb` first with `BUILD_DATABASE = True` to generate `games_db.txt` and `players_db.txt`
+- Set `GEMINI_API_KEY` in your `.env` file (get one free at https://aistudio.google.com)
+
+**Note on rate limits:** ev
+---
