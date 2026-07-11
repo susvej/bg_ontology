@@ -18,9 +18,9 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 random.seed(42)
 
-DB_PATH  = "bgg.db"
-SRC_PATH = "fake_players.ttl"
-OUT_PATH = "fake_players.ttl"
+DB_PATH  = "../bgg.db"
+SRC_PATH = "../data/fake_players.ttl"
+OUT_PATH = "../data/fake_players.ttl"
 
 # ── Cluster definitions ────────────────────────────────────────────────────────
 CLUSTER_DEFS = {

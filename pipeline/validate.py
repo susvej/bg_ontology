@@ -3,7 +3,7 @@ from rdflib import Graph, RDF, RDFS, Namespace
 
 SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
 
-ttl_files = sorted(glob.glob("*.ttl"))
+ttl_files = sorted(glob.glob("../data/*.ttl"))
 print(f"Found {len(ttl_files)} TTL files\n")
 
 for path in ttl_files:

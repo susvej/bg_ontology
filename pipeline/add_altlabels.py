@@ -134,7 +134,7 @@ def apply_label_fixes(g: Graph) -> int:
 def main() -> None:
     print("Loading bgg_main.ttl...")
     g = Graph()
-    g.parse("bgg_main.ttl", format="turtle")
+    g.parse("../data/bgg_main.ttl", format="turtle")
     g.bind("skos", SKOS)
     print(f"  {len(g)} triples loaded")
 
@@ -173,7 +173,7 @@ def main() -> None:
     print(f"  Added {added} skos:altLabel triples across {len(ALT_LABELS) - len(not_found)} instances")
 
     print("Serializing bgg_main.ttl...")
-    serialize_organized(g, "bgg_main.ttl")
+    serialize_organized(g, "../data/bgg_main.ttl")
     print("Done.")
 
 

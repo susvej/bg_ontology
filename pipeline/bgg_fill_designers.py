@@ -23,7 +23,7 @@ import unicodedata
 import requests
 
 # ── Configuration ────────────────────────────────────────────────────────────
-TTL_FILE          = 'bgg_main.ttl'
+TTL_FILE          = '../data/bgg_main.ttl'
 PATCH_FILE        = 'bgg_designers_patch.ttl'
 CHECKPOINT_FILE   = 'bgg_designers_checkpoint.json'
 ENV_FILE          = '.env'

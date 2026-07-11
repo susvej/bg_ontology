@@ -10,7 +10,7 @@ from pathlib import Path
 import anthropic
 
 # ── Config ────────────────────────────────────────────────────────────────────
-DB_PATH    = "bgg.db"
+DB_PATH    = "../bgg.db"
 MODEL      = "claude-sonnet-4-6"
 AGENT_NAME = "sql_compare"
 LOG_FILE   = "qa_log.jsonl"

@@ -11,8 +11,8 @@ from pathlib import Path
 from rdflib import Dataset, Namespace, RDF, RDFS
 from rdflib.namespace import SKOS
 
-TTL_FILES = ["bgg_main.ttl", "fake_players.ttl"]
-DB_PATH   = "bgg.db"
+TTL_FILES = ["../data/bgg_main.ttl", "../data/fake_players.ttl"]
+DB_PATH   = "../bgg.db"
 
 BGG   = Namespace("https://raw.githubusercontent.com/susvej/bg_ontology/")
 TRENJ = Namespace("https://vejdemo.se/boardgames/threnjen#")

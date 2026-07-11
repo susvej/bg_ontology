@@ -127,7 +127,7 @@ def main():
 
         player_count += 1
 
-    output = "fake_players.ttl"
+    output = "../data/fake_players.ttl"
     print(f"Serializing {player_count} players, {opinion_count} opinions ...")
     g.serialize(output, format="turtle")
     print(f"Written to {output}")

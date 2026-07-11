@@ -28,7 +28,7 @@ Usage:
 import argparse, json, os, re, sqlite3, time, unicodedata
 import requests
 
-DB_PATH         = "bgg.db"
+DB_PATH         = "../bgg.db"
 PATCH_FILE      = "bgg_reimplements_patch.ttl"
 CHECKPOINT_FILE = "bgg_reimplements_checkpoint.json"
 ENV_FILE        = ".env"
