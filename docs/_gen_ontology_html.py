@@ -326,6 +326,6 @@ network.on("stabilizationIterationsDone", () => {
 </html>
 """
 
-with open("../bgg_ontology_interactive.html", "w", encoding="utf-8") as f:
+with open("../index.html", "w", encoding="utf-8") as f:
     f.write(HTML)
-print("Saved: ../bgg_ontology_interactive.html")
+print("Saved: ../index.html")

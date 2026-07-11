@@ -1,21 +1,219 @@
-# Welcome to the Boardgame Ontology Project
-*Last updated July 2025 by Susanne Vejdemo*
+# Boardgame Ontology
 
-![Image of part of the ontology of board games](https://github.com/susvej/bg_ontology/blob/c01a5bb7332c7c16d28e149294ca902f7980728f/PartialBgOntology.png?raw=true)
+An OWL ontology and knowledge graph of board games, built from BoardGameGeek data. Intended as a practice dataset for people learning ontologies, knowledge graphs, and SPARQL — and as a testbed for comparing different LLM-based QA agents.
 
-## Documentation
+**[Interactive ontology graph](https://susvej.github.io/bg_ontology/)** · *Susanne Vejdemo, 2025*
 
-The data in this KG was taken from the Boardgamegeek dataset from [kaggle](https://www.kaggle.com/datasets/threnjen/board-games-database-from-boardgamegeek), which in turn is based on the https://boardgamegeek.com/ website. Thousands of games! 
+---
 
-This iteration of the ontology is not particularly advanced - it is intended to be a practice data set for people getting their feet wet with ontologies and KGs. In fact, there are some obvious improvements that I encourage you all to make - a good practice task might be creating a Person class, for instance. 
+## Contents
 
-For details on the current ontology, please see [this documentation.](https://susvej.github.io/bg_ontology/ontospy_gendocs/index.html)
+- [The Ontology (T-BOX)](#the-ontology-t-box)
+- [The Knowledge Graph (A-BOX)](#the-knowledge-graph-a-box)
+- [Agents](#agents)
+- [Agent Comparison](#agent-comparison)
+- [SPARQL Practice](#sparql-practice)
+- [Contact](#contact)
 
-For code generating the ontology documentation (which you might not have access to), see [this colab.](https://colab.research.google.com/drive/10Trh2cXFGjlTVRwlChWXaZ_9C714C7ih?usp=sharing)
+---
 
-## Graph visualization
+## The Ontology (T-BOX)
 
-For a (large! Zoom in!) graph visualization of the entire ontology, see [this png.](https://susvej.github.io/bg_ontology/ontology.png)
+The ontology describes board games and the people who play them. It is intentionally kept simple — a good learning exercise is to extend it (for instance, adding more player interaction properties, or modelling game series).
+
+![BGG ontology diagram](docs/bgg_ontology_diagram.png)
+
+For a fully interactive version where you can click classes and explore properties, see the **[interactive graph](https://susvej.github.io/bg_ontology/)**.
+
+### Namespace
+
+```
+PREFIX bgg: <https://raw.githubusercontent.com/susvej/bg_ontology/>
+```
+
+### Classes
+
+| Class | Description |
+|---|---|
+| `bgg:Game` | A board game, card game, or tabletop game listed on BGG |
+| `bgg:Creator` | A person who designed a board game |
+| `bgg:Category` | A thematic classification of a game (e.g. *Fantasy*, *War Game*) — controlled vocabulary |
+| `bgg:Mechanic` | A gameplay mechanic (e.g. *Worker Placement*, *Deck Building*) — controlled vocabulary |
+| `bgg:Publisher` | A company or individual that published a game |
+| `bgg:Size` | Physical box size: `bgg:small` / `bgg:medium` / `bgg:large` |
+| `bgg:MentalLoad` | Cognitive difficulty: `bgg:easy` / `bgg:moderate` / `bgg:difficult` |
+| `bgg:Player` | A person who plays or owns board games — synthetic data only |
+| `bgg:PlayerOpinion` | One player's rating and assessment of a specific game — synthetic data only |
+| `trenj:Theme` | A thematic grouping from the Threnjen BGG database (e.g. *Steampunk*, *Pirates*) |
+
+### Properties on `bgg:Game`
+
+**Datatype properties**
+
+| Property | Type | Description |
+|---|---|---|
+| `bgg:hasName` | xsd:string | Game title |
+| `bgg:hasID` | xsd:int | BGG numeric ID |
+| `bgg:hasDescription` | xsd:string | Prose summary |
+| `bgg:hasYearPublished` | xsd:int | Year of first publication |
+| `bgg:hasRating` | xsd:double | Average community rating (1–10) |
+| `bgg:hasGeekRating` | xsd:double | BGG Geek Rating (Bayesian average) |
+| `bgg:hasMinPlayers` / `bgg:hasMaxPlayers` | xsd:int | Player count range |
+| `bgg:hasBestNumPlayers` | xsd:int | Optimal player count |
+| `bgg:hasMinGameTime` / `bgg:hasMaxGameTime` | xsd:int | Playtime in minutes |
+| `bgg:hasMinRecAge` | xsd:int | Minimum recommended age |
+| `bgg:isFullyEnriched` | xsd:boolean | Whether the game has complete structured data |
+
+**Object properties**
+
+| Property | Range | Description |
+|---|---|---|
+| `bgg:hasCategory` | `bgg:Category` | Thematic classification (89 values) |
+| `bgg:hasMechanic` | `bgg:Mechanic` | Gameplay mechanic (176 values) |
+| `bgg:hasCreator` | `bgg:Creator` | Designer |
+| `bgg:hasPublisher` | `bgg:Publisher` | Publisher |
+| `bgg:hasSize` | `bgg:Size` | Box size |
+| `trenj:hasTheme` | `trenj:Theme` | Thematic grouping |
+| `bgg:isExpansionOf` | `bgg:Game` | This game is an expansion of another |
+| `bgg:reimplements` | `bgg:Game` | This game reimplements an earlier game |
+| `bgg:hasURL` | URI | BGG page URL |
+| `bgg:hasThumbnail` | URI | Cover image URL |
+
+### Properties on `bgg:Player` / `bgg:PlayerOpinion`
+
+| Property | Description |
+|---|---|
+| `bgg:hasOwnershipOf` | A game in the player's collection |
+| `bgg:hasOpinionHolder` | The player who gave this opinion |
+| `bgg:hasOpinionOf` | The game this opinion is about |
+| `bgg:hasPlayerRatingOpinion` | Personal rating on 1–10 scale |
+| `bgg:hasMentalLoad` | Difficulty the player assigned |
+| `bgg:likesCategory` / `bgg:likesMechanic` | Preferred categories and mechanics |
+
+### Vocabulary
+
+Category and mechanic instances are identified by IRI (e.g. `bgg:PartyGame`) and carry an `rdfs:label` (e.g. `"Party Game"`) and `skos:altLabel` values for common synonyms and abbreviations. There are **89 categories** and **176 mechanics**.
+
+---
+
+## The Knowledge Graph (A-BOX)
+
+### `data/bgg_main.ttl` — real BGG data
+
+The main dataset contains **33,754 games** sourced from BoardGameGeek via the BGG XML API and two Kaggle datasets (2018 and 2025 snapshots).
+
+Not all games have complete data. Games marked `bgg:isFullyEnriched true` (~21,379) have structured categories, mechanics, themes, creators, and publishers. The remaining games have at minimum a name, BGG ID, and ratings.
+
+The file also contains:
+- **11,726 expansion links** (`bgg:isExpansionOf`)
+- **Designer data** for enriched games (`bgg:hasCreator`)
+- **Reimplementation links** (`bgg:reimplements`)
+
+### `data/fake_players.ttl` — synthetic player data
+
+Contains **200 synthetic players** (`bgg:Player`) with taste-clustered game ownership and personal ratings (`bgg:PlayerOpinion`). Players are divided into five taste clusters (Strategy, Cooperative, Party, Family, Thematic) with realistic overlap patterns, making social-graph queries interesting.
+
+This data is kept in a separate file to avoid polluting the real BGG data. Load it alongside `bgg_main.ttl` when you need player-related queries.
+
+```
+PREFIX fake: <https://vejdemo.se/boardgames/fake#>
+PREFIX svj:  <https://vejdemo.se/boardgames#>
+```
+
+---
+
+## Agents
+
+Five different QA agents answer natural-language questions about the knowledge graph. Each uses a different strategy and has different strengths.
+
+### SPARQL Agent — `notebooks/bgg_sparql_qa.ipynb`
+
+**How it works:** Claude translates the question into a SPARQL query, executes it against a GraphDB endpoint, then synthesises the results into a natural-language answer.
+
+**Strengths:** Precise counting, filtering, and aggregation. Can traverse relationships (e.g. "find all games designed by someone who also designed X"). Transparent — you can see the SPARQL it generated.
+
+**Weaknesses:** Requires a running GraphDB instance. Quality of the SPARQL depends on the model's understanding of the ontology schema.
+
+**Requirements:** Anthropic API key, GraphDB running locally with `bgg_main.ttl` loaded.
+
+---
+
+### Ollama SPARQL Agent — `notebooks/bgg_ollama_qa.ipynb`
+
+**How it works:** Same SPARQL approach as the SPARQL Agent, but uses a local Ollama model instead of Claude.
+
+**Strengths:** Completely free to run, no API key needed. Useful for testing locally or for deployments where data privacy matters.
+
+**Weaknesses:** Smaller local models write less reliable SPARQL, especially for complex multi-hop queries. Requires a running GraphDB instance and a running Ollama instance.
+
+**Requirements:** GraphDB, Ollama with a compatible model (tested with `qwen2.5-coder:7b`).
+
+---
+
+### Gemini Long-Context Agent — `notebooks/bgg_gemini_qa.ipynb`
+
+**How it works:** The knowledge graph is converted to a compact text representation (`data/games_db.txt`, `data/players_db.txt`) and the entire text is loaded into Gemini's very large context window. No SPARQL or vector search needed — the model reads the whole thing.
+
+**Strengths:** Handles vague, exploratory, or qualitative questions well (e.g. "suggest some games in the style of Wingspan"). Does not need a structured endpoint.
+
+**Weaknesses:** Counts and aggregations are unreliable when the model has to scan thousands of lines. Costs money (Gemini API). The full text is ~20,500 games and takes substantial context space.
+
+**Requirements:** Google Gemini API key. Run the *build database* step once to generate `data/games_db.txt`.
+
+---
+
+### Long-Context Agent — `notebooks/bgg_longcontext_qa.ipynb`
+
+**How it works:** Builds the same text representation as the Gemini agent (`data/games_db.txt`, `data/players_db.txt`) and is designed to work with any model that has a large enough context window. Used as a baseline and as the data-building step for the Gemini agent.
+
+**Strengths:** Model-agnostic — swap in any long-context model. The database-building step runs once and the files are reused.
+
+**Requirements:** A model API key. Set `BUILD_DATABASE = True` on first run.
+
+---
+
+### GraphRAG Agent — `notebooks/bgg_graphrag_qa.ipynb`
+
+**How it works:** Converts the knowledge graph to text embeddings and stores them in a ChromaDB vector database (`data/chroma_bgg/`). For each question, it retrieves the most semantically relevant game descriptions, then passes only those to Claude to formulate an answer.
+
+**Strengths:** Scales to the full dataset without hitting context limits. Good at "similar to" and semantic matching queries. Persistent index — rebuilt once, reused forever.
+
+**Weaknesses:** Retrieval quality depends on how well the question matches the embedding space. Can miss games that are relevant for structural (graph) reasons rather than semantic ones.
+
+**Requirements:** Anthropic API key. Set `REBUILD_INDEX = True` on first run to build the ChromaDB index.
+
+---
+
+## Agent Comparison
+
+All five agents are evaluated on the same **20 golden questions** covering a range of question types: factual lookups, counting/aggregation, multi-hop graph traversal, player social-graph queries, and open-ended recommendations.
+
+| File | Description |
+|---|---|
+| [`qa/GoldenQandA_June17.md`](qa/GoldenQandA_June17.md) | Questions and reference answers (human-readable) |
+| [`qa/GoldenQandA_June17.xml`](qa/GoldenQandA_June17.xml) | Machine-readable version used by the autoscorer |
+| [`qa/qa_log.jsonl`](qa/qa_log.jsonl) | Raw log of all agent answers |
+| [`qa/report.xlsx`](qa/report.xlsx) | Scores and commentary per agent per question |
+| [`qa/bgg_sparql_compare.py`](qa/bgg_sparql_compare.py) | Runs the SPARQL agent against all 20 questions |
+| [`qa/bgg_sql_compare.py`](qa/bgg_sql_compare.py) | Runs the SQL agent (comparison baseline) |
+| [`qa/_autoscore.py`](qa/_autoscore.py) | Auto-scores unanswered log entries using Claude Haiku |
+
+The comparison also explores where SPARQL has a structural advantage over SQL — particularly for property-path queries (arbitrary-depth traversal with `+` / `*`) and graph connectivity queries that would require `WITH RECURSIVE` in SQL.
+
+---
+
+## SPARQL Practice
+
+Two notebooks with 30+ exercises covering SPARQL from basics to advanced features. They use `bgg_main.ttl` and `fake_players.ttl` as the practice dataset, so the queries are about real board games.
+
+Topics covered include: basic SELECT, FILTER, OPTIONAL, aggregation (COUNT, AVG, GROUP BY, HAVING), property paths (`+`, `*`, `^`), UNION, BIND, FILTER NOT EXISTS, and the Open World Assumption.
+
+| Notebook | Description |
+|---|---|
+| [`notebooks/Practice_SPARQL_local.ipynb`](notebooks/Practice_SPARQL_local.ipynb) | Runs in VS Code or Jupyter — loads files locally with rdflib, no server needed |
+| [`notebooks/Practice_SPARQL_with_the_Boardgame_Knowledge_Graph.ipynb`](notebooks/Practice_SPARQL_with_the_Boardgame_Knowledge_Graph.ipynb) | Google Colab version — fetches `bgg_main.ttl` from GitHub, queries a remote GraphDB endpoint |
+
+---
 
 ## Contact
 
