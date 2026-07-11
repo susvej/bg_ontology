@@ -279,9 +279,11 @@ Both agents score similarly on straightforward queries. SPARQL's advantage emerg
 
 ## SPARQL Practice
 
-Two notebooks with 30+ exercises covering SPARQL from basics to advanced features. They use `bgg_main.ttl` and `fake_players.ttl` as the practice dataset, so the queries are about real board games.
+A notebook with 30+ exercises covering SPARQL from basics to advanced features. You will use `bgg_main.ttl` and `fake_players.ttl` as the practice dataset, so the queries are about real board games.
 
 Topics covered include: basic SELECT, FILTER, OPTIONAL, aggregation (COUNT, AVG, GROUP BY, HAVING), property paths (`+`, `*`, `^`), UNION, BIND, FILTER NOT EXISTS, and the Open World Assumption.
+
+This is very much a WIP though. Ultimately I want it to have 100 plus challenges, with the correct answer hidden. Just gotta find the time :)
 
 | Notebook | Description |
 |---|---|
