@@ -147,6 +147,8 @@ Five different QA agents answer natural-language questions about the knowledge g
 
 **How it works:** Claude translates the question into a SPARQL query, executes it against a GraphDB endpoint, then synthesises the results into a natural-language answer.
 
+**Data coverage:** All 33,754 games in `bgg_main.ttl`.
+
 **Strengths:** Precise counting, filtering, and aggregation. Can traverse relationships (e.g. "find all games designed by someone who also designed X"). Transparent — you can see the SPARQL it generated.
 
 **Weaknesses:** Requires a running GraphDB instance. Quality of the SPARQL depends on the model's understanding of the ontology schema.
@@ -158,6 +160,8 @@ Five different QA agents answer natural-language questions about the knowledge g
 ### Ollama SPARQL Agent — `notebooks/bgg_ollama_qa.ipynb`
 
 **How it works:** Same SPARQL approach as the SPARQL Agent, but uses a local Ollama model instead of Claude.
+
+**Data coverage:** All 33,754 games in `bgg_main.ttl`.
 
 **Strengths:** Completely free to run, no API key needed. Useful for testing locally or for deployments where data privacy matters.
 
@@ -171,6 +175,8 @@ Five different QA agents answer natural-language questions about the knowledge g
 
 **How it works:** The knowledge graph is converted to a compact text representation (`data/games_db.txt`, `data/players_db.txt`) and the entire text is loaded into Gemini's very large context window. No SPARQL or vector search needed — the model reads the whole thing.
 
+**Data coverage:** ~21,000 fully enriched games (those with structured categories, mechanics, and descriptions).
+
 **Strengths:** Handles vague, exploratory, or qualitative questions well (e.g. "suggest some games in the style of Wingspan"). Does not need a structured endpoint.
 
 **Weaknesses:** Counts and aggregations are unreliable when the model has to scan thousands of lines. Costs money (Gemini API). The full text is ~20,500 games and takes substantial context space.
@@ -179,19 +185,25 @@ Five different QA agents answer natural-language questions about the knowledge g
 
 ---
 
-### Long-Context Agent — `notebooks/bgg_longcontext_qa.ipynb`
+### Claude Long-Context Agent — `notebooks/bgg_longcontext_qa.ipynb`
 
-**How it works:** Builds the same text representation as the Gemini agent (`data/games_db.txt`, `data/players_db.txt`) and is designed to work with any model that has a large enough context window. Used as a baseline and as the data-building step for the Gemini agent.
+**How it works:** Builds the same text representation as the Gemini agent (`data/games_db.txt`, `data/players_db.txt`) and loads it into Claude's context window. Used as a baseline and as the data-building step for the Gemini agent.
 
-**Strengths:** Model-agnostic — swap in any long-context model. The database-building step runs once and the files are reused.
+**Data coverage:** The top ~1,000 games by rating (context window limit for Claude Sonnet at this context size).
 
-**Requirements:** A model API key. Set `BUILD_DATABASE = True` on first run.
+**Strengths:** Good at nuanced, qualitative questions. Transparent reasoning. The database-building step runs once and the files are reused by both long-context agents.
+
+**Weaknesses:** Coverage is limited to the top 1,000 games — questions about less popular games will come up empty.
+
+**Requirements:** Anthropic API key. Set `BUILD_DATABASE = True` on first run.
 
 ---
 
 ### GraphRAG Agent — `notebooks/bgg_graphrag_qa.ipynb`
 
 **How it works:** Converts the knowledge graph to text embeddings and stores them in a ChromaDB vector database (`data/chroma_bgg/`). For each question, it retrieves the most semantically relevant game descriptions, then passes only those to Claude to formulate an answer.
+
+**Data coverage:** All ~21,000 enriched games indexed as embeddings.
 
 **Strengths:** Scales to the full dataset without hitting context limits. Good at "similar to" and semantic matching queries. Persistent index — rebuilt once, reused forever.
 
@@ -203,14 +215,28 @@ Five different QA agents answer natural-language questions about the knowledge g
 
 ## Agent Comparison
 
-All five agents are evaluated on the same **20 golden questions** covering a range of question types: factual lookups, counting/aggregation, multi-hop graph traversal, player social-graph queries, and open-ended recommendations.
+All agents (except Ollama, which was not scored) are evaluated on the same **20 golden questions** covering a range of question types: factual lookups, counting/aggregation, multi-hop graph traversal, player social-graph queries, and open-ended recommendations.
+
+### Results
+
+**[Download the full report (report.xlsx)](qa/report.xlsx)** — three sheets: how each agent works, a color-coded score grid (20 questions × 4 agents), and per-agent narrative summaries.
+
+| Agent | Avg score (0–10) |
+|---|---|
+| SPARQL | 9.2 |
+| Claude Long-Context | 6.6 |
+| Gemini Long-Context | 5.0 |
+| GraphRAG | 4.7 |
+
+Key finding: the SPARQL agent dominates on counting, filtering, and graph traversal. The long-context agents do better on vague or qualitative questions where there is no single correct answer.
+
+### Files
 
 | File | Description |
 |---|---|
 | [`qa/GoldenQandA_June17.md`](qa/GoldenQandA_June17.md) | Questions and reference answers (human-readable) |
 | [`qa/GoldenQandA_June17.xml`](qa/GoldenQandA_June17.xml) | Machine-readable version used by the autoscorer |
 | [`qa/qa_log.jsonl`](qa/qa_log.jsonl) | Raw log of all agent answers |
-| [`qa/report.xlsx`](qa/report.xlsx) | Scores and commentary per agent per question |
 | [`qa/bgg_sparql_compare.py`](qa/bgg_sparql_compare.py) | Runs the SPARQL agent against all 20 questions |
 | [`qa/bgg_sql_compare.py`](qa/bgg_sql_compare.py) | Runs the SQL agent (comparison baseline) |
 | [`qa/_autoscore.py`](qa/_autoscore.py) | Auto-scores unanswered log entries using Claude Haiku |
