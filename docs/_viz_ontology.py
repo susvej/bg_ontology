@@ -2,7 +2,6 @@
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 # ── Canvas ────────────────────────────────────────────────────────
@@ -119,26 +118,9 @@ arrow("Game", "Game", "isExpansionOf", color=C_DASH, dashed=True,
       offset_src=(W+0.1,  0.0),  offset_dst=(W+0.1, -0.50),
       label_offset=(2.3,-0.5), rad=-1.1)
 
-# ── Legend ────────────────────────────────────────────────────────
-legend_items = [
-    mpatches.Patch(color=C_GAME,    label="Game"),
-    mpatches.Patch(color=C_VOCAB,   label="Controlled vocabulary (Category / Mechanic / Size / MentalLoad)"),
-    mpatches.Patch(color=C_AGENT,   label="Player / PlayerOpinion  [fake_players.ttl]"),
-    mpatches.Patch(color=C_CREATOR, label="Creator"),
-    mpatches.Patch(color=C_PUBLISH, label="Publisher"),
-    mpatches.Patch(color=C_TRENJ,   label="trenj:Theme"),
-    mpatches.Patch(color=C_EDGE,    label="Object property (bgg:)"),
-    mpatches.Patch(color=C_DASH,    label="Game→Game relationship"),
-]
-ax.legend(handles=legend_items,
-          bbox_to_anchor=(0.5, -0.02), loc="upper center", ncol=2,
-          fontsize=9, framealpha=0.9,
-          facecolor="#0D1B2A", edgecolor="#445566", labelcolor=WHITE)
-
 ax.set_title("BGG Ontology — Classes & Object Properties",
              fontsize=20, fontweight="bold", color=WHITE, pad=12)
 
-plt.subplots_adjust(bottom=0.14)
 plt.savefig("bgg_ontology_diagram.png", dpi=150, bbox_inches="tight",
             facecolor=fig.get_facecolor())
 print("Saved: bgg_ontology_diagram.png")
