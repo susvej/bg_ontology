@@ -1,8 +1,9 @@
 # Boardgame Ontology
+*Susanne Vejdemo, 2025*
 
 An OWL ontology and knowledge graph of board games, built from BoardGameGeek data. Intended as a practice dataset for people learning ontologies, knowledge graphs, and SPARQL — and as a testbed for comparing different LLM-based QA agents.
 
-**[Interactive ontology graph](https://susvej.github.io/bg_ontology/)** · *Susanne Vejdemo, 2025*
+**[Interactive ontology graph](https://susvej.github.io/bg_ontology/)** · 
 
 ---
 
