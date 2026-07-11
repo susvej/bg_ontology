@@ -46,7 +46,7 @@ PREFIX bgg: <https://raw.githubusercontent.com/susvej/bg_ontology/>
 | `bgg:PlayerOpinion` | One player's rating and assessment of a specific game — synthetic data only |
 | `trenj:Theme` | A thematic grouping from the Threnjen BGG database (e.g. *Steampunk*, *Pirates*) |
 
-### Properties on `bgg:Game`
+### Properties with `bgg:Game` as rdfs:domain
 
 **Datatype properties**
 
@@ -79,16 +79,23 @@ PREFIX bgg: <https://raw.githubusercontent.com/susvej/bg_ontology/>
 | `bgg:hasURL` | URI | BGG page URL |
 | `bgg:hasThumbnail` | URI | Cover image URL |
 
-### Properties on `bgg:Player` / `bgg:PlayerOpinion`
+### Properties with  `bgg:Player` / `bgg:PlayerOpinion` as domain or range
 
-| Property | Description |
+**Datatype properties**
+
+| Property | Type | Description |
+|---|---|---|
+| `bgg:hasPlayerRatingOpinion` | A bgg:Player has a personal rating on 1–10 scale |
+
+| Object Property | Description |
 |---|---|
-| `bgg:hasOwnershipOf` | A game in the player's collection |
-| `bgg:hasOpinionHolder` | The player who gave this opinion |
-| `bgg:hasOpinionOf` | The game this opinion is about |
-| `bgg:hasPlayerRatingOpinion` | Personal rating on 1–10 scale |
+| `bgg:hasOwnershipOf` | A bgg:player owns a bgg:Game |
+| `bgg:isOwnedBy` | A bgg:Game is owned by a bgg:Player |
+| `bgg:hasOpinionHolder` | A  bgg:PlayerOpinion is held by a bgg:Player|
+| `bgg:hasOpinionOf` | A bgg:Player has a bgg:PlayerOpinion  |
 | `bgg:hasMentalLoad` | Difficulty the player assigned |
 | `bgg:likesCategory` / `bgg:likesMechanic` | Preferred categories and mechanics |
+
 
 ### Optional extension: `data/fake_players.ttl`
 
