@@ -230,7 +230,7 @@ Five different QA agents answer natural-language questions about the knowledge g
 
 All agents (except Ollama, which was not scored) are evaluated on the same **20 golden questions** covering a range of question types: factual lookups, counting/aggregation, multi-hop graph traversal, player social-graph queries, and open-ended recommendations.
 
-### Results
+### Results (KG)
 
 **[Download the slide deck (bgg_agents_slides.pptx)](docs/bgg_agents_slides.pptx)** — covers how each agent works, a color-coded score grid (20 questions × 4 agents), and per-agent narrative summaries.
 
@@ -247,6 +247,23 @@ Each question was scored 0–10; a score of 9–10 means the answer was correct 
 
 Key finding: the SPARQL agent dominates on counting, filtering, and graph traversal. The long-context agents do better on vague or qualitative questions where there is no single correct answer.
 
+### Results (SQL)
+
+The SPARQL agent is also compared against a SQL agent running on an equivalent SQLite database, across 8 questions specifically designed to test graph traversal and multi-hop reasoning.
+
+Both agents score similarly on straightforward queries. SPARQL's advantage emerges clearly on recursive graph traversal:
+
+- **Property paths** (`+`, `*`, `^`) express arbitrary-depth traversal in a single token — no extra JOINs, no recursion boilerplate. The equivalent SQL requires `WITH RECURSIVE`, a specialist construct rarely used in practice.
+- **Conciseness**: the transitive community query (find all players reachable through shared game ownership) is 4 lines in SPARQL vs 15 lines in SQL — and the SQL version contained a subtle bug (Susanne re-entered her own community via the recursive arm), while SPARQL's `FILTER` made the exclusion natural.
+- **LLM reliability**: Claude generated correct SPARQL property paths every time, but introduced a correctness bug in the recursive SQL arm — consistent with the general finding that LLMs are less reliable on `WITH RECURSIVE` than on standard joins.
+
+| Query type | SPARQL | SQL |
+|---|---|---|
+| Simple filter + join | Equal | Equal |
+| Multi-hop (3 hops, fixed depth) | Equal | Equal |
+| Transitive closure (any depth) | 4 lines, correct | 15 lines, bug |
+| Game family traversal (`*`) | 5 lines, correct | 8 lines, correct |
+
 ### Files
 
 | File | Description |
@@ -257,8 +274,6 @@ Key finding: the SPARQL agent dominates on counting, filtering, and graph traver
 | [`qa/bgg_sparql_compare.py`](qa/bgg_sparql_compare.py) | Runs the SPARQL agent against all 20 questions |
 | [`qa/bgg_sql_compare.py`](qa/bgg_sql_compare.py) | Runs the SQL agent (comparison baseline) |
 | [`qa/_autoscore.py`](qa/_autoscore.py) | Auto-scores answer log entries using Claude Haiku |
-
-The comparison also explores where SPARQL has a structural advantage over SQL — particularly for property-path queries (arbitrary-depth traversal with `+` / `*`) and graph connectivity queries that would require `WITH RECURSIVE` in SQL.
 
 ---
 
