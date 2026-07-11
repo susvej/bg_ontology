@@ -83,8 +83,8 @@ PREFIX bgg: <https://raw.githubusercontent.com/susvej/bg_ontology/>
 
 **Datatype properties**
 
-| Property | Type | Description |
-|---|---|---|
+| Property  | Description |
+|---|---|
 | `bgg:hasPlayerRatingOpinion` | A bgg:Player has a personal rating on 1–10 scale |
 
 | Object Property | Description |
