@@ -9,6 +9,8 @@ I love boardgames, ontologies, learning, and teaching. This project combines all
 
 **[Interactive ontology graph](https://susvej.github.io/bg_ontology/)**
 
+![Agent comparison intro](docs/bg_agents_intro_screenshot.png)
+
 ---
 
 ## Contents
@@ -231,6 +233,8 @@ All agents (except Ollama, which was not scored) are evaluated on the same **20 
 ### Results
 
 **[Download the slide deck (bgg_agents_slides.pptx)](docs/bgg_agents_slides.pptx)** — covers how each agent works, a color-coded score grid (20 questions × 4 agents), and per-agent narrative summaries.
+
+![Agent overview](docs/bg_agents_overview.png)
 
 Each question was scored 0–10; a score of 9–10 means the answer was correct and complete, below 5 means it was wrong or misleading.
 
