@@ -254,7 +254,6 @@ Topics covered include: basic SELECT, FILTER, OPTIONAL, aggregation (COUNT, AVG,
 | Notebook | Description |
 |---|---|
 | [`notebooks/Practice_SPARQL_local.ipynb`](notebooks/Practice_SPARQL_local.ipynb) | Runs in VS Code or Jupyter — loads files locally with rdflib, no server needed |
-| [`notebooks/Practice_SPARQL_with_the_Boardgame_Knowledge_Graph.ipynb`](notebooks/Practice_SPARQL_with_the_Boardgame_Knowledge_Graph.ipynb) | Google Colab version — fetches `bgg_main.ttl` from GitHub, queries a remote GraphDB endpoint |
 
 ---
 
