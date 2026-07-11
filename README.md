@@ -90,6 +90,16 @@ PREFIX bgg: <https://raw.githubusercontent.com/susvej/bg_ontology/>
 | `bgg:hasMentalLoad` | Difficulty the player assigned |
 | `bgg:likesCategory` / `bgg:likesMechanic` | Preferred categories and mechanics |
 
+### Optional extension: `data/fake_players.ttl`
+
+BoardGameGeek does not publish individual player data, so the classes `bgg:Player` and `bgg:PlayerOpinion` would have no instances if you only load `bgg_main.ttl`. The file `data/fake_players.ttl` fills that gap with **200 fictional players** with invented game collections and personal ratings — enough to practice ownership, rating, and social-graph queries.
+
+It is kept as a **separate file** rather than merged into `bgg_main.ttl`, so the real BGG data stays clean and unmodified. Loading it is opt-in: load `bgg_main.ttl` alone for pure game queries, or load both together when you need player data.
+
+```
+PREFIX fake: <https://vejdemo.se/boardgames/fake#>
+```
+
 ### Vocabulary
 
 Category and mechanic instances are identified by IRI (e.g. `bgg:PartyGame`) and carry an `rdfs:label` (e.g. `"Party Game"`) and `skos:altLabel` values for common synonyms and abbreviations. There are **89 categories** and **176 mechanics**.
