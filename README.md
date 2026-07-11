@@ -239,7 +239,7 @@ Key finding: the SPARQL agent dominates on counting, filtering, and graph traver
 | [`qa/qa_log.jsonl`](qa/qa_log.jsonl) | Raw log of all agent answers |
 | [`qa/bgg_sparql_compare.py`](qa/bgg_sparql_compare.py) | Runs the SPARQL agent against all 20 questions |
 | [`qa/bgg_sql_compare.py`](qa/bgg_sql_compare.py) | Runs the SQL agent (comparison baseline) |
-| [`qa/_autoscore.py`](qa/_autoscore.py) | Auto-scores unanswered log entries using Claude Haiku |
+| [`qa/_autoscore.py`](qa/_autoscore.py) | Auto-scores answer log entries using Claude Haiku |
 
 The comparison also explores where SPARQL has a structural advantage over SQL — particularly for property-path queries (arbitrary-depth traversal with `+` / `*`) and graph connectivity queries that would require `WITH RECURSIVE` in SQL.
 
