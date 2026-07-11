@@ -259,4 +259,4 @@ Topics covered include: basic SELECT, FILTER, OPTIONAL, aggregation (COUNT, AVG,
 
 ## Contact
 
-susanne ADD A PLUSSIGN kgpractice AND THEN AN AT vejdemo PUNCTUATION se
+![susanne@vejdemo.se](docs/email.png)
