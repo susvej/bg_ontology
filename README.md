@@ -1,7 +1,11 @@
-# Boardgame Ontology
+# Boardgame Ontology Project
 *Susanne Vejdemo, 2025*
 
-An OWL ontology and knowledge graph of board games, built from BoardGameGeek data. Intended as a practice dataset for people learning ontologies, knowledge graphs, and SPARQL — and as a testbed for comparing different LLM-based QA agents.
+I love boardgames, ontologies, learning, and teaching. This project combines all of these things.
+* I built an OWL/RDF **ontology** about boardgames to help answer such important questions as "what is the  board games about pirates can I play with my team of 6 people"\
+* I built a **knowledge graph** from BoardGameGeek.com data. Intended as a practice dataset for people learning ontologies, knowledge graphs, and SPARQL — and as a testbed for comparing different LLM-based QA agents.
+* I built **five  different Natural Language LLM Agents**, each with a different methodology to query the data. I find that most walkthroughs about these things are too complex, or half the code is omitted. I learnt a lot building the agents, and I hope it can be useful for other learners.
+* I created a **SPARQL query practice sandbox**, because there are too few resources out there for people who want hands-on experience in learning SPARQL.
 
 **[Interactive ontology graph](https://susvej.github.io/bg_ontology/)** · 
 
