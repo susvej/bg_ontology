@@ -219,7 +219,7 @@ All agents (except Ollama, which was not scored) are evaluated on the same **20 
 
 ### Results
 
-**[Download the full report (report.xlsx)](qa/report.xlsx)** — three sheets: how each agent works, a color-coded score grid (20 questions × 4 agents), and per-agent narrative summaries.
+**[Download the slide deck (bgg_agents_slides.pptx)](docs/bgg_agents_slides.pptx)** — covers how each agent works, a color-coded score grid (20 questions × 4 agents), and per-agent narrative summaries.
 
 | Agent | Avg score (0–10) |
 |---|---|
