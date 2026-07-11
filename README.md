@@ -1,8 +1,10 @@
 # Boardgame Ontology
 
+*[Susanne Vejdemo](https://www.linkedin.com/in/susanne-vejdemo/) · 2026*
+
 An OWL ontology and knowledge graph of board games, built from BoardGameGeek data. Intended as a practice dataset for people learning ontologies, knowledge graphs, and SPARQL — and as a testbed for comparing different LLM-based QA agents.
 
-**[Interactive ontology graph](https://susvej.github.io/bg_ontology/)** · *Susanne Vejdemo, 2025*
+**[Interactive ontology graph](https://susvej.github.io/bg_ontology/)**
 
 ---
 
@@ -46,7 +48,8 @@ PREFIX bgg: <https://raw.githubusercontent.com/susvej/bg_ontology/>
 | `bgg:PlayerOpinion` | One player's rating and assessment of a specific game — synthetic data only |
 | `trenj:Theme` | A thematic grouping from the Threnjen BGG database (e.g. *Steampunk*, *Pirates*) |
 
-### Properties with `bgg:Game` as rdfs:domain
+<details>
+<summary><strong>Properties with <code>bgg:Game</code> as rdfs:domain</strong></summary>
 
 **Datatype properties**
 
@@ -79,7 +82,10 @@ PREFIX bgg: <https://raw.githubusercontent.com/susvej/bg_ontology/>
 | `bgg:hasURL` | URI | BGG page URL |
 | `bgg:hasThumbnail` | URI | Cover image URL |
 
-### Properties with  `bgg:Player` / `bgg:PlayerOpinion` as domain or range
+</details>
+
+<details>
+<summary><strong>Properties with <code>bgg:Player</code> / <code>bgg:PlayerOpinion</code> as domain or range</strong></summary>
 
 **Datatype properties**
 
@@ -95,6 +101,8 @@ PREFIX bgg: <https://raw.githubusercontent.com/susvej/bg_ontology/>
 | `bgg:hasOpinionOf` | A bgg:Player has a bgg:PlayerOpinion  |
 | `bgg:hasMentalLoad` | Difficulty the player assigned |
 | `bgg:likesCategory` / `bgg:likesMechanic` | Preferred categories and mechanics |
+
+</details>
 
 
 ### Optional extension: `data/fake_players.ttl`
@@ -220,6 +228,8 @@ All agents (except Ollama, which was not scored) are evaluated on the same **20 
 ### Results
 
 **[Download the slide deck (bgg_agents_slides.pptx)](docs/bgg_agents_slides.pptx)** — covers how each agent works, a color-coded score grid (20 questions × 4 agents), and per-agent narrative summaries.
+
+Each question was scored 0–10; a score of 9–10 means the answer was correct and complete, below 5 means it was wrong or misleading.
 
 | Agent | Avg score (0–10) |
 |---|---|
