@@ -36418,7 +36418,19 @@ fake:AkikoDupont a bgg:Player ;
         bgg:188834,
         bgg:190247,
         bgg:262534,
-        bgg:272599 .
+        bgg:272599 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Political,
+        bgg:Negotiation,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:VariablePlayerPowers,
+        bgg:AreaMajorityInfluence,
+        bgg:PlayerElimination,
+        bgg:Voting,
+        bgg:Negotiation .
 
 fake:AkikoHajek a bgg:Player ;
     rdfs:label "Akiko Hajek"@en ;
@@ -36451,7 +36463,19 @@ fake:AkikoHajek a bgg:Player ;
         bgg:217776,
         bgg:221248,
         bgg:249675,
-        bgg:302463 .
+        bgg:302463 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:CardGame,
+        bgg:ScienceFiction,
+        bgg:Humor,
+        bgg:Negotiation ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:Drafting,
+        bgg:AuctionBidding,
+        bgg:TeamBasedGame .
 
 fake:AkikoJohansson a bgg:Player ;
     rdfs:label "Akiko Johansson"@en ;
@@ -36484,7 +36508,19 @@ fake:AkikoJohansson a bgg:Player ;
         bgg:208256,
         bgg:218333,
         bgg:246740,
-        bgg:290872 .
+        bgg:290872 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:RealTime,
+        bgg:PartyGame ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:RealTime,
+        bgg:PatternRecognition,
+        bgg:Race,
+        bgg:Memory .
 
 fake:AlejandroAdams a bgg:Player ;
     rdfs:label "Alejandro Adams"@en ;
@@ -36517,7 +36553,19 @@ fake:AlejandroAdams a bgg:Player ;
         bgg:213578,
         bgg:220308,
         bgg:289438,
-        bgg:325414 .
+        bgg:325414 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:ScienceFiction,
+        bgg:Fighting,
+        bgg:Miniatures,
+        bgg:Adventure,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:CooperativeGame,
+        bgg:HandManagement,
+        bgg:RolePlaying .
 
 fake:AlejandroAndersen a bgg:Player ;
     rdfs:label "Alejandro Andersen"@en ;
@@ -36550,7 +36598,19 @@ fake:AlejandroAndersen a bgg:Player ;
         bgg:220193,
         bgg:221248,
         bgg:246900,
-        bgg:256957 .
+        bgg:256957 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Deduction,
+        bgg:Humor,
+        bgg:ScienceFiction ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:Deduction,
+        bgg:VariablePlayerPowers,
+        bgg:SimultaneousActionSelection,
+        bgg:Memory .
 
 fake:AmaraCarlsson a bgg:Player ;
     rdfs:label "Amara Carlsson"@en ;
@@ -36583,7 +36643,19 @@ fake:AmaraCarlsson a bgg:Player ;
         bgg:211716,
         bgg:225836,
         bgg:232832,
-        bgg:234277 .
+        bgg:234277 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:CardGame,
+        bgg:IndustryManufacturing,
+        bgg:Transportation,
+        bgg:Medieval,
+        bgg:Negotiation ;
+    bgg:likesMechanic bgg:AuctionBidding,
+        bgg:StockHolding,
+        bgg:Simulation,
+        bgg:VariablePlayerPowers,
+        bgg:NetworkAndRouteBuilding,
+        bgg:HandManagement .
 
 fake:AmaraHernandez a bgg:Player ;
     rdfs:label "Amara Hernandez"@en ;
@@ -36616,7 +36688,19 @@ fake:AmaraHernandez a bgg:Player ;
         bgg:181345,
         bgg:183231,
         bgg:221318,
-        bgg:296987 .
+        bgg:296987 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:Memory,
+        bgg:RealTime ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:Memory,
+        bgg:RealTime,
+        bgg:PatternRecognition .
 
 fake:AmaraPerez a bgg:Player ;
     rdfs:label "Amara Perez"@en ;
@@ -36649,7 +36733,19 @@ fake:AmaraPerez a bgg:Player ;
         bgg:230791,
         bgg:233371,
         bgg:235627,
-        bgg:245658 .
+        bgg:245658 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Fighting,
+        bgg:ScienceFiction,
+        bgg:Miniatures,
+        bgg:Adventure,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:CooperativeGame,
+        bgg:HandManagement,
+        bgg:SoloSolitaireGame .
 
 fake:AndersAxelsson a bgg:Player ;
     rdfs:label "Anders Axelsson"@en ;
@@ -36682,7 +36778,19 @@ fake:AndersAxelsson a bgg:Player ;
         bgg:173341,
         bgg:175088,
         bgg:177524,
-        bgg:178940 .
+        bgg:178940 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:Dice,
+        bgg:Memory,
+        bgg:Deduction ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:Dexterity,
+        bgg:SetCollection,
+        bgg:CooperativeGame,
+        bgg:Memory,
+        bgg:PatternRecognition .
 
 fake:AndersSmith a bgg:Player ;
     rdfs:label "Anders Smith"@en ;
@@ -36715,7 +36823,19 @@ fake:AndersSmith a bgg:Player ;
         bgg:195709,
         bgg:205046,
         bgg:214396,
-        bgg:340834 .
+        bgg:340834 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:CardGame,
+        bgg:Deduction,
+        bgg:ScienceFiction,
+        bgg:Dice ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:DiceRolling,
+        bgg:Deduction,
+        bgg:Voting,
+        bgg:SetCollection .
 
 fake:AndreiPopescu a bgg:Player ;
     rdfs:label "Andrei Popescu"@en ;
@@ -36748,7 +36868,19 @@ fake:AndreiPopescu a bgg:Player ;
         bgg:196340,
         bgg:202426,
         bgg:230802,
-        bgg:252484 .
+        bgg:252484 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Negotiation,
+        bgg:Political,
+        bgg:Trains,
+        bgg:Transportation,
+        bgg:AbstractStrategy ;
+    bgg:likesMechanic bgg:TilePlacement,
+        bgg:VariablePlayerPowers,
+        bgg:AreaMajorityInfluence,
+        bgg:AuctionBidding,
+        bgg:DiceRolling,
+        bgg:NetworkAndRouteBuilding .
 
 fake:AnnaPerez a bgg:Player ;
     rdfs:label "Anna Perez"@en ;
@@ -36781,7 +36913,19 @@ fake:AnnaPerez a bgg:Player ;
         bgg:304847,
         bgg:304983,
         bgg:317434,
-        bgg:322984 .
+        bgg:322984 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Fantasy,
+        bgg:Exploration,
+        bgg:Fighting,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:ModularBoard,
+        bgg:SoloSolitaireGame .
 
 fake:AnnaTorres a bgg:Player ;
     rdfs:label "Anna Torres"@en ;
@@ -36814,7 +36958,19 @@ fake:AnnaTorres a bgg:Player ;
         bgg:194100,
         bgg:209685,
         bgg:220308,
-        bgg:222407 .
+        bgg:222407 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:AbstractStrategy,
+        bgg:Transportation,
+        bgg:CardGame,
+        bgg:Trains,
+        bgg:Civilization ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:AreaMajorityInfluence,
+        bgg:HexagonGrid,
+        bgg:AuctionBidding,
+        bgg:DiceRolling,
+        bgg:TilePlacement .
 
 fake:ArjunLundgren a bgg:Player ;
     rdfs:label "Arjun Lundgren"@en ;
@@ -36847,7 +37003,19 @@ fake:ArjunLundgren a bgg:Player ;
         bgg:221669,
         bgg:230889,
         bgg:255029,
-        bgg:335678 .
+        bgg:335678 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Fantasy,
+        bgg:ScienceFiction,
+        bgg:Fighting,
+        bgg:Wargame,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:ActionPoints,
+        bgg:ModularBoard,
+        bgg:GridMovement .
 
 fake:AstridHansen a bgg:Player ;
     rdfs:label "Astrid Hansen"@en ;
@@ -36880,7 +37048,19 @@ fake:AstridHansen a bgg:Player ;
         bgg:184921,
         bgg:191538,
         bgg:195296,
-        bgg:308329 .
+        bgg:308329 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:Dice,
+        bgg:CardGame,
+        bgg:Medieval ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:Dexterity,
+        bgg:HandManagement,
+        bgg:CooperativeGame,
+        bgg:PushYourLuck,
+        bgg:BettingAndBluffing .
 
 fake:BarbaraChen a bgg:Player ;
     rdfs:label "Barbara Chen"@en ;
@@ -36913,7 +37093,19 @@ fake:BarbaraChen a bgg:Player ;
         bgg:212445,
         bgg:233078,
         bgg:259638,
-        bgg:302933 .
+        bgg:302933 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Miniatures,
+        bgg:Fighting,
+        bgg:ScienceFiction,
+        bgg:Adventure,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:ActionPoints,
+        bgg:HandManagement,
+        bgg:HexagonGrid .
 
 fake:BarbaraLewis a bgg:Player ;
     rdfs:label "Barbara Lewis"@en ;
@@ -36946,7 +37138,19 @@ fake:BarbaraLewis a bgg:Player ;
         bgg:309917,
         bgg:310100,
         bgg:314040,
-        bgg:324856 .
+        bgg:324856 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:CardGame,
+        bgg:Fantasy,
+        bgg:Adventure,
+        bgg:Puzzle ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:SoloSolitaireGame,
+        bgg:HandManagement,
+        bgg:ActionPoints .
 
 fake:BarbaraOkafor a bgg:Player ;
     rdfs:label "Barbara Okafor"@en ;
@@ -36979,7 +37183,19 @@ fake:BarbaraOkafor a bgg:Player ;
         bgg:210271,
         bgg:228668,
         bgg:230791,
-        bgg:245644 .
+        bgg:245644 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Fighting,
+        bgg:Miniatures,
+        bgg:ScienceFiction,
+        bgg:CardGame,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:CooperativeGame,
+        bgg:SoloSolitaireGame,
+        bgg:ActionPoints .
 
 fake:BettyBecker a bgg:Player ;
     rdfs:label "Betty Becker"@en ;
@@ -37012,7 +37228,19 @@ fake:BettyBecker a bgg:Player ;
         bgg:192547,
         bgg:220674,
         bgg:244939,
-        bgg:292684 .
+        bgg:292684 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Racing ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:Memory,
+        bgg:PushYourLuck,
+        bgg:CooperativeGame .
 
 fake:BettyDubois a bgg:Player ;
     rdfs:label "Betty Dubois"@en ;
@@ -37045,7 +37273,19 @@ fake:BettyDubois a bgg:Player ;
         bgg:195296,
         bgg:256297,
         bgg:312484,
-        bgg:342016 .
+        bgg:342016 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Animals,
+        bgg:Dice ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:Memory,
+        bgg:HandManagement,
+        bgg:CooperativeGame,
+        bgg:SetCollection .
 
 fake:BettyFernandez a bgg:Player ;
     rdfs:label "Betty Fernandez"@en ;
@@ -37078,7 +37318,19 @@ fake:BettyFernandez a bgg:Player ;
         bgg:205716,
         bgg:209289,
         bgg:217776,
-        bgg:321756 .
+        bgg:321756 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:CardGame,
+        bgg:Deduction,
+        bgg:ScienceFiction,
+        bgg:Fantasy ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:Deduction,
+        bgg:TeamBasedGame,
+        bgg:DiceRolling .
 
 fake:BettyKobayashi a bgg:Player ;
     rdfs:label "Betty Kobayashi"@en ;
@@ -37111,7 +37363,19 @@ fake:BettyKobayashi a bgg:Player ;
         bgg:285232,
         bgg:310100,
         bgg:314040,
-        bgg:334310 .
+        bgg:334310 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Exploration,
+        bgg:Adventure,
+        bgg:Fantasy,
+        bgg:Horror ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:SoloSolitaireGame,
+        bgg:ModularBoard,
+        bgg:HandManagement .
 
 fake:BettyLopez a bgg:Player ;
     rdfs:label "Betty Lopez"@en ;
@@ -37144,7 +37408,19 @@ fake:BettyLopez a bgg:Player ;
         bgg:200680,
         bgg:227789,
         bgg:245352,
-        bgg:312738 .
+        bgg:312738 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:IndustryManufacturing,
+        bgg:Trains,
+        bgg:Transportation,
+        bgg:AbstractStrategy,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:TilePlacement,
+        bgg:AuctionBidding,
+        bgg:NetworkAndRouteBuilding,
+        bgg:WorkerPlacement,
+        bgg:HandManagement,
+        bgg:Market .
 
 fake:BettyYamamoto a bgg:Player ;
     rdfs:label "Betty Yamamoto"@en ;
@@ -37177,7 +37453,19 @@ fake:BettyYamamoto a bgg:Player ;
         bgg:304847,
         bgg:306637,
         bgg:324853,
-        bgg:331259 .
+        bgg:331259 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:CardGame,
+        bgg:Puzzle,
+        bgg:Educational,
+        bgg:AgeOfReason ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:ActionPoints,
+        bgg:RolePlaying .
 
 fake:BrittaLewis a bgg:Player ;
     rdfs:label "Britta Lewis"@en ;
@@ -37210,7 +37498,19 @@ fake:BrittaLewis a bgg:Player ;
         bgg:224288,
         bgg:233078,
         bgg:234277,
-        bgg:304821 .
+        bgg:304821 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:IndustryManufacturing,
+        bgg:ScienceFiction,
+        bgg:AbstractStrategy,
+        bgg:Fighting,
+        bgg:CityBuilding ;
+    bgg:likesMechanic bgg:WorkerPlacement,
+        bgg:SetCollection,
+        bgg:TilePlacement,
+        bgg:HandManagement,
+        bgg:DiceRolling,
+        bgg:ModularBoard .
 
 fake:BrittaLindqvist a bgg:Player ;
     rdfs:label "Britta Lindqvist"@en ;
@@ -37243,7 +37543,19 @@ fake:BrittaLindqvist a bgg:Player ;
         bgg:207330,
         bgg:215371,
         bgg:219215,
-        bgg:271270 .
+        bgg:271270 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:Deduction,
+        bgg:CardGame,
+        bgg:Negotiation,
+        bgg:Humor ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:TeamBasedGame,
+        bgg:Deduction,
+        bgg:Memory,
+        bgg:VariablePlayerPowers .
 
 fake:BrittaOlsson a bgg:Player ;
     rdfs:label "Britta Olsson"@en ;
@@ -37276,7 +37588,19 @@ fake:BrittaOlsson a bgg:Player ;
         bgg:220308,
         bgg:252323,
         bgg:268098,
-        bgg:300531 .
+        bgg:300531 ;
+    bgg:likesCategory bgg:Fighting,
+        bgg:ScienceFiction,
+        bgg:Fantasy,
+        bgg:Miniatures,
+        bgg:Adventure,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:HandManagement,
+        bgg:GridMovement,
+        bgg:CooperativeGame .
 
 fake:CarlosYamamoto a bgg:Player ;
     rdfs:label "Carlos Yamamoto"@en ;
@@ -37309,7 +37633,19 @@ fake:CarlosYamamoto a bgg:Player ;
         bgg:211716,
         bgg:221194,
         bgg:270350,
-        bgg:300753 .
+        bgg:300753 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Trains,
+        bgg:Transportation,
+        bgg:Political,
+        bgg:IndustryManufacturing,
+        bgg:AbstractStrategy ;
+    bgg:likesMechanic bgg:AuctionBidding,
+        bgg:TilePlacement,
+        bgg:NetworkAndRouteBuilding,
+        bgg:StockHolding,
+        bgg:AreaMajorityInfluence,
+        bgg:DiceRolling .
 
 fake:CarmenOkafor a bgg:Player ;
     rdfs:label "Carmen Okafor"@en ;
@@ -37342,7 +37678,19 @@ fake:CarmenOkafor a bgg:Player ;
         bgg:195296,
         bgg:229240,
         bgg:291563,
-        bgg:311330 .
+        bgg:311330 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:ActionDexterity,
+        bgg:Racing,
+        bgg:Dice ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:Race,
+        bgg:Memory,
+        bgg:CooperativeGame .
 
 fake:CarmenPetersen a bgg:Player ;
     rdfs:label "Carmen Petersen"@en ;
@@ -37375,7 +37723,19 @@ fake:CarmenPetersen a bgg:Player ;
         bgg:194626,
         bgg:202564,
         bgg:205125,
-        bgg:218333 .
+        bgg:218333 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:Dice,
+        bgg:Racing,
+        bgg:Memory ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:Memory,
+        bgg:RealTime,
+        bgg:PatternRecognition,
+        bgg:SetCollection .
 
 fake:CarmenSato a bgg:Player ;
     rdfs:label "Carmen Sato"@en ;
@@ -37408,7 +37768,19 @@ fake:CarmenSato a bgg:Player ;
         bgg:118705,
         bgg:130792,
         bgg:177995,
-        bgg:301085 .
+        bgg:301085 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:PartyGame,
+        bgg:CardGame,
+        bgg:Dice ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:BettingAndBluffing,
+        bgg:PatternRecognition,
+        bgg:RollSpinAndMove,
+        bgg:CooperativeGame .
 
 fake:CarmenWilliams a bgg:Player ;
     rdfs:label "Carmen Williams"@en ;
@@ -37441,7 +37813,19 @@ fake:CarmenWilliams a bgg:Player ;
         bgg:181796,
         bgg:211716,
         bgg:293348,
-        bgg:307715 .
+        bgg:307715 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:CardGame,
+        bgg:AbstractStrategy,
+        bgg:Trains,
+        bgg:Transportation,
+        bgg:Medieval ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:TilePlacement,
+        bgg:AuctionBidding,
+        bgg:NetworkAndRouteBuilding,
+        bgg:StockHolding,
+        bgg:VariablePlayerPowers .
 
 fake:CharlesAdams a bgg:Player ;
     rdfs:label "Charles Adams"@en ;
@@ -37474,7 +37858,19 @@ fake:CharlesAdams a bgg:Player ;
         bgg:222407,
         bgg:233078,
         bgg:279306,
-        bgg:281442 .
+        bgg:281442 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:IndustryManufacturing,
+        bgg:AbstractStrategy,
+        bgg:Transportation,
+        bgg:Wargame,
+        bgg:Medieval ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:HexagonGrid,
+        bgg:SetCollection,
+        bgg:DiceRolling,
+        bgg:WorkerPlacement,
+        bgg:AreaMajorityInfluence .
 
 fake:CharlesEkstrom a bgg:Player ;
     rdfs:label "Charles Ekstrom"@en ;
@@ -37507,7 +37903,19 @@ fake:CharlesEkstrom a bgg:Player ;
         bgg:203087,
         bgg:209778,
         bgg:219215,
-        bgg:224992 .
+        bgg:224992 ;
+    bgg:likesCategory bgg:PartyGame,
+        bgg:Bluffing,
+        bgg:Deduction,
+        bgg:Humor,
+        bgg:CardGame,
+        bgg:ScienceFiction ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:Deduction,
+        bgg:Memory,
+        bgg:TeamBasedGame .
 
 fake:ClaireLindberg a bgg:Player ;
     rdfs:label "Claire Lindberg"@en ;
@@ -37540,7 +37948,19 @@ fake:ClaireLindberg a bgg:Player ;
         bgg:304983,
         bgg:309917,
         bgg:324856,
-        bgg:331259 .
+        bgg:331259 ;
+    bgg:likesCategory bgg:CardGame,
+        bgg:Exploration,
+        bgg:Miniatures,
+        bgg:Puzzle,
+        bgg:Fighting,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:SoloSolitaireGame,
+        bgg:Storytelling .
 
 fake:DanielBergstrom a bgg:Player ;
     rdfs:label "Daniel Bergstrom"@en ;
@@ -37573,7 +37993,19 @@ fake:DanielBergstrom a bgg:Player ;
         bgg:190247,
         bgg:195314,
         bgg:205398,
-        bgg:208775 .
+        bgg:208775 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Deduction,
+        bgg:Political,
+        bgg:Negotiation ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:AreaMovement,
+        bgg:Deduction .
 
 fake:DavidHoffmann a bgg:Player ;
     rdfs:label "David Hoffmann"@en ;
@@ -37606,7 +38038,19 @@ fake:DavidHoffmann a bgg:Player ;
         bgg:285157,
         bgg:286751,
         bgg:308970,
-        bgg:332606 .
+        bgg:332606 ;
+    bgg:likesCategory bgg:CardGame,
+        bgg:Exploration,
+        bgg:Miniatures,
+        bgg:Wargame,
+        bgg:Fighting,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:SoloSolitaireGame,
+        bgg:HandManagement,
+        bgg:DeckBagAndPoolBuilding .
 
 fake:ElifBecker a bgg:Player ;
     rdfs:label "Elif Becker"@en ;
@@ -37639,7 +38083,19 @@ fake:ElifBecker a bgg:Player ;
         bgg:192268,
         bgg:209685,
         bgg:211716,
-        bgg:315060 .
+        bgg:315060 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:IndustryManufacturing,
+        bgg:CardGame,
+        bgg:CityBuilding,
+        bgg:Civilization,
+        bgg:Farming ;
+    bgg:likesMechanic bgg:SetCollection,
+        bgg:WorkerPlacement,
+        bgg:HandManagement,
+        bgg:AuctionBidding,
+        bgg:SoloSolitaireGame,
+        bgg:DiceRolling .
 
 fake:ElifJones a bgg:Player ;
     rdfs:label "Elif Jones"@en ;
@@ -37672,7 +38128,19 @@ fake:ElifJones a bgg:Player ;
         bgg:217083,
         bgg:221194,
         bgg:223996,
-        bgg:229265 .
+        bgg:229265 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:AbstractStrategy,
+        bgg:CardGame,
+        bgg:Farming,
+        bgg:Trains,
+        bgg:Animals ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:SetCollection,
+        bgg:Drafting,
+        bgg:VariablePlayerPowers,
+        bgg:TilePlacement,
+        bgg:GridMovement .
 
 fake:EmmaYamamoto a bgg:Player ;
     rdfs:label "Emma Yamamoto"@en ;
@@ -37705,7 +38173,19 @@ fake:EmmaYamamoto a bgg:Player ;
         bgg:286428,
         bgg:288431,
         bgg:298352,
-        bgg:313919 .
+        bgg:313919 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:AbstractStrategy,
+        bgg:CardGame,
+        bgg:CityBuilding,
+        bgg:Trains,
+        bgg:Civilization ;
+    bgg:likesMechanic bgg:AuctionBidding,
+        bgg:TilePlacement,
+        bgg:NetworkAndRouteBuilding,
+        bgg:HandManagement,
+        bgg:SetCollection,
+        bgg:StockHolding .
 
 fake:ErikGustafsson a bgg:Player ;
     rdfs:label "Erik Gustafsson"@en ;
@@ -37738,7 +38218,19 @@ fake:ErikGustafsson a bgg:Player ;
         bgg:299566,
         bgg:304847,
         bgg:323255,
-        bgg:331212 .
+        bgg:331212 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Fighting,
+        bgg:Exploration,
+        bgg:CardGame,
+        bgg:Fantasy,
+        bgg:ScienceFiction ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:SoloSolitaireGame,
+        bgg:HandManagement,
+        bgg:ModularBoard .
 
 fake:ErikSato a bgg:Player ;
     rdfs:label "Erik Sato"@en ;
@@ -37771,7 +38263,19 @@ fake:ErikSato a bgg:Player ;
         bgg:210271,
         bgg:230889,
         bgg:271060,
-        bgg:298345 .
+        bgg:298345 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:ScienceFiction,
+        bgg:Miniatures,
+        bgg:Fighting,
+        bgg:CardGame,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:ModularBoard,
+        bgg:DeckBagAndPoolBuilding,
+        bgg:GridMovement .
 
 fake:ErikSchulz a bgg:Player ;
     rdfs:label "Erik Schulz"@en ;
@@ -37804,7 +38308,19 @@ fake:ErikSchulz a bgg:Player ;
         bgg:217776,
         bgg:226213,
         bgg:233194,
-        bgg:242520 .
+        bgg:242520 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Deduction,
+        bgg:Humor,
+        bgg:Negotiation ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:Deduction,
+        bgg:SimultaneousActionSelection,
+        bgg:Voting .
 
 fake:ErikWhite a bgg:Player ;
     rdfs:label "Erik White"@en ;
@@ -37837,7 +38353,19 @@ fake:ErikWhite a bgg:Player ;
         bgg:217776,
         bgg:242742,
         bgg:265226,
-        bgg:310194 .
+        bgg:310194 ;
+    bgg:likesCategory bgg:PartyGame,
+        bgg:Bluffing,
+        bgg:CardGame,
+        bgg:Deduction,
+        bgg:Humor,
+        bgg:Horror ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:Deduction,
+        bgg:TeamBasedGame,
+        bgg:PaperAndPencil .
 
 fake:ErikWilson a bgg:Player ;
     rdfs:label "Erik Wilson"@en ;
@@ -37870,7 +38398,19 @@ fake:ErikWilson a bgg:Player ;
         bgg:324157,
         bgg:324853,
         bgg:331259,
-        bgg:339263 .
+        bgg:339263 ;
+    bgg:likesCategory bgg:CardGame,
+        bgg:Exploration,
+        bgg:Miniatures,
+        bgg:Puzzle,
+        bgg:Wargame,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:SoloSolitaireGame,
+        bgg:ModularBoard .
 
 fake:FatimaMuller a bgg:Player ;
     rdfs:label "Fatima Muller"@en ;
@@ -37903,7 +38443,19 @@ fake:FatimaMuller a bgg:Player ;
         bgg:228668,
         bgg:235494,
         bgg:300700,
-        bgg:302524 .
+        bgg:302524 ;
+    bgg:likesCategory bgg:ScienceFiction,
+        bgg:Miniatures,
+        bgg:Fantasy,
+        bgg:Adventure,
+        bgg:Fighting,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:SoloSolitaireGame,
+        bgg:ActionPoints,
+        bgg:ModularBoard .
 
 fake:FatimaWeber a bgg:Player ;
     rdfs:label "Fatima Weber"@en ;
@@ -37936,7 +38488,19 @@ fake:FatimaWeber a bgg:Player ;
         bgg:294652,
         bgg:304847,
         bgg:307191,
-        bgg:309917 .
+        bgg:309917 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Exploration,
+        bgg:Puzzle,
+        bgg:Adventure,
+        bgg:Fighting ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:ActionPoints,
+        bgg:SoloSolitaireGame .
 
 fake:FatouGonzalez a bgg:Player ;
     rdfs:label "Fatou Gonzalez"@en ;
@@ -37969,7 +38533,19 @@ fake:FatouGonzalez a bgg:Player ;
         bgg:173341,
         bgg:191538,
         bgg:194626,
-        bgg:284229 .
+        bgg:284229 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:RealTime,
+        bgg:CardGame,
+        bgg:PartyGame ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:RealTime,
+        bgg:PushYourLuck,
+        bgg:SetCollection,
+        bgg:Simulation .
 
 fake:FatouSmith a bgg:Player ;
     rdfs:label "Fatou Smith"@en ;
@@ -38002,7 +38578,19 @@ fake:FatouSmith a bgg:Player ;
         bgg:219215,
         bgg:221248,
         bgg:284777,
-        bgg:300008 .
+        bgg:300008 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:CardGame,
+        bgg:Deduction,
+        bgg:Humor,
+        bgg:ScienceFiction ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:BettingAndBluffing,
+        bgg:VariablePlayerPowers,
+        bgg:Deduction,
+        bgg:Memory,
+        bgg:Drafting .
 
 fake:FatouTanaka a bgg:Player ;
     rdfs:label "Fatou Tanaka"@en ;
@@ -38035,7 +38623,19 @@ fake:FatouTanaka a bgg:Player ;
         bgg:192906,
         bgg:195314,
         bgg:197439,
-        bgg:227515 .
+        bgg:227515 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Deduction,
+        bgg:Political,
+        bgg:ScienceFiction ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:Deduction,
+        bgg:SetCollection,
+        bgg:DiceRolling .
 
 fake:FrancoisEriksson a bgg:Player ;
     rdfs:label "François Eriksson"@en ;
@@ -38068,7 +38668,19 @@ fake:FrancoisEriksson a bgg:Player ;
         bgg:201308,
         bgg:205398,
         bgg:209778,
-        bgg:219215 .
+        bgg:219215 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:CardGame,
+        bgg:Deduction,
+        bgg:Humor,
+        bgg:ScienceFiction ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:VariablePlayerPowers,
+        bgg:Deduction,
+        bgg:HandManagement,
+        bgg:SecretUnitDeployment,
+        bgg:DiceRolling .
 
 fake:FriedrichSchneider a bgg:Player ;
     rdfs:label "Friedrich Schneider"@en ;
@@ -38101,7 +38713,19 @@ fake:FriedrichSchneider a bgg:Player ;
         bgg:210271,
         bgg:219988,
         bgg:228668,
-        bgg:303551 .
+        bgg:303551 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Fighting,
+        bgg:Miniatures,
+        bgg:Wargame,
+        bgg:Adventure,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:GridMovement,
+        bgg:AreaMovement,
+        bgg:ModularBoard .
 
 fake:GertrudeBernard a bgg:Player ;
     rdfs:label "Gertrude Bernard"@en ;
@@ -38134,7 +38758,19 @@ fake:GertrudeBernard a bgg:Player ;
         bgg:216199,
         bgg:220308,
         bgg:236881,
-        bgg:258210 .
+        bgg:258210 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:ScienceFiction,
+        bgg:Fighting,
+        bgg:CardGame,
+        bgg:Wargame,
+        bgg:Miniatures ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:AreaMajorityInfluence,
+        bgg:Drafting,
+        bgg:BettingAndBluffing .
 
 fake:GertrudeIto a bgg:Player ;
     rdfs:label "Gertrude Ito"@en ;
@@ -38167,7 +38803,19 @@ fake:GertrudeIto a bgg:Player ;
         bgg:192547,
         bgg:204671,
         bgg:211940,
-        bgg:244794 .
+        bgg:244794 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:ActionDexterity,
+        bgg:Fantasy,
+        bgg:Deduction ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:DiceRolling,
+        bgg:Memory,
+        bgg:Dexterity,
+        bgg:SetCollection,
+        bgg:CooperativeGame .
 
 fake:GertrudeKozlov a bgg:Player ;
     rdfs:label "Gertrude Kozlov"@en ;
@@ -38200,7 +38848,19 @@ fake:GertrudeKozlov a bgg:Player ;
         bgg:185845,
         bgg:194655,
         bgg:232980,
-        bgg:234977 .
+        bgg:234977 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:CardGame,
+        bgg:AbstractStrategy,
+        bgg:IndustryManufacturing,
+        bgg:Farming,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:DiceRolling,
+        bgg:AreaMajorityInfluence,
+        bgg:VariablePlayerPowers,
+        bgg:WorkerPlacement,
+        bgg:Drafting .
 
 fake:GertrudeWeber a bgg:Player ;
     rdfs:label "Gertrude Weber"@en ;
@@ -38233,7 +38893,19 @@ fake:GertrudeWeber a bgg:Player ;
         bgg:205637,
         bgg:231484,
         bgg:231991,
-        bgg:299659 .
+        bgg:299659 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:Dice,
+        bgg:PartyGame,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:CooperativeGame,
+        bgg:PatternRecognition,
+        bgg:RealTime,
+        bgg:HandManagement .
 
 fake:GunnarLindberg a bgg:Player ;
     rdfs:label "Gunnar Lindberg"@en ;
@@ -38266,7 +38938,19 @@ fake:GunnarLindberg a bgg:Player ;
         bgg:195709,
         bgg:221248,
         bgg:254894,
-        bgg:322616 .
+        bgg:322616 ;
+    bgg:likesCategory bgg:PartyGame,
+        bgg:Bluffing,
+        bgg:CardGame,
+        bgg:Humor,
+        bgg:Negotiation,
+        bgg:Deduction ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:Physical,
+        bgg:Memory,
+        bgg:SetCollection .
 
 fake:GustavNielsen a bgg:Player ;
     rdfs:label "Gustav Nielsen"@en ;
@@ -38299,7 +38983,19 @@ fake:GustavNielsen a bgg:Player ;
         bgg:222509,
         bgg:223167,
         bgg:224597,
-        bgg:241025 .
+        bgg:241025 ;
+    bgg:likesCategory bgg:ScienceFiction,
+        bgg:Miniatures,
+        bgg:Fantasy,
+        bgg:Fighting,
+        bgg:Adventure,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:GridMovement,
+        bgg:CooperativeGame,
+        bgg:SimultaneousActionSelection .
 
 fake:HanaLee a bgg:Player ;
     rdfs:label "Hana Lee"@en ;
@@ -38332,7 +39028,19 @@ fake:HanaLee a bgg:Player ;
         bgg:206718,
         bgg:218417,
         bgg:218933,
-        bgg:229172 .
+        bgg:229172 ;
+    bgg:likesCategory bgg:ScienceFiction,
+        bgg:Fantasy,
+        bgg:Miniatures,
+        bgg:Fighting,
+        bgg:Wargame,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:HexagonGrid,
+        bgg:GridMovement,
+        bgg:ActionPoints .
 
 fake:HanaSato a bgg:Player ;
     rdfs:label "Hana Sato"@en ;
@@ -38365,7 +39073,19 @@ fake:HanaSato a bgg:Player ;
         bgg:222509,
         bgg:223040,
         bgg:245710,
-        bgg:276499 .
+        bgg:276499 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Fighting,
+        bgg:ScienceFiction,
+        bgg:Fantasy,
+        bgg:Wargame,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:GridMovement,
+        bgg:ModularBoard,
+        bgg:ActionPoints,
+        bgg:HandManagement .
 
 fake:HanaSchulz a bgg:Player ;
     rdfs:label "Hana Schulz"@en ;
@@ -38398,7 +39118,19 @@ fake:HanaSchulz a bgg:Player ;
         bgg:206915,
         bgg:274152,
         bgg:279720,
-        bgg:292506 .
+        bgg:292506 ;
+    bgg:likesCategory bgg:PartyGame,
+        bgg:Bluffing,
+        bgg:Humor,
+        bgg:CardGame,
+        bgg:Deduction,
+        bgg:SpiessecretAgents ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:TeamBasedGame,
+        bgg:DiceRolling,
+        bgg:Memory,
+        bgg:Deduction,
+        bgg:HandManagement .
 
 fake:HansFischer a bgg:Player ;
     rdfs:label "Hans Fischer"@en ;
@@ -38431,7 +39163,19 @@ fake:HansFischer a bgg:Player ;
         bgg:197405,
         bgg:211716,
         bgg:217083,
-        bgg:227789 .
+        bgg:227789 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Farming,
+        bgg:IndustryManufacturing,
+        bgg:Trains,
+        bgg:Transportation,
+        bgg:AbstractStrategy ;
+    bgg:likesMechanic bgg:TilePlacement,
+        bgg:HandManagement,
+        bgg:NetworkAndRouteBuilding,
+        bgg:AreaMajorityInfluence,
+        bgg:DiceRolling,
+        bgg:AuctionBidding .
 
 fake:HelgaEriksson a bgg:Player ;
     rdfs:label "Helga Eriksson"@en ;
@@ -38464,7 +39208,19 @@ fake:HelgaEriksson a bgg:Player ;
         bgg:204184,
         bgg:206490,
         bgg:222407,
-        bgg:229265 .
+        bgg:229265 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:CardGame,
+        bgg:CityBuilding,
+        bgg:IndustryManufacturing,
+        bgg:Fighting,
+        bgg:Nautical ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:AreaMajorityInfluence,
+        bgg:TilePlacement,
+        bgg:VariablePlayerPowers,
+        bgg:AuctionBidding .
 
 fake:HenriRobinson a bgg:Player ;
     rdfs:label "Henri Robinson"@en ;
@@ -38497,7 +39253,19 @@ fake:HenriRobinson a bgg:Player ;
         bgg:199493,
         bgg:201455,
         bgg:215371,
-        bgg:327076 .
+        bgg:327076 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:Deduction,
+        bgg:CardGame,
+        bgg:Fantasy,
+        bgg:ScienceFiction ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:Deduction,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:Drafting .
 
 fake:HenriSato a bgg:Player ;
     rdfs:label "Henri Sato"@en ;
@@ -38530,7 +39298,19 @@ fake:HenriSato a bgg:Player ;
         bgg:205716,
         bgg:213788,
         bgg:306680,
-        bgg:327793 .
+        bgg:327793 ;
+    bgg:likesCategory bgg:PartyGame,
+        bgg:Bluffing,
+        bgg:CardGame,
+        bgg:Deduction,
+        bgg:Negotiation,
+        bgg:ScienceFiction ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:Deduction,
+        bgg:Negotiation,
+        bgg:TeamBasedGame .
 
 fake:HenriTanaka a bgg:Player ;
     rdfs:label "Henri Tanaka"@en ;
@@ -38563,7 +39343,19 @@ fake:HenriTanaka a bgg:Player ;
         bgg:202426,
         bgg:205059,
         bgg:218933,
-        bgg:288654 .
+        bgg:288654 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:ScienceFiction,
+        bgg:Adventure,
+        bgg:Fighting,
+        bgg:Miniatures,
+        bgg:Exploration ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:RolePlaying,
+        bgg:GridMovement,
+        bgg:HandManagement .
 
 fake:HildegardAllen a bgg:Player ;
     rdfs:label "Hildegard Allen"@en ;
@@ -38596,7 +39388,19 @@ fake:HildegardAllen a bgg:Player ;
         bgg:192547,
         bgg:194626,
         bgg:207899,
-        bgg:269752 .
+        bgg:269752 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Fantasy,
+        bgg:Dice,
+        bgg:CardGame,
+        bgg:RealTime ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:Dexterity,
+        bgg:Memory,
+        bgg:GridMovement,
+        bgg:CooperativeGame,
+        bgg:PatternRecognition .
 
 fake:HildegardHarris a bgg:Player ;
     rdfs:label "Hildegard Harris"@en ;
@@ -38629,7 +39433,19 @@ fake:HildegardHarris a bgg:Player ;
         bgg:194626,
         bgg:205125,
         bgg:237087,
-        bgg:265304 .
+        bgg:265304 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:Animals,
+        bgg:ActionDexterity,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:RealTime ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:RealTime,
+        bgg:PushYourLuck,
+        bgg:ModularBoard .
 
 fake:HildegardIonescu a bgg:Player ;
     rdfs:label "Hildegard Ionescu"@en ;
@@ -38662,7 +39478,19 @@ fake:HildegardIonescu a bgg:Player ;
         bgg:268504,
         bgg:284111,
         bgg:295604,
-        bgg:307191 .
+        bgg:307191 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:Fantasy,
+        bgg:Adventure,
+        bgg:CardGame,
+        bgg:Fighting ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:SoloSolitaireGame,
+        bgg:RolePlaying .
 
 fake:HildegardJohansson a bgg:Player ;
     rdfs:label "Hildegard Johansson"@en ;
@@ -38695,7 +39523,19 @@ fake:HildegardJohansson a bgg:Player ;
         bgg:177524,
         bgg:189056,
         bgg:192547,
-        bgg:193840 .
+        bgg:193840 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:PartyGame,
+        bgg:Memory,
+        bgg:Maze ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:Memory,
+        bgg:ModularBoard,
+        bgg:DiceRolling,
+        bgg:PhysicalRemoval,
+        bgg:GridMovement .
 
 fake:HildegardThompson a bgg:Player ;
     rdfs:label "Hildegard Thompson"@en ;
@@ -38728,7 +39568,19 @@ fake:HildegardThompson a bgg:Player ;
         bgg:208775,
         bgg:211940,
         bgg:224675,
-        bgg:226009 .
+        bgg:226009 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:Animals,
+        bgg:ActionDexterity,
+        bgg:CardGame,
+        bgg:Dice,
+        bgg:RealTime ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:Dexterity,
+        bgg:HandManagement,
+        bgg:CooperativeGame,
+        bgg:RealTime,
+        bgg:Memory .
 
 fake:HiroshiSuzuki a bgg:Player ;
     rdfs:label "Hiroshi Suzuki"@en ;
@@ -38761,7 +39613,19 @@ fake:HiroshiSuzuki a bgg:Player ;
         bgg:217776,
         bgg:233284,
         bgg:244076,
-        bgg:254846 .
+        bgg:254846 ;
+    bgg:likesCategory bgg:PartyGame,
+        bgg:Bluffing,
+        bgg:CardGame,
+        bgg:Humor,
+        bgg:Deduction,
+        bgg:Fantasy ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:Deduction,
+        bgg:Memory,
+        bgg:GridMovement .
 
 fake:IngridFischer a bgg:Player ;
     rdfs:label "Ingrid Fischer"@en ;
@@ -38794,7 +39658,19 @@ fake:IngridFischer a bgg:Player ;
         bgg:307844,
         bgg:322708,
         bgg:331212,
-        bgg:332606 .
+        bgg:332606 ;
+    bgg:likesCategory bgg:CardGame,
+        bgg:Miniatures,
+        bgg:Exploration,
+        bgg:Fantasy,
+        bgg:Adventure,
+        bgg:Fighting ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:ActionPoints,
+        bgg:ModularBoard .
 
 fake:IngridIonescu a bgg:Player ;
     rdfs:label "Ingrid Ionescu"@en ;
@@ -38827,7 +39703,19 @@ fake:IngridIonescu a bgg:Player ;
         bgg:284083,
         bgg:285157,
         bgg:287691,
-        bgg:299566 .
+        bgg:299566 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Exploration,
+        bgg:Adventure,
+        bgg:Fantasy,
+        bgg:MoviesTvRadioTheme ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:HandManagement,
+        bgg:SoloSolitaireGame .
 
 fake:IngridKim a bgg:Player ;
     rdfs:label "Ingrid Kim"@en ;
@@ -38860,7 +39748,19 @@ fake:IngridKim a bgg:Player ;
         bgg:220861,
         bgg:221248,
         bgg:228959,
-        bgg:279776 .
+        bgg:279776 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:CardGame,
+        bgg:Humor,
+        bgg:Negotiation,
+        bgg:Fantasy ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:SetCollection,
+        bgg:Negotiation,
+        bgg:Drafting .
 
 fake:IsabelleNielsen a bgg:Player ;
     rdfs:label "Isabelle Nielsen"@en ;
@@ -38893,7 +39793,19 @@ fake:IsabelleNielsen a bgg:Player ;
         bgg:198003,
         bgg:205079,
         bgg:278989,
-        bgg:282414 .
+        bgg:282414 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Dice,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:Racing ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:Memory,
+        bgg:SetCollection,
+        bgg:HandManagement,
+        bgg:RealTime .
 
 fake:IsabellePetit a bgg:Player ;
     rdfs:label "Isabelle Petit"@en ;
@@ -38926,7 +39838,19 @@ fake:IsabellePetit a bgg:Player ;
         bgg:176734,
         bgg:183402,
         bgg:216132,
-        bgg:261982 .
+        bgg:261982 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:AbstractStrategy,
+        bgg:CardGame,
+        bgg:CityBuilding,
+        bgg:IndustryManufacturing,
+        bgg:Transportation ;
+    bgg:likesMechanic bgg:NetworkAndRouteBuilding,
+        bgg:AreaMajorityInfluence,
+        bgg:AuctionBidding,
+        bgg:DiceRolling,
+        bgg:TilePlacement,
+        bgg:VariablePlayerPowers .
 
 fake:IsabelleSanchez a bgg:Player ;
     rdfs:label "Isabelle Sanchez"@en ;
@@ -38959,7 +39883,19 @@ fake:IsabelleSanchez a bgg:Player ;
         bgg:198190,
         bgg:220877,
         bgg:221194,
-        bgg:233078 .
+        bgg:233078 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:AbstractStrategy,
+        bgg:IndustryManufacturing,
+        bgg:ScienceFiction,
+        bgg:Trains,
+        bgg:Transportation ;
+    bgg:likesMechanic bgg:AuctionBidding,
+        bgg:TilePlacement,
+        bgg:HandManagement,
+        bgg:NetworkAndRouteBuilding,
+        bgg:DiceRolling,
+        bgg:AreaMajorityInfluence .
 
 fake:IsabelleWhite a bgg:Player ;
     rdfs:label "Isabelle White"@en ;
@@ -38992,7 +39928,19 @@ fake:IsabelleWhite a bgg:Player ;
         bgg:310100,
         bgg:322709,
         bgg:324157,
-        bgg:331212 .
+        bgg:331212 ;
+    bgg:likesCategory bgg:CardGame,
+        bgg:Miniatures,
+        bgg:Exploration,
+        bgg:Fighting,
+        bgg:Puzzle,
+        bgg:Fantasy ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:SoloSolitaireGame,
+        bgg:ModularBoard .
 
 fake:IsabelleWilson a bgg:Player ;
     rdfs:label "Isabelle Wilson"@en ;
@@ -39025,7 +39973,19 @@ fake:IsabelleWilson a bgg:Player ;
         bgg:175088,
         bgg:218333,
         bgg:228944,
-        bgg:276760 .
+        bgg:276760 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:Memory,
+        bgg:Racing,
+        bgg:Fighting ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:Dexterity,
+        bgg:GridMovement,
+        bgg:Memory,
+        bgg:RollSpinAndMove,
+        bgg:NetworkAndRouteBuilding .
 
 fake:JamesKing a bgg:Player ;
     rdfs:label "James King"@en ;
@@ -39058,7 +40018,19 @@ fake:JamesKing a bgg:Player ;
         bgg:199076,
         bgg:205419,
         bgg:210271,
-        bgg:257089 .
+        bgg:257089 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Fighting,
+        bgg:ScienceFiction,
+        bgg:Fantasy,
+        bgg:Wargame,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ActionPoints,
+        bgg:HandManagement,
+        bgg:DeckBagAndPoolBuilding,
+        bgg:ModularBoard .
 
 fake:JeanMoreau a bgg:Player ;
     rdfs:label "Jean Moreau"@en ;
@@ -39091,7 +40063,19 @@ fake:JeanMoreau a bgg:Player ;
         bgg:204027,
         bgg:206051,
         bgg:206915,
-        bgg:214396 .
+        bgg:214396 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Humor,
+        bgg:Deduction,
+        bgg:Fantasy ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:TeamBasedGame,
+        bgg:Deduction,
+        bgg:VariablePlayerPowers,
+        bgg:Drafting .
 
 fake:JessicaLindahl a bgg:Player ;
     rdfs:label "Jessica Lindahl"@en ;
@@ -39124,7 +40108,19 @@ fake:JessicaLindahl a bgg:Player ;
         bgg:221248,
         bgg:246873,
         bgg:255392,
-        bgg:259298 .
+        bgg:259298 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:CardGame,
+        bgg:Negotiation,
+        bgg:Animals,
+        bgg:Humor ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:AreaMajorityInfluence,
+        bgg:AuctionBidding,
+        bgg:Negotiation .
 
 fake:JohnTanaka a bgg:Player ;
     rdfs:label "John Tanaka"@en ;
@@ -39157,7 +40153,19 @@ fake:JohnTanaka a bgg:Player ;
         bgg:230889,
         bgg:245700,
         bgg:300367,
-        bgg:322705 .
+        bgg:322705 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:ScienceFiction,
+        bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Fighting,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:Drafting,
+        bgg:HandManagement,
+        bgg:DeckBagAndPoolBuilding,
+        bgg:SimultaneousActionSelection .
 
 fake:JohnYamamoto a bgg:Player ;
     rdfs:label "John Yamamoto"@en ;
@@ -39190,7 +40198,19 @@ fake:JohnYamamoto a bgg:Player ;
         bgg:308970,
         bgg:322985,
         bgg:331212,
-        bgg:334310 .
+        bgg:334310 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:Fantasy,
+        bgg:CardGame,
+        bgg:Puzzle,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:RolePlaying,
+        bgg:SoloSolitaireGame .
 
 fake:JoseIvanov a bgg:Player ;
     rdfs:label "José Ivanov"@en ;
@@ -39223,7 +40243,19 @@ fake:JoseIvanov a bgg:Player ;
         bgg:204728,
         bgg:217776,
         bgg:253185,
-        bgg:319792 .
+        bgg:319792 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Deduction,
+        bgg:Humor,
+        bgg:Negotiation ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:Deduction,
+        bgg:VariablePlayerPowers,
+        bgg:TeamBasedGame,
+        bgg:SetCollection .
 
 fake:KarenJohansson a bgg:Player ;
     rdfs:label "Karen Johansson"@en ;
@@ -39256,7 +40288,19 @@ fake:KarenJohansson a bgg:Player ;
         bgg:180644,
         bgg:192547,
         bgg:205885,
-        bgg:307862 .
+        bgg:307862 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:RealTime,
+        bgg:PartyGame ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:RealTime,
+        bgg:DiceRolling,
+        bgg:PointToPointMovement,
+        bgg:Deduction,
+        bgg:HandManagement .
 
 fake:KenjiSchmidt a bgg:Player ;
     rdfs:label "Kenji Schmidt"@en ;
@@ -39289,7 +40333,19 @@ fake:KenjiSchmidt a bgg:Player ;
         bgg:181304,
         bgg:192547,
         bgg:195296,
-        bgg:211940 .
+        bgg:211940 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:PartyGame,
+        bgg:CardGame,
+        bgg:Memory ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:PatternRecognition,
+        bgg:CooperativeGame,
+        bgg:HexagonGrid,
+        bgg:PhysicalRemoval .
 
 fake:KenjiSharma a bgg:Player ;
     rdfs:label "Kenji Sharma"@en ;
@@ -39322,7 +40378,19 @@ fake:KenjiSharma a bgg:Player ;
         bgg:220308,
         bgg:232832,
         bgg:234277,
-        bgg:272502 .
+        bgg:272502 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Negotiation,
+        bgg:Civilization,
+        bgg:Transportation,
+        bgg:AbstractStrategy,
+        bgg:Fighting ;
+    bgg:likesMechanic bgg:AreaMajorityInfluence,
+        bgg:HandManagement,
+        bgg:AuctionBidding,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:Drafting .
 
 fake:KenjiSmith a bgg:Player ;
     rdfs:label "Kenji Smith"@en ;
@@ -39355,7 +40423,19 @@ fake:KenjiSmith a bgg:Player ;
         bgg:209289,
         bgg:209778,
         bgg:226454,
-        bgg:251053 .
+        bgg:251053 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:Deduction,
+        bgg:ScienceFiction,
+        bgg:CardGame,
+        bgg:Negotiation ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:Deduction,
+        bgg:SimultaneousActionSelection,
+        bgg:TeamBasedGame .
 
 fake:KofiIvanov a bgg:Player ;
     rdfs:label "Kofi Ivanov"@en ;
@@ -39388,7 +40468,19 @@ fake:KofiIvanov a bgg:Player ;
         bgg:203411,
         bgg:221248,
         bgg:279087,
-        bgg:327549 .
+        bgg:327549 ;
+    bgg:likesCategory bgg:PartyGame,
+        bgg:Bluffing,
+        bgg:Humor,
+        bgg:Deduction,
+        bgg:ScienceFiction,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:TeamBasedGame,
+        bgg:HandManagement,
+        bgg:PaperAndPencil .
 
 fake:KofiSanchez a bgg:Player ;
     rdfs:label "Kofi Sanchez"@en ;
@@ -39421,7 +40513,19 @@ fake:KofiSanchez a bgg:Player ;
         bgg:285972,
         bgg:308500,
         bgg:308970,
-        bgg:324856 .
+        bgg:324856 ;
+    bgg:likesCategory bgg:Exploration,
+        bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Adventure,
+        bgg:Fantasy,
+        bgg:Fighting ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:ActionPoints,
+        bgg:HandManagement .
 
 fake:KofiWhite a bgg:Player ;
     rdfs:label "Kofi White"@en ;
@@ -39454,7 +40558,19 @@ fake:KofiWhite a bgg:Player ;
         bgg:159675,
         bgg:166317,
         bgg:176494,
-        bgg:227893 .
+        bgg:227893 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:IndustryManufacturing,
+        bgg:Transportation,
+        bgg:TerritoryBuilding,
+        bgg:Nautical,
+        bgg:Political ;
+    bgg:likesMechanic bgg:AreaMajorityInfluence,
+        bgg:AuctionBidding,
+        bgg:DiceRolling,
+        bgg:StockHolding,
+        bgg:HandManagement,
+        bgg:WorkerPlacement .
 
 fake:KristinaHassan a bgg:Player ;
     rdfs:label "Kristina Hassan"@en ;
@@ -39487,7 +40603,19 @@ fake:KristinaHassan a bgg:Player ;
         bgg:309917,
         bgg:322984,
         bgg:324853,
-        bgg:336195 .
+        bgg:336195 ;
+    bgg:likesCategory bgg:CardGame,
+        bgg:Miniatures,
+        bgg:Exploration,
+        bgg:ScienceFiction,
+        bgg:Fantasy,
+        bgg:PrintPlay ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:ModularBoard,
+        bgg:RolePlaying .
 
 fake:KristinaRoux a bgg:Player ;
     rdfs:label "Kristina Roux"@en ;
@@ -39520,7 +40648,19 @@ fake:KristinaRoux a bgg:Player ;
         bgg:206803,
         bgg:217083,
         bgg:220877,
-        bgg:255653 .
+        bgg:255653 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Negotiation,
+        bgg:Political,
+        bgg:Trains,
+        bgg:IndustryManufacturing,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:TilePlacement,
+        bgg:WorkerPlacement,
+        bgg:AreaMajorityInfluence,
+        bgg:NetworkAndRouteBuilding,
+        bgg:ModularBoard .
 
 fake:KwameAllen a bgg:Player ;
     rdfs:label "Kwame Allen"@en ;
@@ -39553,7 +40693,19 @@ fake:KwameAllen a bgg:Player ;
         bgg:295604,
         bgg:304847,
         bgg:324853,
-        bgg:331259 .
+        bgg:331259 ;
+    bgg:likesCategory bgg:CardGame,
+        bgg:Miniatures,
+        bgg:Exploration,
+        bgg:ScienceFiction,
+        bgg:Adventure,
+        bgg:AmericanWest ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:ModularBoard,
+        bgg:SoloSolitaireGame .
 
 fake:KwameGonzalez a bgg:Player ;
     rdfs:label "Kwame Gonzalez"@en ;
@@ -39586,7 +40738,19 @@ fake:KwameGonzalez a bgg:Player ;
         bgg:202426,
         bgg:216132,
         bgg:269603,
-        bgg:274527 .
+        bgg:274527 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Trains,
+        bgg:Farming,
+        bgg:Transportation,
+        bgg:CardGame,
+        bgg:Civilization ;
+    bgg:likesMechanic bgg:NetworkAndRouteBuilding,
+        bgg:TilePlacement,
+        bgg:AuctionBidding,
+        bgg:StockHolding,
+        bgg:VariablePlayerPowers,
+        bgg:DiceRolling .
 
 fake:KwameHernandez a bgg:Player ;
     rdfs:label "Kwame Hernandez"@en ;
@@ -39619,7 +40783,19 @@ fake:KwameHernandez a bgg:Player ;
         bgg:192906,
         bgg:198773,
         bgg:209289,
-        bgg:260561 .
+        bgg:260561 ;
+    bgg:likesCategory bgg:PartyGame,
+        bgg:CardGame,
+        bgg:Bluffing,
+        bgg:Humor,
+        bgg:Wargame,
+        bgg:Deduction ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:TeamBasedGame,
+        bgg:SetCollection .
 
 fake:LarsFernandez a bgg:Player ;
     rdfs:label "Lars Fernandez"@en ;
@@ -39652,7 +40828,19 @@ fake:LarsFernandez a bgg:Player ;
         bgg:195372,
         bgg:199493,
         bgg:201308,
-        bgg:221248 .
+        bgg:221248 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:Deduction,
+        bgg:CardGame,
+        bgg:Political,
+        bgg:Humor ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:Deduction,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:TeamBasedGame,
+        bgg:HiddenRoles .
 
 fake:LeilaDupont a bgg:Player ;
     rdfs:label "Leila Dupont"@en ;
@@ -39685,7 +40873,19 @@ fake:LeilaDupont a bgg:Player ;
         bgg:221248,
         bgg:240827,
         bgg:242742,
-        bgg:349161 .
+        bgg:349161 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:CardGame,
+        bgg:Deduction,
+        bgg:PrintPlay,
+        bgg:Humor ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:Deduction,
+        bgg:DiceRolling,
+        bgg:Voting,
+        bgg:Physical .
 
 fake:LeilaIto a bgg:Player ;
     rdfs:label "Leila Ito"@en ;
@@ -39718,7 +40918,19 @@ fake:LeilaIto a bgg:Player ;
         bgg:204184,
         bgg:230802,
         bgg:233896,
-        bgg:309003 .
+        bgg:309003 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:CityBuilding,
+        bgg:Medieval,
+        bgg:TerritoryBuilding,
+        bgg:Civilization,
+        bgg:Nautical ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:TilePlacement,
+        bgg:ModularBoard,
+        bgg:AuctionBidding,
+        bgg:NetworkAndRouteBuilding,
+        bgg:AreaMajorityInfluence .
 
 fake:LeilaLindqvist a bgg:Player ;
     rdfs:label "Leila Lindqvist"@en ;
@@ -39751,7 +40963,19 @@ fake:LeilaLindqvist a bgg:Player ;
         bgg:220308,
         bgg:266446,
         bgg:277458,
-        bgg:283768 .
+        bgg:283768 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:IndustryManufacturing,
+        bgg:CardGame,
+        bgg:CityBuilding,
+        bgg:Transportation,
+        bgg:ScienceFiction ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:Drafting,
+        bgg:Income,
+        bgg:NetworkAndRouteBuilding,
+        bgg:VariablePlayerPowers,
+        bgg:AuctionBidding .
 
 fake:LeilaPetit a bgg:Player ;
     rdfs:label "Leila Petit"@en ;
@@ -39784,7 +41008,19 @@ fake:LeilaPetit a bgg:Player ;
         bgg:216199,
         bgg:217099,
         bgg:281663,
-        bgg:293112 .
+        bgg:293112 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Fighting,
+        bgg:ScienceFiction,
+        bgg:CardGame,
+        bgg:Adventure,
+        bgg:Miniatures ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:GridMovement,
+        bgg:CooperativeGame,
+        bgg:AreaMajorityInfluence .
 
 fake:LeilaWatanabe a bgg:Player ;
     rdfs:label "Leila Watanabe"@en ;
@@ -39817,7 +41053,19 @@ fake:LeilaWatanabe a bgg:Player ;
         bgg:310100,
         bgg:322708,
         bgg:322984,
-        bgg:332606 .
+        bgg:332606 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:CardGame,
+        bgg:ScienceFiction,
+        bgg:Puzzle,
+        bgg:Racing ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:VariablePlayerPowers,
+        bgg:RolePlaying,
+        bgg:ActionPoints .
 
 fake:LenaTanaka a bgg:Player ;
     rdfs:label "Lena Tanaka"@en ;
@@ -39850,7 +41098,19 @@ fake:LenaTanaka a bgg:Player ;
         bgg:230791,
         bgg:244039,
         bgg:291549,
-        bgg:307191 .
+        bgg:307191 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Fighting,
+        bgg:Miniatures,
+        bgg:ScienceFiction,
+        bgg:Wargame,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:Drafting,
+        bgg:GridMovement,
+        bgg:SimultaneousActionSelection .
 
 fake:LindaBergstrom a bgg:Player ;
     rdfs:label "Linda Bergstrom"@en ;
@@ -39883,7 +41143,19 @@ fake:LindaBergstrom a bgg:Player ;
         bgg:205059,
         bgg:212969,
         bgg:216199,
-        bgg:233078 .
+        bgg:233078 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:ScienceFiction,
+        bgg:Fighting,
+        bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:ActionPoints,
+        bgg:GridMovement,
+        bgg:HandManagement .
 
 fake:LindaHansson a bgg:Player ;
     rdfs:label "Linda Hansson"@en ;
@@ -39916,7 +41188,19 @@ fake:LindaHansson a bgg:Player ;
         bgg:299121,
         bgg:299566,
         bgg:314040,
-        bgg:317434 .
+        bgg:317434 ;
+    bgg:likesCategory bgg:CardGame,
+        bgg:Miniatures,
+        bgg:Exploration,
+        bgg:Wargame,
+        bgg:WorldWarIi,
+        bgg:PrintPlay ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:GridMovement,
+        bgg:SoloSolitaireGame .
 
 fake:LisaBaker a bgg:Player ;
     rdfs:label "Lisa Baker"@en ;
@@ -39949,7 +41233,19 @@ fake:LisaBaker a bgg:Player ;
         bgg:210271,
         bgg:210290,
         bgg:215616,
-        bgg:222509 .
+        bgg:222509 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Fantasy,
+        bgg:Fighting,
+        bgg:ScienceFiction,
+        bgg:Wargame,
+        bgg:Horror ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ActionPoints,
+        bgg:AreaMajorityInfluence,
+        bgg:HandManagement,
+        bgg:Drafting .
 
 fake:LisaKovac a bgg:Player ;
     rdfs:label "Lisa Kovac"@en ;
@@ -39982,7 +41278,19 @@ fake:LisaKovac a bgg:Player ;
         bgg:173341,
         bgg:177524,
         bgg:195296,
-        bgg:261614 .
+        bgg:261614 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:Dice,
+        bgg:RealTime,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:Dexterity,
+        bgg:CooperativeGame,
+        bgg:PushYourLuck,
+        bgg:Memory,
+        bgg:RealTime .
 
 fake:LisaNielsen a bgg:Player ;
     rdfs:label "Lisa Nielsen"@en ;
@@ -40015,7 +41323,19 @@ fake:LisaNielsen a bgg:Player ;
         bgg:192547,
         bgg:218208,
         bgg:224979,
-        bgg:253819 .
+        bgg:253819 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:Racing,
+        bgg:Memory,
+        bgg:Medieval ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:Memory,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:BettingAndBluffing,
+        bgg:Negotiation .
 
 fake:LisaWatanabe a bgg:Player ;
     rdfs:label "Lisa Watanabe"@en ;
@@ -40048,7 +41368,19 @@ fake:LisaWatanabe a bgg:Player ;
         bgg:317434,
         bgg:322708,
         bgg:322985,
-        bgg:331259 .
+        bgg:331259 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:CardGame,
+        bgg:Puzzle,
+        bgg:PrintPlay,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:VariablePlayerPowers,
+        bgg:SoloSolitaireGame,
+        bgg:HandManagement .
 
 fake:LorenzoLopez a bgg:Player ;
     rdfs:label "Lorenzo Lopez"@en ;
@@ -40081,7 +41413,19 @@ fake:LorenzoLopez a bgg:Player ;
         bgg:221194,
         bgg:222407,
         bgg:229235,
-        bgg:229265 .
+        bgg:229265 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Trains,
+        bgg:Transportation,
+        bgg:CardGame,
+        bgg:IndustryManufacturing,
+        bgg:Fighting ;
+    bgg:likesMechanic bgg:AuctionBidding,
+        bgg:NetworkAndRouteBuilding,
+        bgg:StockHolding,
+        bgg:TilePlacement,
+        bgg:VariablePlayerPowers,
+        bgg:SetCollection .
 
 fake:LorenzoMuller a bgg:Player ;
     rdfs:label "Lorenzo Muller"@en ;
@@ -40114,7 +41458,19 @@ fake:LorenzoMuller a bgg:Player ;
         bgg:173341,
         bgg:175088,
         bgg:254192,
-        bgg:264055 .
+        bgg:264055 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:RealTime,
+        bgg:PartyGame ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:Memory,
+        bgg:PatternBuilding,
+        bgg:PushYourLuck,
+        bgg:RealTime .
 
 fake:LuciaAllen a bgg:Player ;
     rdfs:label "Lucia Allen"@en ;
@@ -40147,7 +41503,19 @@ fake:LuciaAllen a bgg:Player ;
         bgg:210040,
         bgg:227789,
         bgg:294612,
-        bgg:339906 .
+        bgg:339906 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:CardGame,
+        bgg:CityBuilding,
+        bgg:IndustryManufacturing,
+        bgg:ScienceFiction,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:Tableaubuilding,
+        bgg:VariablePlayerPowers,
+        bgg:HexagonGrid,
+        bgg:DiceRolling,
+        bgg:WorkerPlacement,
+        bgg:HandManagement .
 
 fake:MajaDupont a bgg:Player ;
     rdfs:label "Maja Dupont"@en ;
@@ -40180,7 +41548,19 @@ fake:MajaDupont a bgg:Player ;
         bgg:275972,
         bgg:285853,
         bgg:291457,
-        bgg:341358 .
+        bgg:341358 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:CardGame,
+        bgg:Medical,
+        bgg:ScienceFiction,
+        bgg:Puzzle ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:ActionPoints,
+        bgg:ModularBoard,
+        bgg:HandManagement .
 
 fake:MajaLarsson a bgg:Player ;
     rdfs:label "Maja Larsson"@en ;
@@ -40213,7 +41593,19 @@ fake:MajaLarsson a bgg:Player ;
         bgg:178940,
         bgg:191004,
         bgg:226237,
-        bgg:253743 .
+        bgg:253743 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:Memory,
+        bgg:Educational ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:Memory,
+        bgg:PatternRecognition,
+        bgg:AreaMovement,
+        bgg:CooperativeGame .
 
 fake:MajaMuller a bgg:Player ;
     rdfs:label "Maja Muller"@en ;
@@ -40246,7 +41638,19 @@ fake:MajaMuller a bgg:Player ;
         bgg:146312,
         bgg:191004,
         bgg:191538,
-        bgg:209090 .
+        bgg:209090 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:Animals,
+        bgg:ActionDexterity,
+        bgg:CardGame,
+        bgg:Memory,
+        bgg:Racing ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:HandManagement,
+        bgg:Memory,
+        bgg:DiceRolling,
+        bgg:PatternRecognition,
+        bgg:RollSpinAndMove .
 
 fake:MargaretLaurent a bgg:Player ;
     rdfs:label "Margaret Laurent"@en ;
@@ -40279,7 +41683,19 @@ fake:MargaretLaurent a bgg:Player ;
         bgg:189056,
         bgg:191004,
         bgg:194626,
-        bgg:205125 .
+        bgg:205125 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:Animals,
+        bgg:ActionDexterity,
+        bgg:CardGame,
+        bgg:Memory,
+        bgg:Dice ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:Dexterity,
+        bgg:Memory,
+        bgg:SetCollection,
+        bgg:PatternBuilding,
+        bgg:HandManagement .
 
 fake:MariaKato a bgg:Player ;
     rdfs:label "Maria Kato"@en ;
@@ -40312,7 +41728,19 @@ fake:MariaKato a bgg:Player ;
         bgg:175088,
         bgg:177524,
         bgg:181345,
-        bgg:235467 .
+        bgg:235467 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:Dice,
+        bgg:RealTime ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:RealTime,
+        bgg:Memory,
+        bgg:HandManagement,
+        bgg:Deduction .
 
 fake:MariaSuzuki a bgg:Player ;
     rdfs:label "Maria Suzuki"@en ;
@@ -40345,7 +41773,19 @@ fake:MariaSuzuki a bgg:Player ;
         bgg:170041,
         bgg:192547,
         bgg:230514,
-        bgg:301576 .
+        bgg:301576 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Dice ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:SetCollection,
+        bgg:PointToPointMovement,
+        bgg:TilePlacement,
+        bgg:PushYourLuck .
 
 fake:MarieAxelsson a bgg:Player ;
     rdfs:label "Marie Axelsson"@en ;
@@ -40378,7 +41818,19 @@ fake:MarieAxelsson a bgg:Player ;
         bgg:206490,
         bgg:232832,
         bgg:276431,
-        bgg:325834 .
+        bgg:325834 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Trains,
+        bgg:CardGame,
+        bgg:Transportation,
+        bgg:CityBuilding,
+        bgg:Dice ;
+    bgg:likesMechanic bgg:TilePlacement,
+        bgg:NetworkAndRouteBuilding,
+        bgg:DiceRolling,
+        bgg:AuctionBidding,
+        bgg:StockHolding,
+        bgg:HandManagement .
 
 fake:MarieBaker a bgg:Player ;
     rdfs:label "Marie Baker"@en ;
@@ -40411,7 +41863,19 @@ fake:MarieBaker a bgg:Player ;
         bgg:177524,
         bgg:211940,
         bgg:273703,
-        bgg:301576 .
+        bgg:301576 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:Animals,
+        bgg:ActionDexterity,
+        bgg:CardGame,
+        bgg:Racing,
+        bgg:Dice ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:Dexterity,
+        bgg:HandManagement,
+        bgg:CooperativeGame,
+        bgg:RollSpinAndMove,
+        bgg:ModularBoard .
 
 fake:MarieFischer a bgg:Player ;
     rdfs:label "Marie Fischer"@en ;
@@ -40444,7 +41908,19 @@ fake:MarieFischer a bgg:Player ;
         bgg:191004,
         bgg:205125,
         bgg:246822,
-        bgg:256570 .
+        bgg:256570 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:CardGame,
+        bgg:Animals,
+        bgg:Puzzle,
+        bgg:Fantasy ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:PatternRecognition,
+        bgg:CooperativeGame,
+        bgg:HandManagement,
+        bgg:GridMovement .
 
 fake:MarkRodriguez a bgg:Player ;
     rdfs:label "Mark Rodriguez"@en ;
@@ -40477,7 +41953,19 @@ fake:MarkRodriguez a bgg:Player ;
         bgg:308970,
         bgg:310100,
         bgg:318553,
-        bgg:334310 .
+        bgg:334310 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:CardGame,
+        bgg:ScienceFiction,
+        bgg:TerritoryBuilding,
+        bgg:CollectibleComponents ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:SoloSolitaireGame,
+        bgg:HandManagement .
 
 fake:MaryKim a bgg:Player ;
     rdfs:label "Mary Kim"@en ;
@@ -40510,7 +41998,19 @@ fake:MaryKim a bgg:Player ;
         bgg:206915,
         bgg:209778,
         bgg:215371,
-        bgg:274861 .
+        bgg:274861 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Deduction,
+        bgg:Humor,
+        bgg:Negotiation ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:Deduction,
+        bgg:VariablePlayerPowers,
+        bgg:SimultaneousActionSelection,
+        bgg:DiceRolling .
 
 fake:MaryKovac a bgg:Player ;
     rdfs:label "Mary Kovac"@en ;
@@ -40543,7 +42043,19 @@ fake:MaryKovac a bgg:Player ;
         bgg:218333,
         bgg:220778,
         bgg:263301,
-        bgg:297129 .
+        bgg:297129 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:Memory,
+        bgg:PartyGame ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:RealTime,
+        bgg:HandManagement,
+        bgg:Memory,
+        bgg:SetCollection .
 
 fake:MikaClark a bgg:Player ;
     rdfs:label "Mika Clark"@en ;
@@ -40576,7 +42088,19 @@ fake:MikaClark a bgg:Player ;
         bgg:192135,
         bgg:206928,
         bgg:216734,
-        bgg:248490 .
+        bgg:248490 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:ScienceFiction,
+        bgg:CardGame,
+        bgg:Fighting,
+        bgg:Wargame,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:CooperativeGame,
+        bgg:ActionPoints,
+        bgg:SoloSolitaireGame .
 
 fake:MikaLindberg a bgg:Player ;
     rdfs:label "Mika Lindberg"@en ;
@@ -40609,7 +42133,19 @@ fake:MikaLindberg a bgg:Player ;
         bgg:207335,
         bgg:218417,
         bgg:223040,
-        bgg:274563 .
+        bgg:274563 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Fighting,
+        bgg:Miniatures,
+        bgg:ScienceFiction,
+        bgg:Adventure,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:ActionPoints,
+        bgg:CooperativeGame,
+        bgg:ModularBoard .
 
 fake:MikaYamamoto a bgg:Player ;
     rdfs:label "Mika Yamamoto"@en ;
@@ -40642,7 +42178,19 @@ fake:MikaYamamoto a bgg:Player ;
         bgg:169513,
         bgg:171129,
         bgg:220632,
-        bgg:244654 .
+        bgg:244654 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:Racing,
+        bgg:Miniatures,
+        bgg:RealTime ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:Dexterity,
+        bgg:VariablePlayerPowers,
+        bgg:AreaMovement,
+        bgg:RealTime,
+        bgg:PatternBuilding .
 
 fake:MinBernard a bgg:Player ;
     rdfs:label "Min Bernard"@en ;
@@ -40675,7 +42223,19 @@ fake:MinBernard a bgg:Player ;
         bgg:204184,
         bgg:204599,
         bgg:251433,
-        bgg:307033 .
+        bgg:307033 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:CardGame,
+        bgg:CityBuilding,
+        bgg:AbstractStrategy,
+        bgg:Wargame,
+        bgg:Medieval ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:AreaMajorityInfluence,
+        bgg:AuctionBidding,
+        bgg:GridMovement .
 
 fake:MinFerrari a bgg:Player ;
     rdfs:label "Min Ferrari"@en ;
@@ -40708,7 +42268,19 @@ fake:MinFerrari a bgg:Player ;
         bgg:299566,
         bgg:322984,
         bgg:324853,
-        bgg:336195 .
+        bgg:336195 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:CardGame,
+        bgg:Adventure,
+        bgg:Fighting,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:VariablePlayerPowers,
+        bgg:SoloSolitaireGame,
+        bgg:ActionPoints .
 
 fake:MinHansson a bgg:Player ;
     rdfs:label "Min Hansson"@en ;
@@ -40741,7 +42313,19 @@ fake:MinHansson a bgg:Player ;
         bgg:178900,
         bgg:197269,
         bgg:197443,
-        bgg:205046 .
+        bgg:205046 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:CardGame,
+        bgg:Humor,
+        bgg:Wargame,
+        bgg:ScienceFiction ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:TeamBasedGame,
+        bgg:Memory,
+        bgg:DiceRolling,
+        bgg:PlayerElimination .
 
 fake:MonikaAdams a bgg:Player ;
     rdfs:label "Monika Adams"@en ;
@@ -40774,7 +42358,19 @@ fake:MonikaAdams a bgg:Player ;
         bgg:324856,
         bgg:331212,
         bgg:332606,
-        bgg:336195 .
+        bgg:336195 ;
+    bgg:likesCategory bgg:Exploration,
+        bgg:CardGame,
+        bgg:Miniatures,
+        bgg:Adventure,
+        bgg:Fantasy,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:SoloSolitaireGame,
+        bgg:HandManagement .
 
 fake:NadiaSchmidt a bgg:Player ;
     rdfs:label "Nadia Schmidt"@en ;
@@ -40807,7 +42403,19 @@ fake:NadiaSchmidt a bgg:Player ;
         bgg:211716,
         bgg:220877,
         bgg:227789,
-        bgg:265285 .
+        bgg:265285 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:IndustryManufacturing,
+        bgg:Transportation,
+        bgg:CardGame,
+        bgg:Farming,
+        bgg:Political ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:DiceRolling,
+        bgg:AreaMajorityInfluence,
+        bgg:Drafting,
+        bgg:WorkerPlacement,
+        bgg:NetworkAndRouteBuilding .
 
 fake:NancyFernandez a bgg:Player ;
     rdfs:label "Nancy Fernandez"@en ;
@@ -40840,7 +42448,19 @@ fake:NancyFernandez a bgg:Player ;
         bgg:198454,
         bgg:204135,
         bgg:221248,
-        bgg:256320 .
+        bgg:256320 ;
+    bgg:likesCategory bgg:PartyGame,
+        bgg:Bluffing,
+        bgg:CardGame,
+        bgg:Political,
+        bgg:Wargame,
+        bgg:Deduction ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:BettingAndBluffing,
+        bgg:VariablePlayerPowers,
+        bgg:AreaMajorityInfluence,
+        bgg:AreaMovement,
+        bgg:AuctionBidding .
 
 fake:NancyKim a bgg:Player ;
     rdfs:label "Nancy Kim"@en ;
@@ -40873,7 +42493,19 @@ fake:NancyKim a bgg:Player ;
         bgg:205637,
         bgg:210271,
         bgg:233078,
-        bgg:269526 .
+        bgg:269526 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Adventure,
+        bgg:Fighting,
+        bgg:Miniatures,
+        bgg:ScienceFiction,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:ActionPoints,
+        bgg:ModularBoard,
+        bgg:GridMovement .
 
 fake:NancyNguyen a bgg:Player ;
     rdfs:label "Nancy Nguyen"@en ;
@@ -40906,7 +42538,19 @@ fake:NancyNguyen a bgg:Player ;
         bgg:193122,
         bgg:206051,
         bgg:219215,
-        bgg:314040 .
+        bgg:314040 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:CardGame,
+        bgg:Humor,
+        bgg:Deduction,
+        bgg:Political ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:Deduction,
+        bgg:VariablePlayerPowers,
+        bgg:TeamBasedGame,
+        bgg:Memory .
 
 fake:NaomiLindqvist a bgg:Player ;
     rdfs:label "Naomi Lindqvist"@en ;
@@ -40939,7 +42583,19 @@ fake:NaomiLindqvist a bgg:Player ;
         bgg:206718,
         bgg:220367,
         bgg:223040,
-        bgg:281257 .
+        bgg:281257 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Fighting,
+        bgg:ScienceFiction,
+        bgg:Miniatures,
+        bgg:Wargame,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:ModularBoard,
+        bgg:CooperativeGame,
+        bgg:ActionPoints .
 
 fake:NaomiMiller a bgg:Player ;
     rdfs:label "Naomi Miller"@en ;
@@ -40972,7 +42628,19 @@ fake:NaomiMiller a bgg:Player ;
         bgg:231872,
         bgg:244191,
         bgg:294484,
-        bgg:318392 .
+        bgg:318392 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:Dice,
+        bgg:Racing ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:CooperativeGame,
+        bgg:HandManagement,
+        bgg:RealTime,
+        bgg:BettingAndBluffing .
 
 fake:NourKim a bgg:Player ;
     rdfs:label "Nour Kim"@en ;
@@ -41005,7 +42673,19 @@ fake:NourKim a bgg:Player ;
         bgg:205398,
         bgg:205716,
         bgg:212445,
-        bgg:238181 .
+        bgg:238181 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:Fantasy,
+        bgg:CardGame,
+        bgg:Political,
+        bgg:Deduction ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:PlayerElimination,
+        bgg:Deduction,
+        bgg:DiceRolling .
 
 fake:OmarPerez a bgg:Player ;
     rdfs:label "Omar Perez"@en ;
@@ -41038,7 +42718,19 @@ fake:OmarPerez a bgg:Player ;
         bgg:216199,
         bgg:217099,
         bgg:228668,
-        bgg:230889 .
+        bgg:230889 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Miniatures,
+        bgg:ScienceFiction,
+        bgg:Fighting,
+        bgg:Wargame,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:GridMovement,
+        bgg:ModularBoard,
+        bgg:Drafting .
 
 fake:PaulBaker a bgg:Player ;
     rdfs:label "Paul Baker"@en ;
@@ -41071,7 +42763,19 @@ fake:PaulBaker a bgg:Player ;
         bgg:194655,
         bgg:204470,
         bgg:241964,
-        bgg:286657 .
+        bgg:286657 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Trains,
+        bgg:Transportation,
+        bgg:IndustryManufacturing,
+        bgg:AbstractStrategy,
+        bgg:Negotiation ;
+    bgg:likesMechanic bgg:AuctionBidding,
+        bgg:TilePlacement,
+        bgg:AreaMajorityInfluence,
+        bgg:WorkerPlacement,
+        bgg:NetworkAndRouteBuilding,
+        bgg:DiceRolling .
 
 fake:PaulRossi a bgg:Player ;
     rdfs:label "Paul Rossi"@en ;
@@ -41104,7 +42808,19 @@ fake:PaulRossi a bgg:Player ;
         bgg:194879,
         bgg:197443,
         bgg:214396,
-        bgg:217776 .
+        bgg:217776 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:PartyGame,
+        bgg:CardGame,
+        bgg:Humor,
+        bgg:Deduction,
+        bgg:Negotiation ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:SimultaneousActionSelection,
+        bgg:AuctionBidding,
+        bgg:TeamBasedGame .
 
 fake:PierreAdams a bgg:Player ;
     rdfs:label "Pierre Adams"@en ;
@@ -41137,7 +42853,19 @@ fake:PierreAdams a bgg:Player ;
         bgg:183394,
         bgg:209452,
         bgg:211716,
-        bgg:279996 .
+        bgg:279996 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:IndustryManufacturing,
+        bgg:Trains,
+        bgg:Negotiation,
+        bgg:Transportation,
+        bgg:Political ;
+    bgg:likesMechanic bgg:Drafting,
+        bgg:TilePlacement,
+        bgg:AuctionBidding,
+        bgg:AreaMajorityInfluence,
+        bgg:HandManagement,
+        bgg:NetworkAndRouteBuilding .
 
 fake:PierreBergstrom a bgg:Player ;
     rdfs:label "Pierre Bergstrom"@en ;
@@ -41170,7 +42898,19 @@ fake:PierreBergstrom a bgg:Player ;
         bgg:194626,
         bgg:269752,
         bgg:288828,
-        bgg:300753 .
+        bgg:300753 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:Bluffing,
+        bgg:CardGame,
+        bgg:Racing ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:BettingAndBluffing,
+        bgg:DiceRolling,
+        bgg:Memory,
+        bgg:SetCollection,
+        bgg:HandManagement .
 
 fake:PierreSato a bgg:Player ;
     rdfs:label "Pierre Sato"@en ;
@@ -41203,7 +42943,19 @@ fake:PierreSato a bgg:Player ;
         bgg:199881,
         bgg:205359,
         bgg:223040,
-        bgg:311751 .
+        bgg:311751 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Fantasy,
+        bgg:ScienceFiction,
+        bgg:Fighting,
+        bgg:Adventure,
+        bgg:CollectibleComponents ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ActionPoints,
+        bgg:GridMovement,
+        bgg:ModularBoard,
+        bgg:HandManagement .
 
 fake:PriyaBernard a bgg:Player ;
     rdfs:label "Priya Bernard"@en ;
@@ -41236,7 +42988,19 @@ fake:PriyaBernard a bgg:Player ;
         bgg:193867,
         bgg:206803,
         bgg:220308,
-        bgg:260694 .
+        bgg:260694 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:IndustryManufacturing,
+        bgg:CardGame,
+        bgg:Trains,
+        bgg:CityBuilding,
+        bgg:Farming ;
+    bgg:likesMechanic bgg:Drafting,
+        bgg:SetCollection,
+        bgg:AuctionBidding,
+        bgg:WorkerPlacement,
+        bgg:NetworkAndRouteBuilding,
+        bgg:TilePlacement .
 
 fake:PriyaChen a bgg:Player ;
     rdfs:label "Priya Chen"@en ;
@@ -41269,7 +43033,19 @@ fake:PriyaChen a bgg:Player ;
         bgg:209090,
         bgg:209778,
         bgg:217776,
-        bgg:227171 .
+        bgg:227171 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Deduction,
+        bgg:Political,
+        bgg:Negotiation ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:Deduction,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:CooperativeGame,
+        bgg:Voting .
 
 fake:PriyaLewis a bgg:Player ;
     rdfs:label "Priya Lewis"@en ;
@@ -41302,7 +43078,19 @@ fake:PriyaLewis a bgg:Player ;
         bgg:195296,
         bgg:218208,
         bgg:235451,
-        bgg:287938 .
+        bgg:287938 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:Animals,
+        bgg:ActionDexterity,
+        bgg:CardGame,
+        bgg:RealTime,
+        bgg:Puzzle ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:RealTime,
+        bgg:CooperativeGame,
+        bgg:PatternRecognition .
 
 fake:RafaelAllen a bgg:Player ;
     rdfs:label "Rafael Allen"@en ;
@@ -41335,7 +43123,19 @@ fake:RafaelAllen a bgg:Player ;
         bgg:317643,
         bgg:322985,
         bgg:331259,
-        bgg:336382 .
+        bgg:336382 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Exploration,
+        bgg:Adventure,
+        bgg:Fantasy,
+        bgg:Puzzle ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:SoloSolitaireGame,
+        bgg:ModularBoard,
+        bgg:DiceRolling .
 
 fake:RafaelNkrumah a bgg:Player ;
     rdfs:label "Rafael Nkrumah"@en ;
@@ -41368,7 +43168,19 @@ fake:RafaelNkrumah a bgg:Player ;
         bgg:198190,
         bgg:208428,
         bgg:248496,
-        bgg:285071 .
+        bgg:285071 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Trains,
+        bgg:Transportation,
+        bgg:CityBuilding,
+        bgg:Farming,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:TilePlacement,
+        bgg:AuctionBidding,
+        bgg:NetworkAndRouteBuilding,
+        bgg:StockHolding,
+        bgg:WorkerPlacement,
+        bgg:HandManagement .
 
 fake:RafaelWeber a bgg:Player ;
     rdfs:label "Rafael Weber"@en ;
@@ -41401,7 +43213,19 @@ fake:RafaelWeber a bgg:Player ;
         bgg:295604,
         bgg:304847,
         bgg:304983,
-        bgg:308970 .
+        bgg:308970 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Exploration,
+        bgg:Fantasy,
+        bgg:Educational,
+        bgg:AbstractStrategy ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:SoloSolitaireGame,
+        bgg:HandManagement,
+        bgg:ModularBoard .
 
 fake:RichardKato a bgg:Player ;
     rdfs:label "Richard Kato"@en ;
@@ -41434,7 +43258,19 @@ fake:RichardKato a bgg:Player ;
         bgg:224597,
         bgg:233078,
         bgg:301576,
-        bgg:335528 .
+        bgg:335528 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:CardGame,
+        bgg:ScienceFiction,
+        bgg:Wargame,
+        bgg:Miniatures,
+        bgg:Fighting ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:DiceRolling,
+        bgg:ActionPoints,
+        bgg:AreaMovement,
+        bgg:AreaMajorityInfluence .
 
 fake:RichardNovak a bgg:Player ;
     rdfs:label "Richard Novak"@en ;
@@ -41467,7 +43303,19 @@ fake:RichardNovak a bgg:Player ;
         bgg:299566,
         bgg:302098,
         bgg:309917,
-        bgg:336195 .
+        bgg:336195 ;
+    bgg:likesCategory bgg:Exploration,
+        bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Puzzle,
+        bgg:PrintPlay,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:RolePlaying .
 
 fake:RichardSanchez a bgg:Player ;
     rdfs:label "Richard Sanchez"@en ;
@@ -41500,7 +43348,19 @@ fake:RichardSanchez a bgg:Player ;
         bgg:195137,
         bgg:209010,
         bgg:223040,
-        bgg:287158 .
+        bgg:287158 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Fighting,
+        bgg:Adventure,
+        bgg:Miniatures,
+        bgg:CardGame,
+        bgg:ScienceFiction ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:ModularBoard,
+        bgg:GridMovement,
+        bgg:ActionPoints .
 
 fake:RobertThompson a bgg:Player ;
     rdfs:label "Robert Thompson"@en ;
@@ -41533,7 +43393,19 @@ fake:RobertThompson a bgg:Player ;
         bgg:191004,
         bgg:194626,
         bgg:218208,
-        bgg:276281 .
+        bgg:276281 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:PartyGame,
+        bgg:Puzzle,
+        bgg:RealTime ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:PushYourLuck,
+        bgg:CooperativeGame,
+        bgg:PatternBuilding,
+        bgg:PatternRecognition .
 
 fake:RyoClark a bgg:Player ;
     rdfs:label "Ryo Clark"@en ;
@@ -41566,7 +43438,19 @@ fake:RyoClark a bgg:Player ;
         bgg:222509,
         bgg:249590,
         bgg:276760,
-        bgg:329465 .
+        bgg:329465 ;
+    bgg:likesCategory bgg:ScienceFiction,
+        bgg:Fantasy,
+        bgg:Miniatures,
+        bgg:Fighting,
+        bgg:Wargame,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:CooperativeGame,
+        bgg:HandManagement,
+        bgg:ActionPoints,
+        bgg:ModularBoard .
 
 fake:RyoDupont a bgg:Player ;
     rdfs:label "Ryo Dupont"@en ;
@@ -41599,7 +43483,19 @@ fake:RyoDupont a bgg:Player ;
         bgg:202426,
         bgg:210290,
         bgg:220308,
-        bgg:325834 .
+        bgg:325834 ;
+    bgg:likesCategory bgg:ScienceFiction,
+        bgg:Miniatures,
+        bgg:Fighting,
+        bgg:Adventure,
+        bgg:Fantasy,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:HandManagement,
+        bgg:GridMovement,
+        bgg:Drafting .
 
 fake:RyoKing a bgg:Player ;
     rdfs:label "Ryo King"@en ;
@@ -41632,7 +43528,19 @@ fake:RyoKing a bgg:Player ;
         bgg:304983,
         bgg:307191,
         bgg:309430,
-        bgg:322708 .
+        bgg:322708 ;
+    bgg:likesCategory bgg:Exploration,
+        bgg:Miniatures,
+        bgg:Wargame,
+        bgg:CardGame,
+        bgg:Adventure,
+        bgg:WorldWarIi ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:SoloSolitaireGame,
+        bgg:VariablePlayerPowers,
+        bgg:RolePlaying,
+        bgg:HandManagement .
 
 fake:RyoLee a bgg:Player ;
     rdfs:label "Ryo Lee"@en ;
@@ -41665,7 +43573,19 @@ fake:RyoLee a bgg:Player ;
         bgg:304983,
         bgg:309917,
         bgg:314040,
-        bgg:322984 .
+        bgg:322984 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:CardGame,
+        bgg:Adventure,
+        bgg:Fantasy,
+        bgg:Horror ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:SoloSolitaireGame,
+        bgg:VariablePlayerPowers,
+        bgg:ActionPoints .
 
 fake:RyoPopescu a bgg:Player ;
     rdfs:label "Ryo Popescu"@en ;
@@ -41698,7 +43618,19 @@ fake:RyoPopescu a bgg:Player ;
         bgg:210271,
         bgg:233371,
         bgg:254938,
-        bgg:338628 .
+        bgg:338628 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:ScienceFiction,
+        bgg:Fighting,
+        bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:ActionPoints,
+        bgg:ModularBoard,
+        bgg:DeckBagAndPoolBuilding .
 
 fake:SandraAllen a bgg:Player ;
     rdfs:label "Sandra Allen"@en ;
@@ -41731,7 +43663,19 @@ fake:SandraAllen a bgg:Player ;
         bgg:189056,
         bgg:191538,
         bgg:218333,
-        bgg:229791 .
+        bgg:229791 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:Animals,
+        bgg:ActionDexterity,
+        bgg:CardGame,
+        bgg:Dice,
+        bgg:Memory ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:Dexterity,
+        bgg:HandManagement,
+        bgg:Memory,
+        bgg:SimultaneousActionSelection,
+        bgg:BettingAndBluffing .
 
 fake:SandraKing a bgg:Player ;
     rdfs:label "Sandra King"@en ;
@@ -41764,7 +43708,19 @@ fake:SandraKing a bgg:Player ;
         bgg:198190,
         bgg:210040,
         bgg:238546,
-        bgg:264656 .
+        bgg:264656 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:CardGame,
+        bgg:CityBuilding,
+        bgg:Trains,
+        bgg:AbstractStrategy,
+        bgg:Transportation ;
+    bgg:likesMechanic bgg:AuctionBidding,
+        bgg:TilePlacement,
+        bgg:HandManagement,
+        bgg:Drafting,
+        bgg:Tableaubuilding,
+        bgg:NetworkAndRouteBuilding .
 
 fake:SarahKing a bgg:Player ;
     rdfs:label "Sarah King"@en ;
@@ -41797,7 +43753,19 @@ fake:SarahKing a bgg:Player ;
         bgg:217776,
         bgg:223855,
         bgg:256838,
-        bgg:341233 .
+        bgg:341233 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Fantasy,
+        bgg:Negotiation,
+        bgg:Deduction ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:Voting,
+        bgg:DiceRolling,
+        bgg:SimultaneousActionSelection .
 
 fake:SarahLindahl a bgg:Player ;
     rdfs:label "Sarah Lindahl"@en ;
@@ -41830,7 +43798,19 @@ fake:SarahLindahl a bgg:Player ;
         bgg:302098,
         bgg:304847,
         bgg:322984,
-        bgg:324856 .
+        bgg:324856 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:Adventure,
+        bgg:CardGame,
+        bgg:AmericanWest,
+        bgg:Horror ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:RolePlaying,
+        bgg:SoloSolitaireGame .
 
 fake:SarahTanaka a bgg:Player ;
     rdfs:label "Sarah Tanaka"@en ;
@@ -41863,7 +43843,19 @@ fake:SarahTanaka a bgg:Player ;
         bgg:182581,
         bgg:182874,
         bgg:220877,
-        bgg:317105 .
+        bgg:317105 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:CardGame,
+        bgg:Trains,
+        bgg:Transportation,
+        bgg:IndustryManufacturing,
+        bgg:Nautical ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:AuctionBidding,
+        bgg:TilePlacement,
+        bgg:Tableaubuilding,
+        bgg:Drafting .
 
 fake:SarahTorres a bgg:Player ;
     rdfs:label "Sarah Torres"@en ;
@@ -41896,7 +43888,19 @@ fake:SarahTorres a bgg:Player ;
         bgg:234277,
         bgg:264052,
         bgg:284665,
-        bgg:295565 .
+        bgg:295565 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Transportation,
+        bgg:TerritoryBuilding,
+        bgg:Civilization,
+        bgg:CardGame,
+        bgg:Trains ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:WorkerPlacement,
+        bgg:TilePlacement,
+        bgg:VariablePlayerPowers,
+        bgg:StockHolding,
+        bgg:AuctionBidding .
 
 fake:SaraSchneider a bgg:Player ;
     rdfs:label "Sara Schneider"@en ;
@@ -41929,7 +43933,19 @@ fake:SaraSchneider a bgg:Player ;
         bgg:216199,
         bgg:216734,
         bgg:228668,
-        bgg:229540 .
+        bgg:229540 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:CardGame,
+        bgg:ScienceFiction,
+        bgg:Wargame,
+        bgg:Fighting,
+        bgg:Miniatures ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:ModularBoard,
+        bgg:ActionPoints,
+        bgg:BettingAndBluffing .
 
 fake:SusanJones a bgg:Player ;
     rdfs:label "Susan Jones"@en ;
@@ -41962,7 +43978,19 @@ fake:SusanJones a bgg:Player ;
         bgg:314040,
         bgg:322708,
         bgg:322984,
-        bgg:336195 .
+        bgg:336195 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:Fighting,
+        bgg:CardGame,
+        bgg:Fantasy,
+        bgg:PrintPlay ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:VariablePlayerPowers,
+        bgg:SoloSolitaireGame,
+        bgg:HandManagement .
 
 fake:SusanLundgren a bgg:Player ;
     rdfs:label "Susan Lundgren"@en ;
@@ -41995,7 +44023,19 @@ fake:SusanLundgren a bgg:Player ;
         bgg:198190,
         bgg:204184,
         bgg:216132,
-        bgg:252962 .
+        bgg:252962 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Civilization,
+        bgg:IndustryManufacturing,
+        bgg:Wargame,
+        bgg:TerritoryBuilding,
+        bgg:AbstractStrategy ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:AuctionBidding,
+        bgg:SoloSolitaireGame,
+        bgg:TilePlacement,
+        bgg:NetworkAndRouteBuilding .
 
 fake:SvenGarcia a bgg:Player ;
     rdfs:label "Sven Garcia"@en ;
@@ -42028,7 +44068,19 @@ fake:SvenGarcia a bgg:Player ;
         bgg:285972,
         bgg:290367,
         bgg:290484,
-        bgg:299248 .
+        bgg:299248 ;
+    bgg:likesCategory bgg:Exploration,
+        bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Adventure,
+        bgg:Fantasy,
+        bgg:Dice ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:RolePlaying,
+        bgg:SoloSolitaireGame .
 
 fake:SvenIvanova a bgg:Player ;
     rdfs:label "Sven Ivanova"@en ;
@@ -42061,7 +44113,19 @@ fake:SvenIvanova a bgg:Player ;
         bgg:299566,
         bgg:307191,
         bgg:308529,
-        bgg:331259 .
+        bgg:331259 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Exploration,
+        bgg:Fighting,
+        bgg:Horror,
+        bgg:Dice ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:SoloSolitaireGame,
+        bgg:RolePlaying .
 
 fake:SvenSmith a bgg:Player ;
     rdfs:label "Sven Smith"@en ;
@@ -42094,7 +44158,19 @@ fake:SvenSmith a bgg:Player ;
         bgg:220877,
         bgg:225274,
         bgg:228570,
-        bgg:229265 .
+        bgg:229265 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:TerritoryBuilding,
+        bgg:Trains,
+        bgg:Political,
+        bgg:Civilization,
+        bgg:IndustryManufacturing ;
+    bgg:likesMechanic bgg:AreaMajorityInfluence,
+        bgg:TilePlacement,
+        bgg:AuctionBidding,
+        bgg:DiceRolling,
+        bgg:NetworkAndRouteBuilding,
+        bgg:StockHolding .
 
 fake:TakeshiPettersson a bgg:Player ;
     rdfs:label "Takeshi Pettersson"@en ;
@@ -42127,7 +44203,19 @@ fake:TakeshiPettersson a bgg:Player ;
         bgg:249381,
         bgg:255586,
         bgg:269257,
-        bgg:286559 .
+        bgg:286559 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:ScienceFiction,
+        bgg:CardGame,
+        bgg:Miniatures,
+        bgg:Fighting,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:ModularBoard,
+        bgg:ActionPoints,
+        bgg:GridMovement .
 
 fake:TakeshiWhite a bgg:Player ;
     rdfs:label "Takeshi White"@en ;
@@ -42160,7 +44248,19 @@ fake:TakeshiWhite a bgg:Player ;
         bgg:228668,
         bgg:230889,
         bgg:233078,
-        bgg:266769 .
+        bgg:266769 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Miniatures,
+        bgg:Fighting,
+        bgg:Adventure,
+        bgg:Wargame,
+        bgg:ScienceFiction ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:ModularBoard,
+        bgg:GridMovement,
+        bgg:Drafting .
 
 fake:TariqJohansson a bgg:Player ;
     rdfs:label "Tariq Johansson"@en ;
@@ -42193,7 +44293,19 @@ fake:TariqJohansson a bgg:Player ;
         bgg:304847,
         bgg:317434,
         bgg:322984,
-        bgg:324856 .
+        bgg:324856 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:CardGame,
+        bgg:Puzzle,
+        bgg:Adventure,
+        bgg:Fantasy ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:RolePlaying,
+        bgg:SoloSolitaireGame .
 
 fake:ThomasGustafsson a bgg:Player ;
     rdfs:label "Thomas Gustafsson"@en ;
@@ -42226,7 +44338,19 @@ fake:ThomasGustafsson a bgg:Player ;
         bgg:218333,
         bgg:238968,
         bgg:257966,
-        bgg:277080 .
+        bgg:277080 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:Memory,
+        bgg:Dice ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:Memory,
+        bgg:PushYourLuck,
+        bgg:HandManagement,
+        bgg:SetCollection .
 
 fake:ThomasHansson a bgg:Player ;
     rdfs:label "Thomas Hansson"@en ;
@@ -42259,7 +44383,19 @@ fake:ThomasHansson a bgg:Player ;
         bgg:175088,
         bgg:178940,
         bgg:179820,
-        bgg:219985 .
+        bgg:219985 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:Animals,
+        bgg:CardGame,
+        bgg:Racing,
+        bgg:Fantasy ;
+    bgg:likesMechanic bgg:Dexterity,
+        bgg:DiceRolling,
+        bgg:RollSpinAndMove,
+        bgg:PatternRecognition,
+        bgg:PatternBuilding,
+        bgg:PhysicalRemoval .
 
 fake:ThomasPersson a bgg:Player ;
     rdfs:label "Thomas Persson"@en ;
@@ -42292,7 +44428,19 @@ fake:ThomasPersson a bgg:Player ;
         bgg:295604,
         bgg:299452,
         bgg:324856,
-        bgg:332606 .
+        bgg:332606 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Exploration,
+        bgg:Puzzle,
+        bgg:ScienceFiction,
+        bgg:Horror ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:HandManagement,
+        bgg:SoloSolitaireGame .
 
 fake:ThomasSchulz a bgg:Player ;
     rdfs:label "Thomas Schulz"@en ;
@@ -42325,7 +44473,19 @@ fake:ThomasSchulz a bgg:Player ;
         bgg:190400,
         bgg:205637,
         bgg:216734,
-        bgg:253499 .
+        bgg:253499 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Fighting,
+        bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Wargame,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:ActionPoints,
+        bgg:AreaMajorityInfluence,
+        bgg:AreaMovement .
 
 fake:UlfLewis a bgg:Player ;
     rdfs:label "Ulf Lewis"@en ;
@@ -42358,7 +44518,19 @@ fake:UlfLewis a bgg:Player ;
         bgg:229265,
         bgg:232832,
         bgg:284003,
-        bgg:303830 .
+        bgg:303830 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Transportation,
+        bgg:TerritoryBuilding,
+        bgg:Trains,
+        bgg:IndustryManufacturing,
+        bgg:AbstractStrategy ;
+    bgg:likesMechanic bgg:AuctionBidding,
+        bgg:TilePlacement,
+        bgg:NetworkAndRouteBuilding,
+        bgg:SetCollection,
+        bgg:ModularBoard,
+        bgg:AreaMajorityInfluence .
 
 fake:UlfMensah a bgg:Player ;
     rdfs:label "Ulf Mensah"@en ;
@@ -42391,7 +44563,19 @@ fake:UlfMensah a bgg:Player ;
         bgg:218933,
         bgg:223040,
         bgg:233078,
-        bgg:297562 .
+        bgg:297562 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Fighting,
+        bgg:Miniatures,
+        bgg:ScienceFiction,
+        bgg:Adventure,
+        bgg:Dice ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:ActionPoints,
+        bgg:HandManagement,
+        bgg:ModularBoard,
+        bgg:AreaMajorityInfluence .
 
 fake:UlfNovak a bgg:Player ;
     rdfs:label "Ulf Novak"@en ;
@@ -42424,7 +44608,19 @@ fake:UlfNovak a bgg:Player ;
         bgg:216199,
         bgg:218933,
         bgg:234337,
-        bgg:234931 .
+        bgg:234931 ;
+    bgg:likesCategory bgg:ScienceFiction,
+        bgg:Fantasy,
+        bgg:Wargame,
+        bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Fighting ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:GridMovement,
+        bgg:HandManagement,
+        bgg:ActionPoints .
 
 fake:UlfThompson a bgg:Player ;
     rdfs:label "Ulf Thompson"@en ;
@@ -42457,7 +44653,19 @@ fake:UlfThompson a bgg:Player ;
         bgg:194879,
         bgg:205398,
         bgg:214396,
-        bgg:219215 .
+        bgg:219215 ;
+    bgg:likesCategory bgg:PartyGame,
+        bgg:Bluffing,
+        bgg:CardGame,
+        bgg:Deduction,
+        bgg:Political,
+        bgg:Humor ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:Deduction,
+        bgg:VariablePlayerPowers,
+        bgg:Voting,
+        bgg:Drafting .
 
 fake:UrsulaWatanabe a bgg:Player ;
     rdfs:label "Ursula Watanabe"@en ;
@@ -42490,7 +44698,19 @@ fake:UrsulaWatanabe a bgg:Player ;
         bgg:322984,
         bgg:331212,
         bgg:336195,
-        bgg:336382 .
+        bgg:336382 ;
+    bgg:likesCategory bgg:CardGame,
+        bgg:Miniatures,
+        bgg:Exploration,
+        bgg:Wargame,
+        bgg:Adventure,
+        bgg:Fantasy ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:ModularBoard,
+        bgg:ActionPoints .
 
 fake:ValentinaAndersen a bgg:Player ;
     rdfs:label "Valentina Andersen"@en ;
@@ -42523,7 +44743,19 @@ fake:ValentinaAndersen a bgg:Player ;
         bgg:291457,
         bgg:295785,
         bgg:304847,
-        bgg:316407 .
+        bgg:316407 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:CardGame,
+        bgg:Adventure,
+        bgg:Fantasy,
+        bgg:Horror ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:SoloSolitaireGame,
+        bgg:ModularBoard,
+        bgg:HandManagement .
 
 fake:WalterMiller a bgg:Player ;
     rdfs:label "Walter Miller"@en ;
@@ -42556,7 +44788,19 @@ fake:WalterMiller a bgg:Player ;
         bgg:216234,
         bgg:220308,
         bgg:220341,
-        bgg:296912 .
+        bgg:296912 ;
+    bgg:likesCategory bgg:Fantasy,
+        bgg:Miniatures,
+        bgg:ScienceFiction,
+        bgg:CardGame,
+        bgg:Fighting,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:HandManagement,
+        bgg:ActionPoints,
+        bgg:AreaMovement,
+        bgg:ModularBoard .
 
 fake:WalterPopescu a bgg:Player ;
     rdfs:label "Walter Popescu"@en ;
@@ -42589,7 +44833,19 @@ fake:WalterPopescu a bgg:Player ;
         bgg:200680,
         bgg:221194,
         bgg:235819,
-        bgg:287732 .
+        bgg:287732 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:CardGame,
+        bgg:Trains,
+        bgg:IndustryManufacturing,
+        bgg:ScienceFiction,
+        bgg:CityBuilding ;
+    bgg:likesMechanic bgg:AuctionBidding,
+        bgg:TilePlacement,
+        bgg:VariablePlayerPowers,
+        bgg:NetworkAndRouteBuilding,
+        bgg:WorkerPlacement,
+        bgg:HandManagement .
 
 fake:WeiMartin a bgg:Player ;
     rdfs:label "Wei Martin"@en ;
@@ -42622,7 +44878,19 @@ fake:WeiMartin a bgg:Player ;
         bgg:304847,
         bgg:317434,
         bgg:332606,
-        bgg:334310 .
+        bgg:334310 ;
+    bgg:likesCategory bgg:Exploration,
+        bgg:Miniatures,
+        bgg:CardGame,
+        bgg:Fantasy,
+        bgg:Puzzle,
+        bgg:Educational ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:ModularBoard,
+        bgg:SoloSolitaireGame,
+        bgg:HandManagement .
 
 fake:WeiWeber a bgg:Player ;
     rdfs:label "Wei Weber"@en ;
@@ -42655,7 +44923,19 @@ fake:WeiWeber a bgg:Player ;
         bgg:198773,
         bgg:203411,
         bgg:205046,
-        bgg:208808 .
+        bgg:208808 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Deduction,
+        bgg:Fantasy,
+        bgg:ScienceFiction ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:Deduction,
+        bgg:Drafting,
+        bgg:SecretUnitDeployment .
 
 fake:WilliamNkrumah a bgg:Player ;
     rdfs:label "William Nkrumah"@en ;
@@ -42688,7 +44968,19 @@ fake:WilliamNkrumah a bgg:Player ;
         bgg:181304,
         bgg:186279,
         bgg:191475,
-        bgg:195314 .
+        bgg:195314 ;
+    bgg:likesCategory bgg:PartyGame,
+        bgg:Bluffing,
+        bgg:Deduction,
+        bgg:CardGame,
+        bgg:Humor,
+        bgg:Negotiation ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:Deduction,
+        bgg:HandManagement,
+        bgg:Voting,
+        bgg:VariablePlayerPowers,
+        bgg:Memory .
 
 fake:WolfgangAndersen a bgg:Player ;
     rdfs:label "Wolfgang Andersen"@en ;
@@ -42721,7 +45013,19 @@ fake:WolfgangAndersen a bgg:Player ;
         bgg:295785,
         bgg:298278,
         bgg:310100,
-        bgg:317434 .
+        bgg:317434 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:CardGame,
+        bgg:Fighting,
+        bgg:Fantasy,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:VariablePlayerPowers,
+        bgg:SoloSolitaireGame,
+        bgg:RolePlaying .
 
 fake:WolfgangKing a bgg:Player ;
     rdfs:label "Wolfgang King"@en ;
@@ -42754,7 +45058,19 @@ fake:WolfgangKing a bgg:Player ;
         bgg:209685,
         bgg:211716,
         bgg:220877,
-        bgg:282390 .
+        bgg:282390 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:IndustryManufacturing,
+        bgg:Medieval,
+        bgg:Political,
+        bgg:AbstractStrategy,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:WorkerPlacement,
+        bgg:DiceRolling,
+        bgg:SetCollection,
+        bgg:VariablePlayerPowers,
+        bgg:NetworkAndRouteBuilding,
+        bgg:StockHolding .
 
 fake:WolfgangKovac a bgg:Player ;
     rdfs:label "Wolfgang Kovac"@en ;
@@ -42787,7 +45103,19 @@ fake:WolfgangKovac a bgg:Player ;
         bgg:196712,
         bgg:197333,
         bgg:210271,
-        bgg:216658 .
+        bgg:216658 ;
+    bgg:likesCategory bgg:Fighting,
+        bgg:Miniatures,
+        bgg:Fantasy,
+        bgg:ScienceFiction,
+        bgg:Adventure,
+        bgg:Wargame ;
+    bgg:likesMechanic bgg:VariablePlayerPowers,
+        bgg:DiceRolling,
+        bgg:ModularBoard,
+        bgg:CooperativeGame,
+        bgg:HandManagement,
+        bgg:SoloSolitaireGame .
 
 fake:WolfgangSchulz a bgg:Player ;
     rdfs:label "Wolfgang Schulz"@en ;
@@ -42820,7 +45148,19 @@ fake:WolfgangSchulz a bgg:Player ;
         bgg:185343,
         bgg:194655,
         bgg:195539,
-        bgg:233078 .
+        bgg:233078 ;
+    bgg:likesCategory bgg:Economic,
+        bgg:Trains,
+        bgg:CityBuilding,
+        bgg:AbstractStrategy,
+        bgg:CardGame,
+        bgg:Transportation ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:NetworkAndRouteBuilding,
+        bgg:DiceRolling,
+        bgg:AreaMajorityInfluence,
+        bgg:AuctionBidding,
+        bgg:StockHolding .
 
 fake:YukiEkstrom a bgg:Player ;
     rdfs:label "Yuki Ekstrom"@en ;
@@ -42853,7 +45193,19 @@ fake:YukiEkstrom a bgg:Player ;
         bgg:205125,
         bgg:211940,
         bgg:218333,
-        bgg:256998 .
+        bgg:256998 ;
+    bgg:likesCategory bgg:ChildrensGame,
+        bgg:ActionDexterity,
+        bgg:CardGame,
+        bgg:Animals,
+        bgg:Memory,
+        bgg:Dice ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:Dexterity,
+        bgg:Memory,
+        bgg:CooperativeGame,
+        bgg:HandManagement,
+        bgg:SetCollection .
 
 fake:ZaraKovac a bgg:Player ;
     rdfs:label "Zara Kovac"@en ;
@@ -42886,7 +45238,19 @@ fake:ZaraKovac a bgg:Player ;
         bgg:203411,
         bgg:214396,
         bgg:261666,
-        bgg:316412 .
+        bgg:316412 ;
+    bgg:likesCategory bgg:PartyGame,
+        bgg:Bluffing,
+        bgg:CardGame,
+        bgg:Deduction,
+        bgg:Fantasy,
+        bgg:Humor ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:HandManagement,
+        bgg:VariablePlayerPowers,
+        bgg:Deduction,
+        bgg:Memory,
+        bgg:TeamBasedGame .
 
 fake:ZaraMiller a bgg:Player ;
     rdfs:label "Zara Miller"@en ;
@@ -42919,7 +45283,19 @@ fake:ZaraMiller a bgg:Player ;
         bgg:199881,
         bgg:206718,
         bgg:218417,
-        bgg:218933 .
+        bgg:218933 ;
+    bgg:likesCategory bgg:ScienceFiction,
+        bgg:Miniatures,
+        bgg:Fantasy,
+        bgg:Fighting,
+        bgg:Wargame,
+        bgg:CardGame ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:HandManagement,
+        bgg:ModularBoard,
+        bgg:ActionPoints,
+        bgg:GridMovement .
 
 fake:ZaraOkafor a bgg:Player ;
     rdfs:label "Zara Okafor"@en ;
@@ -42952,7 +45328,19 @@ fake:ZaraOkafor a bgg:Player ;
         bgg:318083,
         bgg:332606,
         bgg:336195,
-        bgg:336382 .
+        bgg:336382 ;
+    bgg:likesCategory bgg:Miniatures,
+        bgg:Exploration,
+        bgg:CardGame,
+        bgg:Fantasy,
+        bgg:Puzzle,
+        bgg:Adventure ;
+    bgg:likesMechanic bgg:CooperativeGame,
+        bgg:ModularBoard,
+        bgg:DiceRolling,
+        bgg:SoloSolitaireGame,
+        bgg:VariablePlayerPowers,
+        bgg:ActionPoints .
 
 fake:ZaraWatanabe a bgg:Player ;
     rdfs:label "Zara Watanabe"@en ;
@@ -42985,7 +45373,19 @@ fake:ZaraWatanabe a bgg:Player ;
         bgg:197443,
         bgg:218995,
         bgg:227813,
-        bgg:273092 .
+        bgg:273092 ;
+    bgg:likesCategory bgg:Bluffing,
+        bgg:CardGame,
+        bgg:PartyGame,
+        bgg:Deduction,
+        bgg:Humor,
+        bgg:Negotiation ;
+    bgg:likesMechanic bgg:BettingAndBluffing,
+        bgg:VariablePlayerPowers,
+        bgg:Deduction,
+        bgg:HandManagement,
+        bgg:TeamBasedGame,
+        bgg:Memory .
 
 fake:Gertrudeyoung a bgg:Player ;
     rdfs:label "Gertrude Young"@en ;
@@ -43020,7 +45420,19 @@ fake:Gertrudeyoung a bgg:Player ;
         bgg:5702,
         bgg:5836,
         bgg:5990,
-        bgg:78647 .
+        bgg:78647 ;
+    bgg:likesCategory bgg:CardGame,
+        bgg:WordGame,
+        bgg:Puzzle,
+        bgg:Animals,
+        bgg:ChildrensGame,
+        bgg:Memory ;
+    bgg:likesMechanic bgg:HandManagement,
+        bgg:DiceRolling,
+        bgg:VariablePlayerPowers,
+        bgg:TilePlacement,
+        bgg:Drafting,
+        bgg:HexagonGrid .
 
 fake:Majabrown a bgg:Player ;
     rdfs:label "Maja Brown"@en ;
@@ -43055,4 +45467,16 @@ fake:Majabrown a bgg:Player ;
         bgg:62219,
         bgg:6873,
         bgg:7307,
-        bgg:8670 .
+        bgg:8670 ;
+    bgg:likesCategory bgg:Wargame,
+        bgg:CardGame,
+        bgg:Electronic,
+        bgg:Miniatures,
+        bgg:WorldWarIi,
+        bgg:Negotiation ;
+    bgg:likesMechanic bgg:DiceRolling,
+        bgg:HexagonGrid,
+        bgg:VariablePlayerPowers,
+        bgg:AreaMajorityInfluence,
+        bgg:Simulation,
+        bgg:HandManagement .
