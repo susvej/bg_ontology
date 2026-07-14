@@ -1,0 +1,106 @@
+# ── Root query type ──────────────────────────────────────────────────────────
+# Every GraphQL API has exactly one Query type. Fields here are the entry
+# points — what you can ask for at the top level.
+
+type Query {
+  # Single game by its BGG numeric ID
+  game(id: ID!): Game
+
+  # List games with optional filters. All arguments are optional.
+  games(
+    limit:     Int    = 20
+    offset:    Int    = 0
+    name:      String        # partial, case-insensitive substring match
+    minRating: Float         # filters on geekRating
+    category:  String        # e.g. "PartyGame", "Fantasy"
+    mechanic:  String        # e.g. "DiceRolling", "CooperativeGame"
+  ): [Game!]!
+
+  # Vocabulary lists
+  categories: [Category!]!
+  mechanics:  [Mechanic!]!
+
+  # Creators (board game designers)
+  creator(id: ID!): Creator
+  creators(name: String, limit: Int = 20): [Creator!]!
+
+  # Fake players
+  player(id: ID!): Player
+  players(limit: Int = 20, offset: Int = 0): [Player!]!
+}
+
+# ── Game ─────────────────────────────────────────────────────────────────────
+type Game {
+  id:             ID!
+  name:           String!
+  year:           Int
+  rating:         Float     # raw average community rating
+  geekRating:     Float     # BGG Bayesian "Geek Rating"
+  minPlayers:     Int
+  maxPlayers:     Int
+  bestNumPlayers: Int
+  minTime:        Int
+  maxTime:        Int
+  minRecAge:      Int
+  size:           String    # "Small" | "Medium" | "Large"
+  description:    String
+
+  # Nested objects — these trigger their own resolver calls
+  categories:  [Category!]!
+  mechanics:   [Mechanic!]!
+  creators:    [Creator!]!
+  publishers:  [Publisher!]!
+
+  # A game can be an expansion of other games (or have expansions)
+  expandedBy: [Game!]!   # games that expand THIS game
+  expandsTo:  Game        # the base game this expands (if any)
+
+  # Reimplementation chain
+  reimplementedBy: [Game!]!
+  reimplements:    Game
+}
+
+# ── Vocabulary types ──────────────────────────────────────────────────────────
+type Category {
+  id:    ID!
+  label: String
+  # Reverse lookup: which games have this category?
+  games(limit: Int = 10): [Game!]!
+}
+
+type Mechanic {
+  id:    ID!
+  label: String
+  games(limit: Int = 10): [Game!]!
+}
+
+type Creator {
+  id:    ID!
+  label: String!
+  games: [Game!]!
+}
+
+type Publisher {
+  id:    ID!
+  label: String!
+}
+
+# ── Players ───────────────────────────────────────────────────────────────────
+type Player {
+  id:        ID!
+  label:     String!
+  namespace: String    # "fake" or "svj"
+
+  owns:     [Game!]!
+  opinions: [Opinion!]!
+
+  # Derived taste preferences (added in fake_players.ttl)
+  likesCategories: [Category!]!
+  likesMechanics:  [Mechanic!]!
+}
+
+type Opinion {
+  game:       Game!
+  rating:     Float
+  mentalLoad: String   # "easy" | "moderate" | "difficult"
+}
